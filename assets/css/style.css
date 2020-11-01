@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+}
+
+.navbar {
+    padding: 12px;
+    background-color: #DBC7B9;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.navbar img {
+    height: 100px;
+    width: 150px;
+}
