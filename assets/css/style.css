@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* HOMEPAGE BACKGROUND SETUP */ 
+
 body {
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
@@ -11,6 +13,14 @@ body {
 header .container {
     background-color: #DBC7B9;
 }
+
+section {
+    background-color: #FFF0E5;
+}
+
+/* / HOMEPAGE BACKGROUND SETUP */ 
+
+/* NAVBAR */ 
 
 .navbar {
     font-family: "Nanum Gothic Coding", monospace;
@@ -29,9 +39,7 @@ header .container {
     width: 80px;
 }
 
-section {
-    background-color: #FFF0E5;
-}
+/* / NAVBAR */ 
 
 /* GAME LOGO */ 
 
@@ -114,6 +122,8 @@ section {
 
 /* / GAME LOGO */ 
 
+/* HOMEPAGE */ 
+
 .start-game-text {
     font-weight: 700;
     font-size: 18px;
@@ -150,9 +160,15 @@ button a:hover {
     border-radius: 5px;
 }
 
+/* / HOMEPAGE */ 
+
+/* FOOTER */ 
+
 footer {
     background-color: #dbc7b99d;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
 }
+
+/* / FOOTER */ 
