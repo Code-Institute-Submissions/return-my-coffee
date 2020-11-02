@@ -87,3 +87,17 @@ button a {
 button a:hover {
     text-decoration: none;
 }
+
+#homepageImg {
+    width: 80%;
+    height: 350px;
+    border: 5px solid #dbc7b99d;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #dbc7b99d;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
