@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25vh;
+    perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
 }
 
 .memory-card {
@@ -30,6 +31,9 @@ body {
     height: calc(40%);  /* to give the cards a height (ensure they're visible) once the front-face and back-face are stacked */
     position: relative;
     margin: 10px; 
+    /* Initialize 3D effect */
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .front-face,
@@ -39,4 +43,13 @@ body {
     position: absolute;     /* stacks the cards on top of eachother */  
     border-radius: 3px;
     border: 2px solid #1a66a5;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
 }
