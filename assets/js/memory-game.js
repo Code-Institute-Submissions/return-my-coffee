@@ -4,6 +4,7 @@
  */
 
 const cards = document.querySelectorAll(".memory-card");
+const cardBoard = document.querySelector(".memory-game-board");
 
 var lockBoard = false;
 var hasFlippedCard = false;
@@ -16,7 +17,7 @@ cards.forEach((card)=> {
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
-    
+
     this.classList.add("flip");
 
     if (!hasFlippedCard) {
@@ -58,3 +59,24 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
+
+/* Shuffle cards on browser refresh
+Based upon the following source:
+"https://jsfiddle.net/z503fjv9/"
+*/
+
+(function shuffle(){
+    var cardDeck = Array.from(cardBoard.children);
+    var shuffleCards;
+
+    cardDeck.sort(function(a, b) {
+        return -1 + Math.random() * 3;
+    });
+
+    while (cardBoard.children.length > 0) {
+        cardBoard.removeChild(cardBoard.children[0]);
+    }
+    cardDeck.forEach(function(el) {
+        cardBoard.appendChild(el);
+    })
+})();
