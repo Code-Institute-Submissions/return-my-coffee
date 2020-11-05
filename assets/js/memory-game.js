@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll(".memory-card");
 
 // Define variables for checking cards
+var lockBoard = false;
 var hasFlippedCard = false;
 var firstCard, secondCard;
 
@@ -9,6 +10,7 @@ cards.forEach((card)=> {
 })
 
 function checkCards() {
+    if (lockBoard) return;
     this.classList.add("flip");
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -25,10 +27,12 @@ function checkCards() {
             secondCard.removeEventListener("click", checkCards, false);
         }
         else {
+            lockBoard = true;
             // It's not a match so flip the cards back
             setTimeout(function() {
                 firstCard.classList.remove("flip");
                 secondCard.classList.remove("flip");
+                lockBoard = false;
             }, 800);
         }
     }
