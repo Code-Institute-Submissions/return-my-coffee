@@ -1,18 +1,24 @@
+/* The following code for this game was based upon
+    a video guide from the following source:
+    "https://www.youtube.com/watch?v=ZniVgo8U7ek"
+ */
+
 const cards = document.querySelectorAll(".memory-card");
 
-// Define variables for checking cards
 var lockBoard = false;
 var hasFlippedCard = false;
 var firstCard, secondCard;
 
 cards.forEach((card)=> {
-    card.addEventListener("click", checkCards);
-})
+    card.addEventListener("click", flipCard);
+});
 
-function checkCards() {
+function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
+    
     this.classList.add("flip");
+
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
@@ -20,25 +26,30 @@ function checkCards() {
     else {
         hasFlippedCard = false;
         secondCard = this;
+        checkForMatch();
+    } 
+};
 
-        // Do the cards match?
-        if (firstCard.dataset.cardname === secondCard.dataset.cardname) {
-            // It's a match!
-            firstCard.removeEventListener("click", checkCards, false);
-            secondCard.removeEventListener("click", checkCards, false);
-            resetBoard();
-        }
-        else {
-            lockBoard = true;
-            // It's not a match so flip the cards back
-            setTimeout(function() {
-                firstCard.classList.remove("flip");
-                secondCard.classList.remove("flip");
-                lockBoard = false;
-                resetBoard();
-            }, 800);
-        }
-    }
+function checkForMatch() {
+    let isMatch = firstCard.dataset.cardname === secondCard.dataset.cardname;
+    // Ternary operator
+    isMatch ? disableCards() : unflipCards(); 
+};
+
+function disableCards() {
+    firstCard.removeEventListener("click", flipCard, false);
+    secondCard.removeEventListener("click", flipCard, false);
+    resetBoard();
+};
+
+function unflipCards() {
+    lockBoard = true;
+    setTimeout(function() {
+        firstCard.classList.remove("flip");
+        secondCard.classList.remove("flip");
+        lockBoard = false;
+        resetBoard();
+    }, 800);
 }
 
 /*  When the user double clicks a card and then gets a failed match, 
