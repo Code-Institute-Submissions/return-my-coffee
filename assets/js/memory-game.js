@@ -5,10 +5,15 @@
 
 const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
+const countdownBoard = document.querySelector(".time-left");
+const timeLeft = document.querySelector(".time-left span");
 
 var lockBoard = false;
 var hasFlippedCard = false;
 var firstCard, secondCard;
+
+var progressBar = document.querySelector(".inner-bar");
+let countdown = 10;
 
 cards.forEach((card)=> {
     card.addEventListener("click", flipCard);
@@ -80,3 +85,23 @@ Based upon the following source:
         cardBoard.appendChild(el);
     })
 })();
+
+
+// Countdown Timer
+
+let startCountdown = setInterval(() => {
+    // Time Left text
+    countdown -= 1;
+    timeLeft.textContent = countdown;
+    if (countdown < 0) {
+        countdown = 0;
+        clearInterval(startCountdown);
+        countdownBoard.textContent = "Time's Up!"
+    }
+    // Progress bar timer
+    // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
+    progressBar.animate({
+        width: "0%"
+    }, 15000)
+    
+}, 1000);
