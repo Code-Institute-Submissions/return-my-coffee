@@ -16,7 +16,151 @@ body {
     background-color: #4a4a4a4a;
 }
 
+/* COUNTDOWN TIMER */
+
+.game-hud {
+    position: absolute;
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    top: 10%;
+    left: 25%;
+}
+
+/* CLOCK */
+/* This code was based upon the following source:
+"https://codepen.io/MyXoToD/pen/psLen" */
+
+.clock {
+    box-sizing: border-box;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 100%;
+    border: 6px solid #00A99E;
+}
+
+.top {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.right {
+    position: absolute;
+    width: 5px;
+    height: 2px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+}
+
+.bottom {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    background: #262626;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.left {
+    position: absolute;
+    width: 6px;
+    height: 2px;
+    background: #262626;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+
+.center {
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #262626;
+    border-radius: 100%;
+}
+
+.hour {
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 20s infinite linear;
+}
+.hour:before {
+    position: absolute;
+    content: "";
+    background: #262626;
+    height: 20px;
+    width: 3px;
+    top: 5px;
+}
+
+.minute {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 10s infinite linear;
+}
+.minute:before {
+    position: absolute;
+    content: "";
+    background: #262626;
+    height: 15px;
+    width: 1px;
+    top: 8px;
+}
+
+.second {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 5s infinite linear;
+}
+.second:before {
+    position: absolute;
+    content: "";
+    background: #fd1111;
+    height: 18px;
+    width: 2px;
+    top: 5px;
+}
+
+@keyframes time {
+    to {transform: rotate(360deg);}
+}
+
+/* / CLOCK */
+
+/* / COUNTDOWN TIMER */
+
 .memory-game-board {
+    border: 2px solid black;
     width: 1000px;
     height: 900px;
     margin: auto;   /* to center the card deck */
