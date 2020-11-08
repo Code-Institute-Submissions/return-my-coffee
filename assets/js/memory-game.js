@@ -7,6 +7,8 @@ const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
+const startGameCountdownBoard = document.querySelector(".start-timer h1"); 
+const startText = document.querySelector("#startGameText");
 
 var lockBoard = false;
 var hasFlippedCard = false;
@@ -14,6 +16,8 @@ var firstCard, secondCard;
 
 var progressBar = document.querySelector(".inner-bar");
 let countdown = 10;
+let startGameCountdown = 5;
+
 
 cards.forEach((card)=> {
     card.addEventListener("click", flipCard);
@@ -86,22 +90,50 @@ Based upon the following source:
     })
 })();
 
+// Start Game
+
+(function startGameTimer() {
+    lockBoard = true;
+    let gameStartCountdown = setInterval(() => {
+    startGameCountdown -= 1;
+    startGameCountdownBoard.textContent = startGameCountdown;
+    if (startGameCountdown < 1) {
+        startGameCountdown = 1;
+        clearInterval(gameStartCountdown);
+        startGameCountdownBoard.style.display = "none";
+        displayStartGameText();
+    }
+    }, 1000)
+})();
+
+function displayStartGameText() {
+    lockBoard = true;
+    startText.style.display = "block";
+    let beginGame = setInterval(() => {
+        startText.style.display = "none";
+        startGame();
+    }, 1000)
+}
 
 // Countdown Timer
 
-let startCountdown = setInterval(() => {
-    // Time Left text
-    countdown -= 1;
-    timeLeft.textContent = countdown;
-    if (countdown < 0) {
-        countdown = 0;
-        clearInterval(startCountdown);
-        countdownBoard.textContent = "Time's Up!"
-    }
-    // Progress bar timer
-    // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
-    progressBar.animate({
-        width: "0%"
-    }, 15000)
+function startGame() {
+    lockBoard = false;
     
-}, 1000);
+    let startCountdown = setInterval(() => {
+        // Time Left text
+        countdown -= 1;
+        timeLeft.textContent = countdown;
+        if (countdown < 0) {
+            countdown = 0;
+            clearInterval(startCountdown);
+            countdownBoard.textContent = "Time's Up!"
+        }
+        // Progress bar timer
+        // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
+        progressBar.animate({
+            width: "0%"
+        }, 15000)
+
+    }, 1000);
+}
