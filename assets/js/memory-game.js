@@ -16,6 +16,7 @@ var firstCard, secondCard;
 
 var progressBar = document.querySelector(".inner-bar");
 let countdown = localStorage.getItem("countdownSpeed") || 20;
+let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 let startGameCountdown = 5;
 
 
@@ -134,11 +135,12 @@ function startTimer() {
             clearInterval(startCountdown);
             countdownBoard.textContent = "Time's Up!"
         }
-        // Progress bar timer
-        // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
-        progressBar.animate({
-            width: "0%"
-        }, 15000)
+        
 
     }, 1000);
+    // Progress bar timer
+    // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
+    progressBar.animate({
+        width: "0%"
+    }, animateSpeed)
 }

@@ -17,6 +17,7 @@ openGame.addEventListener("click", function() {
 // Easy
 easyBtn.addEventListener("click", function(){
     localStorage.setItem("countdownSpeed", 60);
+    localStorage.setItem("animateSpeed", 61000);
     confirmSetting.style.display = "block";
     confirmSetting.textContent = "easy";
 });
@@ -24,6 +25,7 @@ easyBtn.addEventListener("click", function(){
 // Medium
 mediumBtn.addEventListener("click", function(){
     localStorage.setItem("countdownSpeed", 40);
+    localStorage.setItem("animateSpeed", 41000);
     confirmSetting.style.display = "block";
     confirmSetting.textContent = "medium";
 });
@@ -31,6 +33,7 @@ mediumBtn.addEventListener("click", function(){
 // Hard
 hardBtn.addEventListener("click", function(){
     localStorage.setItem("countdownSpeed", 25);
+    localStorage.setItem("animateSpeed", 26000);
     confirmSetting.style.display = "block";
     confirmSetting.textContent = "hard";
 });
