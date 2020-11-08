@@ -1,6 +1,15 @@
+const openGame = document.querySelector("#startGameBtn");
+
 const easyBtn = document.querySelector("#easyBtn");
 const mediumBtn = document.querySelector("#mediumBtn");
 const hardBtn = document.querySelector("#hardBtn");
+
+
+//  Open Game
+
+openGame.addEventListener("click", function() {
+    window.location.replace("memory-game.html");
+});
 
 
 // Game Difficulty Settings
