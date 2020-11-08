@@ -17,14 +17,15 @@ body {
     font-family: "Source Code Pro", monospace;
 }
 
-.start-timer {
+.start-timer h1 {
+    display: none;
     width: 320px;
     height: 320px;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     z-index: 10;
-    font-size: 10rem;
+    font-size: 20rem;
     color: white;
     text-shadow: -3px 3px 0 #000,
                     3px 3px 0 #000,

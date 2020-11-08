@@ -93,33 +93,38 @@ Based upon the following source:
 // Start Game
 
 (function startGameTimer() {
-    lockBoard = true;
+    startGameCountdownBoard.style.display = "block";
     let gameStartCountdown = setInterval(() => {
-    startGameCountdown -= 1;
-    startGameCountdownBoard.textContent = startGameCountdown;
-    if (startGameCountdown < 1) {
-        startGameCountdown = 1;
-        clearInterval(gameStartCountdown);
-        startGameCountdownBoard.style.display = "none";
-        displayStartGameText();
-    }
+        lockBoard = true;
+        startGameCountdown -= 1;
+        startGameCountdownBoard.textContent = startGameCountdown;
+        if (startGameCountdown < 1) {
+            startGameCountdown = 1;
+            clearInterval(gameStartCountdown);
+            startGameCountdownBoard.style.display = "none";
+            displayStartGameText();
+        }
     }, 1000)
 })();
 
 function displayStartGameText() {
-    lockBoard = true;
     startText.style.display = "block";
     let beginGame = setInterval(() => {
+        lockBoard = true;
         startText.style.display = "none";
+        clearInterval(beginGame);
+        startTimer();
         startGame();
     }, 1000)
 }
 
-// Countdown Timer
-
 function startGame() {
     lockBoard = false;
-    
+}
+
+// Countdown Timer
+
+function startTimer() {
     let startCountdown = setInterval(() => {
         // Time Left text
         countdown -= 1;
