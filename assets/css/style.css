@@ -261,6 +261,21 @@ footer {
     margin: 20px 80%;
 }
 
+.setting-confirmation p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+
+.setting-confirmation span {
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #dbc7b99d;
+    padding: 5px;
+}
+
 /* / MODAL CONTENT */ 
 
 /* / START GAME MODAL */
