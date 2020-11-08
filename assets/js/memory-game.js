@@ -15,7 +15,7 @@ var hasFlippedCard = false;
 var firstCard, secondCard;
 
 var progressBar = document.querySelector(".inner-bar");
-let countdown = 10;
+let countdown = localStorage.getItem("countdownSpeed") || 20;
 let startGameCountdown = 5;
 
 
