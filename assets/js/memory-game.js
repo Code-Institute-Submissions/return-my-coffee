@@ -83,17 +83,19 @@ function resetBoard() {
 // Shuffle Cards
 /* Based upon the following source: "https://jsfiddle.net/z503fjv9/" */
 (function shuffle(){
-    var cardDeck = Array.from(cardBoard.children);
-    var shuffleCards;
+    if(cardBoard) {
+        var cardDeck = Array.from(cardBoard.children);
+        var shuffleCards;
 
-    cardDeck.sort(function(a, b) {
-        return -1 + Math.random() * 3;
-    });
+        cardDeck.sort(function(a, b) {
+            return -1 + Math.random() * 3;
+        });
 
-    while (cardBoard.children.length > 0) {
-        cardBoard.removeChild(cardBoard.children[0]);
-    }
-    cardDeck.forEach(function(el) {
-        cardBoard.appendChild(el);
-    })
+        while (cardBoard.children.length > 0) {
+            cardBoard.removeChild(cardBoard.children[0]);
+            }
+            cardDeck.forEach(function(el) {
+                cardBoard.appendChild(el);
+            })
+        }
 })();
