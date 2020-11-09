@@ -18,12 +18,14 @@ var progressBar = document.querySelector(".inner-bar");
 let countdown = localStorage.getItem("countdownSpeed") || 20;
 let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 let startGameCountdown = 5;
+let totalMatches = 0;
 
 
 cards.forEach((card)=> {
     card.addEventListener("click", flipCard);
 });
 
+// Flip Card
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -44,8 +46,22 @@ function flipCard() {
 function checkForMatch() {
     let isMatch = firstCard.dataset.cardname === secondCard.dataset.cardname;
     // Ternary operator
-    isMatch ? disableCards() : unflipCards(); 
+    isMatch ? disableCards() : unflipCards();
+    // Increment card matches 
+    if (isMatch) {
+        totalMatches ++;
+    }
+    // Call win condition
+    checkForWin();
 };
+
+function checkForWin() {
+    matchAllCards = setInterval(() => {
+        if (totalMatches === 8) {
+            endGame();
+        }
+    }, 1000)    // gives time to allow the final card to be flipped before the win condition is called
+}
 
 function disableCards() {
     firstCard.removeEventListener("click", flipCard, false);
@@ -134,13 +150,23 @@ function startTimer() {
             countdown = 0;
             clearInterval(startCountdown);
             countdownBoard.textContent = "Time's Up!"
+            endGame();
         }
-        
-
     }, 1000);
+
     // Progress bar timer
     // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
     progressBar.animate({
         width: "0%"
     }, animateSpeed)
+}
+
+function endGame() {
+    lockBoard = true;
+    if (totalMatches === 8) {
+        alert("You win!")
+    }
+    else {
+        alert("Better luck next time")
+    }
 }
