@@ -6,7 +6,6 @@ const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
 
 //  Open Game
-
 openGame.addEventListener("click", function() {
     window.location.replace("memory-game.html");
 });

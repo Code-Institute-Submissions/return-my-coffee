@@ -1,12 +1,13 @@
-/* The following code for this game was based upon
-    a video guide from the following source:
-    "https://www.youtube.com/watch?v=ZniVgo8U7ek"
- */
+/* 
+The following code for this game was based upon a video guide from the following source:
+"https://www.youtube.com/watch?v=ZniVgo8U7ek"
+*/
 
 const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
+const progressBar = document.querySelector(".inner-bar");
 const startGameCountdownBoard = document.querySelector(".start-timer h1"); 
 const startText = document.querySelector("#startGameText");
 
@@ -14,28 +15,27 @@ var lockBoard = false;
 var hasFlippedCard = false;
 var firstCard, secondCard;
 
-var progressBar = document.querySelector(".inner-bar");
 let countdown = localStorage.getItem("countdownSpeed") || 20;
 let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 let startGameCountdown = 5;
 let totalMatches = 0;
 
-
+// Flip Card
 cards.forEach((card)=> {
     card.addEventListener("click", flipCard);
 });
 
-// Flip Card
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
 
     this.classList.add("flip");
-
+    // First card
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
     }
+    // Second card
     else {
         hasFlippedCard = false;
         secondCard = this;
@@ -43,6 +43,7 @@ function flipCard() {
     } 
 };
 
+// Check for match
 function checkForMatch() {
     let isMatch = firstCard.dataset.cardname === secondCard.dataset.cardname;
     // Ternary operator
@@ -51,24 +52,26 @@ function checkForMatch() {
     if (isMatch) {
         totalMatches ++;
     }
-    // Call win condition
     checkForWin();
 };
 
+// Check for win 
 function checkForWin() {
     matchAllCards = setInterval(() => {
         if (totalMatches === 8) {
             endGame();
         }
-    }, 1000)    // gives time to allow the final card to be flipped before the win condition is called
+    }, 1000)    // setInterval gives time to allow the final card to be flipped before the win condition is called
 }
 
+// Prevent matched cards from flipping back over
 function disableCards() {
     firstCard.removeEventListener("click", flipCard, false);
     secondCard.removeEventListener("click", flipCard, false);
     resetBoard();
 };
 
+// Unflip cards that do not match
 function unflipCards() {
     lockBoard = true;
     setTimeout(function() {
@@ -79,18 +82,14 @@ function unflipCards() {
     }, 800);
 }
 
-/*  When the user double clicks a card and then gets a failed match, 
-    the gameboard needs to reset to allow that same card to be clicked again */
+// Reset board upon a failed match to allow cards to be clicked again
 function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
-/* Shuffle cards on browser refresh
-Based upon the following source:
-"https://jsfiddle.net/z503fjv9/"
-*/
-
+// Shuffle Cards
+/* Based upon the following source: "https://jsfiddle.net/z503fjv9/" */
 (function shuffle(){
     var cardDeck = Array.from(cardBoard.children);
     var shuffleCards;
@@ -106,67 +105,3 @@ Based upon the following source:
         cardBoard.appendChild(el);
     })
 })();
-
-// Start Game
-
-(function startGameTimer() {
-    startGameCountdownBoard.style.display = "block";
-    let gameStartCountdown = setInterval(() => {
-        lockBoard = true;
-        startGameCountdown -= 1;
-        startGameCountdownBoard.textContent = startGameCountdown;
-        if (startGameCountdown < 1) {
-            startGameCountdown = 1;
-            clearInterval(gameStartCountdown);
-            startGameCountdownBoard.style.display = "none";
-            displayStartGameText();
-        }
-    }, 1000)
-})();
-
-function displayStartGameText() {
-    startText.style.display = "block";
-    let beginGame = setInterval(() => {
-        lockBoard = true;
-        startText.style.display = "none";
-        clearInterval(beginGame);
-        startTimer();
-        startGame();
-    }, 1000)
-}
-
-function startGame() {
-    lockBoard = false;
-}
-
-// Countdown Timer
-
-function startTimer() {
-    let startCountdown = setInterval(() => {
-        // Time Left text
-        countdown -= 1;
-        timeLeft.textContent = countdown;
-        if (countdown < 0) {
-            countdown = 0;
-            clearInterval(startCountdown);
-            countdownBoard.textContent = "Time's Up!"
-            endGame();
-        }
-    }, 1000);
-
-    // Progress bar timer
-    // Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar"
-    progressBar.animate({
-        width: "0%"
-    }, animateSpeed)
-}
-
-function endGame() {
-    lockBoard = true;
-    if (totalMatches === 8) {
-        alert("You win!")
-    }
-    else {
-        alert("Better luck next time")
-    }
-}
