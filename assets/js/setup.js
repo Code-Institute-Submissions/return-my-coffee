@@ -1,12 +1,18 @@
+// Game-start modal variables
 const openGame = document.querySelector("#startGameBtn");
 const easyBtn = document.querySelector("#easyBtn");
 const mediumBtn = document.querySelector("#mediumBtn");
 const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
 
+// End game - win/lose modal variables
 const winGameModal = document.querySelector("#winModal");
 const loseGameModal = document.querySelector("#loseModal");
+const continueBtn = document.querySelector("#continueBtn");
+const replayBtn = document.querySelector("#replayBtn");
+const quitBtn = document.querySelector("#quitBtn");
 
+// Constant game variables
 const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
 const countdownBoard = document.querySelector(".time-left");
@@ -15,13 +21,6 @@ const progressBar = document.querySelector(".inner-bar");
 const startGameCountdownBoard = document.querySelector(".start-timer h1"); 
 const startText = document.querySelector("#startGameText");
 
-//  Open Game
-if (openGame) {    
-    openGame.addEventListener("click", function() {
-        window.location.replace("memory-game.html");
-    });
-}
-
 /*
 The if statements check if the variables are 
 not null before adding the event listener.
@@ -29,6 +28,15 @@ This fixes a null error within the console.
 The following source was used to fix this issue:
 "https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null"
 */
+
+//  Open Game
+if (openGame) {    
+    openGame.addEventListener("click", function() {
+        window.location.replace("memory-game.html");
+    });
+}
+
+// 
 
 // Game Difficulty Settings
 

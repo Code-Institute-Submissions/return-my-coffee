@@ -58,9 +58,18 @@ function endGame() {
     // Check for win
     if (totalMatches === 8) {
         winGameModal.style.display = "block";
+        continueBtn.addEventListener("click", function(){
+            console.log("Prepare next game")
+        });
     }
     // Check for loss
     else {
         loseGameModal.style.display = "block";
+        replayBtn.addEventListener("click", function(){
+            window.location.reload();
+        });
+        quitBtn.addEventListener("click", function(){
+            window.location.replace("index.html");
+        })
     }
 }
