@@ -5,6 +5,14 @@ const mediumBtn = document.querySelector("#mediumBtn");
 const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
 
+const cards = document.querySelectorAll(".memory-card");
+const cardBoard = document.querySelector(".memory-game-board");
+const countdownBoard = document.querySelector(".time-left");
+const timeLeft = document.querySelector(".time-left span");
+const progressBar = document.querySelector(".inner-bar");
+const startGameCountdownBoard = document.querySelector(".start-timer h1"); 
+const startText = document.querySelector("#startGameText");
+
 //  Open Game
 if (openGame) {    
     openGame.addEventListener("click", function() {
