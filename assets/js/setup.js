@@ -6,33 +6,48 @@ const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
 
 //  Open Game
-openGame.addEventListener("click", function() {
-    window.location.replace("memory-game.html");
-});
+if (openGame) {    
+    openGame.addEventListener("click", function() {
+        window.location.replace("memory-game.html");
+    });
+}
 
+/*
+The if statements check if the variables are 
+not null before adding the event listener.
+This fixes a null error within the console.
+The following source was used to fix this issue:
+"https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null"
+*/
 
 // Game Difficulty Settings
 
 // Easy
-easyBtn.addEventListener("click", function(){
-    localStorage.setItem("countdownSpeed", 60);
-    localStorage.setItem("animateSpeed", 61000);
-    confirmSetting.style.display = "block";
-    confirmSetting.textContent = "easy";
-});
+if (easyBtn) {
+    easyBtn.addEventListener("click", function(){
+        localStorage.setItem("countdownSpeed", 60);
+        localStorage.setItem("animateSpeed", 61000);
+        confirmSetting.style.display = "block";
+        confirmSetting.textContent = "easy";
+    });
+}
 
 // Medium
-mediumBtn.addEventListener("click", function(){
-    localStorage.setItem("countdownSpeed", 40);
-    localStorage.setItem("animateSpeed", 41000);
-    confirmSetting.style.display = "block";
-    confirmSetting.textContent = "medium";
-});
+if (mediumBtn) {
+    mediumBtn.addEventListener("click", function(){
+        localStorage.setItem("countdownSpeed", 40);
+        localStorage.setItem("animateSpeed", 41000);
+        confirmSetting.style.display = "block";
+        confirmSetting.textContent = "medium";
+    });
+}
 
 // Hard
-hardBtn.addEventListener("click", function(){
-    localStorage.setItem("countdownSpeed", 25);
-    localStorage.setItem("animateSpeed", 26000);
-    confirmSetting.style.display = "block";
-    confirmSetting.textContent = "hard";
-});
+if (hardBtn) {
+    hardBtn.addEventListener("click", function(){
+        localStorage.setItem("countdownSpeed", 25);
+        localStorage.setItem("animateSpeed", 26000);
+        confirmSetting.style.display = "block";
+        confirmSetting.textContent = "hard";
+    });
+}
