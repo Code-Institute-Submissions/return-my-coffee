@@ -57,10 +57,10 @@ function endGame() {
     lockBoard = true;
     // Check for win
     if (totalMatches === 8) {
-        alert("You win!")
+        winGameModal.style.display = "block";
     }
     // Check for loss
     else {
-        alert("Better luck next time")
+        loseGameModal.style.display = "block";
     }
 }

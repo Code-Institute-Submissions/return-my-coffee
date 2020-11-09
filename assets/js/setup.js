@@ -1,9 +1,11 @@
 const openGame = document.querySelector("#startGameBtn");
-
 const easyBtn = document.querySelector("#easyBtn");
 const mediumBtn = document.querySelector("#mediumBtn");
 const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
+
+const winGameModal = document.querySelector("#winModal");
+const loseGameModal = document.querySelector("#loseModal");
 
 const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
