@@ -88,7 +88,7 @@ body {
     position: absolute;
     width: 900px;
     height: 100px;
-    top: 10px;
+    top: 50px;
     left: 10%;
     right: 10%;
     margin: 0 auto;
@@ -271,7 +271,7 @@ body {
 .memory-game-board {
     width: 900px;
     height: 600px;
-    margin: 120px auto;   /* to center the card deck */
+    margin: 180px auto;   /* to center the card deck */
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25vh;
@@ -316,9 +316,13 @@ body {
 
 @media (max-width: 1110px) {
     .game-hud {
+        top: 10px;
         margin: 0 auto;
         left: 0%;
         right: 0%;
+    }
+    .memory-game-board {
+        margin: 120px auto;       /* Make the cards 3D for the flip animation effect */
     }
 }
 
