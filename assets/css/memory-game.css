@@ -220,6 +220,8 @@ body {
 
 /* / COUNTDOWN TIMER */
 
+/* GAMEBOARD */
+
 .memory-game-board {
     width: 1000px;
     height: 900px;
@@ -229,6 +231,8 @@ body {
     padding-bottom: 25vh;
     perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
 }
+
+/* CARDS */
 
 .memory-card {
     width: calc(20%);   /* to give the cards a width (ensure they're visible) once the front-face and back-face are stacked */
@@ -258,7 +262,9 @@ body {
     transform: rotateY(180deg);
 }
 
+/* / CARDS */
 
+/* /GAMEBOARD */
 
 /* END GAME MODAL */
 
@@ -281,6 +287,38 @@ body {
     margin: 10% auto;
     border: 2px solid #888;
     background-color: #FFF9F5;
+}
+
+.end-game-content hr {
+    border: 1px solid #707070;
+    transform: translate(0, 8rem);
+}
+
+.end-game-content h2 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #dbc7b99d;
+    padding: 10px;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.end-game-content button {
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    margin: 25px auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 /* MODAL GAME LOGO */
@@ -314,37 +352,5 @@ body {
 }
 
 /* / MODAL GAME LOGO */
-
-.end-game-content hr {
-    border: 1px solid #707070;
-    transform: translate(0, 8rem);
-}
-
-.end-game-content h2 {
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #dbc7b99d;
-    padding: 10px;
-    font-family: "Nanum Gothic Coding", monospace;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.end-game-content button {
-    display: block;
-    font-family: "Roboto Mono", monospace;
-    border: 2px solid black;
-    border-radius: 2px;
-    background-color: white;
-    padding: 10px;
-    width: 150px;
-    margin: 25px auto;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
 /* / END GAME MODAL */
