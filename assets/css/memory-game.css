@@ -18,15 +18,18 @@ body {
     position: relative;
 }
 
+/* START GAME COUNTDOWN */
+
 .start-timer h1 {
     display: none;
     width: 320px;
     height: 320px;
-    margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    margin: auto;
     z-index: 10;
-    font-size: 20rem;
+    font-size: 18rem;
     color: white;
     text-shadow: -3px 3px 0 #000,
                     3px 3px 0 #000,
@@ -35,10 +38,51 @@ body {
 
 .start-timer #startGameText {
     display: none;
-    transform: translate(-35%, 0%);
+    font-size: 16rem;
+    text-align: center;
+    margin: auto;
 }
 
-/* COUNTDOWN TIMER */
+/* START GAME COUNTDOWN */
+
+/* START GAME COUNTDOWN MEDIA QUERIES */
+
+@media (max-width: 521px) {
+    .start-timer h1 {
+        width: 320px;
+        height: 320px;
+        top: 25%; left: 0; bottom: 25%; right: 0;
+        font-size: 15rem;
+    }
+    .start-timer #startGameText {
+        font-size: 13rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .start-timer h1 {
+        font-size: 12rem;
+    }
+    .start-timer #startGameText {
+        font-size: 9.5rem;
+        left: 5%; 
+    }
+}
+
+@media (max-width: 280px) {
+    .start-timer h1 {
+        font-size: 8rem;
+        left: -10%; 
+    }
+    .start-timer #startGameText {
+        font-size: 6rem;
+        left: -5%; 
+    }
+}
+
+/* / START GAME COUNTDOWN MEDIA QUERIES */
+
+/* IN-GAME COUNTDOWN TIMER */
 
 .game-hud {
     position: absolute;
@@ -220,7 +264,7 @@ body {
 
 /* / NUMBERED TIMER */
 
-/* / COUNTDOWN TIMER */
+/* / IN-GAME COUNTDOWN TIMER */
 
 /* GAMEBOARD */
 
