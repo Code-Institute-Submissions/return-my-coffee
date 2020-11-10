@@ -30,15 +30,27 @@ The following source was used to fix this issue:
 */
 
 //  Open Game
-if (openGame) {    
-    openGame.addEventListener("click", function() {
+
+var settingBtnClicked = false;
+
+function findYourCoffee() {
+    if (settingBtnClicked === false) {
+        alert("Please pick a setting before you play")
+    }
+    else if (settingBtnClicked === true) {
         window.location.replace("memory-game.html");
-    });
+    }
 }
 
-// 
-
 // Game Difficulty Settings
+
+function checkForDifficultySetting() {
+    if (openGame) {
+        openGame.addEventListener("click", findYourCoffee);
+    }
+}
+
+checkForDifficultySetting();
 
 // Easy
 if (easyBtn) {
@@ -47,6 +59,7 @@ if (easyBtn) {
         localStorage.setItem("animateSpeed", 61000);
         confirmSetting.style.display = "block";
         confirmSetting.textContent = "easy";
+        settingBtnClicked = true;
     });
 }
 
@@ -57,6 +70,7 @@ if (mediumBtn) {
         localStorage.setItem("animateSpeed", 41000);
         confirmSetting.style.display = "block";
         confirmSetting.textContent = "medium";
+        settingBtnClicked = true;
     });
 }
 
@@ -67,5 +81,6 @@ if (hardBtn) {
         localStorage.setItem("animateSpeed", 26000);
         confirmSetting.style.display = "block";
         confirmSetting.textContent = "hard";
+        settingBtnClicked = true;
     });
 }
