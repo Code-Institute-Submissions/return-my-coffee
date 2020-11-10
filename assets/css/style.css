@@ -129,7 +129,8 @@ section {
     font-size: 18px;
 }
 
-button {
+button,
+#startGameBtn {
     font-family: "Roboto Mono", monospace;
     border: 2px solid black;
     border-radius: 2px;
@@ -139,14 +140,16 @@ button {
     padding: 10px;
 }
 
-button a {
+#startGameBtn {
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 20px;
+}
+
+button a {
+    color: black;
 }
 
 button a:hover {
@@ -241,9 +244,9 @@ footer {
 }
 
 .startup-content img {
-    height: 250px;
-    width: 250px;
-    transform: translate(85%, -5%);
+    height: 350px;
+    width: 350px;
+    transform: translate(35%, 0%);
     padding: 15px;
 }
 
@@ -257,8 +260,15 @@ footer {
     padding: 10px;
 }
 
-.difficulty-btn button {
-    margin: 20px 80%;
+.difficulty-btn {
+    margin: auto;
+}
+
+#easyBtn,
+#mediumBtn,
+#hardBtn {
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .setting-confirmation p {
@@ -276,6 +286,70 @@ footer {
     padding: 5px;
 }
 
+.fa-level-down-alt {
+    transform: rotate(90deg);
+    color: #707070;
+}
+
 /* / MODAL CONTENT */ 
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1199px) {
+    .startup-content img {
+        height: 300px;
+        width: 300px;
+        transform: translate(30%, 0%);
+        padding: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .startup-content {
+        margin: 5% auto;
+    }
+    
+    .startup-content p {
+        padding: 2rem 5rem;
+    }
+    .setting-confirmation p {
+        padding: 0;
+    }
+    .setting-confirmation span {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .startup-content #gameLogo {
+        width: 300px;
+        height: 300px;
+    }
+    .modal-game-logo {
+        height: 200px;
+    }
+    .startup-content .overlay-text {
+        width: 60%;
+        font-size: 22px;
+        transform: translate(0%, -17rem);
+    }
+}
+
+@media (max-width: 515px) {
+    .startup-content .overlay-text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    #startGameBtn {
+        width: 250px;
+    }
+}
+
+@media (max-width: 465px) {
+    #startGameBtn {
+        font-size: 16px;
+        width: 200px;
+    }
+}
 
 /* / START GAME MODAL */
