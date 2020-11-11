@@ -49,7 +49,7 @@ body {
     height: 550px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10vh auto;
+    margin: 12vh auto;
     padding: 15px;
     border: 2px solid black;
 }
@@ -102,7 +102,6 @@ body {
     .whack-a-mole-board {
         width: 210px;
         height: 210px;
-        margin: 5vh auto;
     }
 }
 
@@ -110,8 +109,103 @@ body {
 
 /* / GAMEBOARD */
 
-/* GAME HUD */
+/* USER INTERFACE */
+
+.user-interface {
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.user-interface .score,
+.user-interface .highscore
+ {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: red;
+    text-shadow: -1px 1px 0 white,
+                    1px 1px 0 white,
+				    1px -1px 0 white;
+}
+
+.user-interface .score span,
+.user-interface .highscore span {
+    font-size: 28px;
+    font-weight: 900;
+    color: black;
+    width: 40px;
+    height: 30px;
+}
+
+.user-interface .score {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    text-align: left;
+}
+
+.user-interface .score span {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    text-align: left;
+}
 
 
+.user-interface .highscore {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+    text-align: right;
+}
 
-/* GAME HUD */
+.user-interface .highscore span {
+    position: absolute;
+    right: 100px;
+}
+
+.user-interface .game-title {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: -2px 2px 0 white,
+                    2px 2px 0 white,
+				    2px -2px 0 white;
+}
+
+/* Countdown timer */
+.user-interface .game-hud {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.user-interface .time-left {
+    position: absolute;
+    top: 0px;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+}
+
+/* / USER INTERFACE */
