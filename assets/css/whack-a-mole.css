@@ -8,6 +8,8 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* GAME CONTAINER */
+
 .container {
     border: 2px solid #010124;
     width: 80vw;
@@ -32,3 +34,72 @@ body {
         margin: 0;
     }
 }
+
+/* / GAME CONTAINER */
+
+/* GAMEBOARD */
+
+.gameboard {
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh auto;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* GAMEBOARD MEDIA QUERIES */
+
+@media (max-width: 468px) {
+    .gameboard img {
+        width: 140px;
+        height: 140px
+    }
+}
+
+@media (max-width: 434px) {
+    .gameboard img {
+        width: 130px;
+        height: 130px
+    }
+    .gameboard {
+        padding: 0;
+    }
+}
+
+@media (max-width: 385px) {
+    .gameboard img {
+        width: 120px;
+        height: 120px
+    }
+    .gameboard {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 360px) {
+    .gameboard img {
+        width: 110px;
+        height: 110px
+    }
+}
+
+@media (max-width: 328px) {
+    .gameboard img {
+        width: 100px;
+        height: 100px
+    }
+}
+
+@media (max-width: 302px) {
+    .gameboard {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+/* / GAMEBOARD MEDIA QUERIES */
+
+/* GAMEBOARD */
