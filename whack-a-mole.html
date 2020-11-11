@@ -5,16 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Mono:wght@400;700&family=Source+Code+Pro:wght@300;400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/whack-a-mole.css">
+    <link rel="stylesheet" href="assets/css/interface.css">
     <title>Return myCoffee</title>
 </head>
 <body>
     <section class="container">
-        <div class="game-hud">
-            <div class="highscore">High Score: <span>0</span></div>
+        <div class="user-interface">
             <div class="score">0</div>
-            <div class="countdown">60</div>
+            <div class="highscore">High Score: <span>0</span></div>
+            <div class="game-title">Whack-A-Mole</div>
+            <div class="game-hud">
+                <div class="countdown">
+                    <div class="clock">
+                        <div class="top"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                        <div class="left"></div>
+                        <div class="center"></div>
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+                    </div>
+                </div>
+                <div id="progressBar">
+                    <div class="inner-bar"></div>
+                </div>
+                <div class="time-left">Time Left: <span></span></div>
+            </div>
         </div>
-        <div class="gameboard">
+        <div class="whack-a-mole-board">
             <div class="hole" id="hole1">
                 <img src="assets/img/whack-a-mole/hole.png" alt="Hole for the moles to pop out of">
                 <div class="mole small"></div>

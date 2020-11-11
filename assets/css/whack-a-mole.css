@@ -39,7 +39,7 @@ body {
 
 /* GAMEBOARD */
 
-.gameboard {
+.whack-a-mole-board {
     width: 500px;
     height: 550px;
     display: flex;
@@ -52,49 +52,49 @@ body {
 /* GAMEBOARD MEDIA QUERIES */
 
 @media (max-width: 468px) {
-    .gameboard img {
+    .whack-a-mole-board img {
         width: 140px;
         height: 140px
     }
 }
 
 @media (max-width: 434px) {
-    .gameboard img {
+    .whack-a-mole-board img {
         width: 130px;
         height: 130px
     }
-    .gameboard {
+    .whack-a-mole-board {
         padding: 0;
     }
 }
 
 @media (max-width: 385px) {
-    .gameboard img {
+    .whack-a-mole-board img {
         width: 120px;
         height: 120px
     }
-    .gameboard {
+    .whack-a-mole-board {
         width: 380px;
         height: 380px;
     }
 }
 
 @media (max-width: 360px) {
-    .gameboard img {
+    .whack-a-mole-board img {
         width: 110px;
         height: 110px
     }
 }
 
 @media (max-width: 328px) {
-    .gameboard img {
+    .whack-a-mole-board img {
         width: 100px;
         height: 100px
     }
 }
 
 @media (max-width: 302px) {
-    .gameboard {
+    .whack-a-mole-board {
         width: 210px;
         height: 210px;
     }
@@ -102,4 +102,10 @@ body {
 
 /* / GAMEBOARD MEDIA QUERIES */
 
-/* GAMEBOARD */
+/* / GAMEBOARD */
+
+/* GAME HUD */
+
+
+
+/* GAME HUD */
