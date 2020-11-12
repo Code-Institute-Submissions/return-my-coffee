@@ -81,6 +81,7 @@ body {
 
 @media (max-width: 580px) {
     .whack-a-mole-board {
+        width: 460px;
         padding-left: 0;
         padding-right: 0;
     }
@@ -92,6 +93,9 @@ body {
 }
 
 @media (max-width: 528px) {
+    .whack-a-mole-board {
+        width: 400px;
+    }
     .mole {
         width: 130px;
         height: 130px;
@@ -119,6 +123,9 @@ body {
 }
 
 @media (max-width: 442px) {
+    .whack-a-mole-board {
+        width: 340px;
+    }
     .whack-a-mole-board img {
         width: 110px;
         height: 110px
@@ -369,22 +376,7 @@ body {
     }
 }
 
-@media (max-width: 576px) {
-    .game-hud .time-left {
-        font-size: 16px;
-        width: 80%;
-        height: 40px;
-        top: -5vh;
-    }
-    .user-interface .game-title {
-        top: 15vh;
-    }
-    .whack-a-mole-board {
-        margin: 15vh auto;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 614px) {
     .user-interface .game-title {
         font-size: 35px;
         width: 400px;
@@ -411,6 +403,21 @@ body {
     .user-interface .highscore span {
         font-size: 24px;
         right: 75px;
+    }
+}
+
+@media (max-width: 576px) {
+    .game-hud .time-left {
+        font-size: 16px;
+        width: 80%;
+        height: 40px;
+        top: -5vh;
+    }
+    .user-interface .game-title {
+        top: 15vh;
+    }
+    .whack-a-mole-board {
+        margin: 15vh auto;
     }
 }
 
@@ -452,37 +459,6 @@ body {
     }
     .user-interface .score span {
         left:   25px;
-    }
-    .user-interface .highscore span {
-        right: 50px;
-    }
-}
-
-@media (max-width: 340px) {
-    .user-interface .game-title {
-        font-size: 22px;
-        width: 250px;
-        top: 21vh;
-        margin: 0 auto;
-    }
-    .user-interface .game-hud {
-        top: 18.5vh;
-    }
-    .user-interface .score,
-    .user-interface .highscore {
-        font-size: 14px;
-        letter-spacing: 1px;
-        left: 15px;
-        right: 15px;
-        top: 28px;
-    }
-    .user-interface .score span,
-    .user-interface .highscore span {
-        font-size: 18px;
-        top: 14px;
-    }
-    .user-interface .score span {
-        left: 25px;
     }
     .user-interface .highscore span {
         right: 50px;
