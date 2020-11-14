@@ -8,3 +8,31 @@ let timeUp = false;
 let timeLimit = 2000;
 let score = 0;
 let countdown;
+
+// Pick random hole
+function pickRandomHole() {
+    const randomHole = Math.floor(Math.random() * holes.length);
+    const hole = holes[randomHole];
+    if (hole === lastHole) {
+        // If the same hole is selected, pick a different one
+        return pickRandomHole(hole);
+    }
+    lastHole = hole;
+    return hole;
+}
+
+// Mole pop-up 
+function molePopUp() {
+    // random time between 400 and 1700 milliseconds
+    const time = Math.floor(Math.random() * 1300 + 400); 
+    const hole = pickRandomHole(holes);
+    hole.classList.add("up");
+    setTimeout(() => {
+        hole.classList.remove("up");
+        if (!timeUp) {
+            molePopUp();
+        }
+    }, time)
+}
+
+molePopUp();
