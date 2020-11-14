@@ -3,11 +3,13 @@ The following code for this game was based upon a video guide from the following
 "https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=2"
 */
 
+let countdown = localStorage.getItem("countdownSpeed") || 20;
+let animateSpeed = localStorage.getItem("animateSpeed") || 20;
+
 let lastHole;
 let timeUp = false;
 let timeLimit = 2000;
 let score = 0;
-let countdown;
 
 // Pick random hole
 function pickRandomHole() {
@@ -35,4 +37,28 @@ function molePopUp() {
     }, time)
 }
 
-molePopUp();
+// Start game 
+
+startGameBtn.addEventListener("click", startGame);
+
+function startGame() {
+    scoreBoard.textContent = 0;
+    scoreBoard.style.display = "block";
+    score = 0;
+    molePopUp();
+
+    let startCountdown = setInterval(() => {
+        countdown -= 1;
+        timeLeft.textContent = countdown;
+        if (countdown < 0) {
+            countdown = 0;
+            clearInterval(startCountdown);
+            countdownBoard.textContent = "Time's Up!"
+            endGame();
+        }
+    }, 1000);
+    
+    progressBar.animate({
+        width: "0%"
+    }, animateSpeed)
+}
