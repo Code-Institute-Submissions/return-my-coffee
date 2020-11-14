@@ -43,9 +43,14 @@ startGameBtn.addEventListener("click", startGame);
 
 function startGame() {
     scoreBoard.textContent = 0;
-    scoreBoard.style.display = "block";
     score = 0;
+    timeUp = false;
     molePopUp();
+
+    // Stop mole pop up when timer is finished
+    setTimeout(() => {
+        timeUp = true;
+    }, countdown * 1000)
 
     let startCountdown = setInterval(() => {
         countdown -= 1;
@@ -54,7 +59,6 @@ function startGame() {
             countdown = 0;
             clearInterval(startCountdown);
             countdownBoard.textContent = "Time's Up!"
-            endGame();
         }
     }, 1000);
     
