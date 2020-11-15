@@ -8,8 +8,10 @@ let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 
 let lastHole;
 let timeUp = false;
-//let timeLimit = 2000;
 let score = 0;
+
+let highscore = localStorage.getItem("game1HighScore") || 0;
+highScoreBoard.textContent = highscore;
 
 // Pick random hole
 function pickRandomHole() {
@@ -58,6 +60,7 @@ function startGame() {
         if (countdown < 0) {
             countdown = 0;
             clearInterval(startCountdown);
+            checkHighScore();
             countdownBoard.textContent = "Time's Up!"
         }
     }, 1000);
@@ -83,4 +86,12 @@ function whackMole(e) {
         this.style.pointerEvents = "all"; 
     }, 800)
     scoreBoard.textContent = score;
+}
+
+function checkHighScore() {
+    if (score > localStorage.getItem("game1HighScore")) {
+        localStorage.setItem("game1HighScore", score);
+        highscore = score;
+        highScoreBoard.textContent = highscore;
+    }
 }
