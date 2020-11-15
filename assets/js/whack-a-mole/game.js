@@ -8,7 +8,7 @@ let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 
 let lastHole;
 let timeUp = false;
-let timeLimit = 2000;
+//let timeLimit = 2000;
 let score = 0;
 
 // Pick random hole
@@ -65,4 +65,22 @@ function startGame() {
     progressBar.animate({
         width: "0%"
     }, animateSpeed)
+}
+
+// Count player score
+
+moles.forEach(mole => mole.addEventListener("click", whackMole));
+
+function whackMole(e) {
+    score ++;
+    // change mole image when hit
+    this.style.backgroundImage = "url('assets/img/whack-a-mole/angrymole.png')";
+    // disable clicks once a mole has been hit
+    this.style.pointerEvents = "none"; 
+    // sets image back to default after being hit
+    setTimeout(() => {
+        this.style.backgroundImage = "url('assets/img/whack-a-mole/mole.png')";
+        this.style.pointerEvents = "all"; 
+    }, 800)
+    scoreBoard.textContent = score;
 }
