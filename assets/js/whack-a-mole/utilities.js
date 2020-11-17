@@ -21,6 +21,7 @@ function startGame() {
             clearInterval(startCountdown);
             checkHighScore();
             countdownBoard.textContent = "Time's Up!"
+            endGame();
         }
     }, 1000);
     
@@ -68,5 +69,26 @@ function checkHighScore() {
         localStorage.setItem("game1HighScore", score);
         highscore = score;
         highScoreBoard.textContent = highscore;
+    }
+}
+
+// End game 
+function endGame() {
+    // Check for win
+    if (score = 25) {
+        winGameModal.style.display = "block";
+        continueBtn.addEventListener("click", function(){
+            console.log("Prepare game 3");
+        });
+    }
+    // Check for loss
+    else {
+        loseGameModal.style.display = "block";
+        replayBtn.addEventListener("click", function(){
+            window.location.reload();
+        });
+        quitBtn.addEventListener("click", function(){
+            window.location.replace("index.html");
+        })
     }
 }
