@@ -15,3 +15,20 @@ class Obstacle {
         this.x += this.speed * gamespeed;
     }
 }
+
+// Add new obstacle to car array
+
+function initObstacles() {
+    for (let i = 0; i < 2; i++) {
+        let x = i * 350;    
+        carsArray.push(new Obstacle(x, canvas.height - grid * 2 - 20, grid * 2, grid, 1, "car"));
+    }
+}
+initObstacles();
+
+function handleObstacles() {
+    for (let i = 0; i < carsArray.length; i++) {
+        carsArray[i].update();
+        carsArray[i].draw();
+    }
+} 
