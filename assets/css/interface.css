@@ -261,6 +261,11 @@
 
 /* ---------------------------------------------- End game modal */
 
+#gameLogo {
+    position: absolute;
+    z-index: 100;
+}
+
 .end-game-modal {
     display: none;
     position: fixed;
