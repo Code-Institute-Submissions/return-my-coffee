@@ -20,7 +20,7 @@ function startGame() {
             countdown = 0;
             clearInterval(startCountdown);
             checkHighScore();
-            countdownBoard.textContent = "Time's Up!"
+            countdownBoard.textContent = "Time's Up!";
             endGame();
         }
     }, 1000);
@@ -73,15 +73,16 @@ function checkHighScore() {
 }
 
 // End game 
+
 function endGame() {
-    // Check for win
-    if (score = 25) {
+    // Win
+    if (score === 25 || score > 25) {
         winGameModal.style.display = "block";
         continueBtn.addEventListener("click", function(){
             console.log("Prepare game 3");
         });
     }
-    // Check for loss
+    // Lose
     else {
         loseGameModal.style.display = "block";
         replayBtn.addEventListener("click", function(){
