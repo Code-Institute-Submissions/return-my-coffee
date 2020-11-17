@@ -25,16 +25,51 @@ function pickRandomHole() {
     return hole;
 }
 
-// Mole pop-up 
+// Mole pop up
 function molePopUp() {
-    // random time between 400 and 1700 milliseconds
-    const time = Math.floor(Math.random() * 1300 + 400); 
+    if (countdown == 60) {
+        molePopUpEasy();
+    }
+    else if (countdown == 40) {
+        molePopUpMedium();
+    }
+    else if (countdown == 25) {
+        molePopUpHard();
+    }
+}
+
+function molePopUpEasy() {
     const hole = pickRandomHole(holes);
     hole.classList.add("up");
+    const time = Math.floor(Math.random() * 1300 + 400); 
     setTimeout(() => {
         hole.classList.remove("up");
         if (!timeUp) {
-            molePopUp();
+            molePopUpEasy();
+        }
+    }, time)
+}
+
+function molePopUpMedium() {
+    const hole = pickRandomHole(holes);
+    hole.classList.add("up");
+    const time = Math.floor(Math.random() * 800 + 400); 
+    setTimeout(() => {
+        hole.classList.remove("up");
+        if (!timeUp) {
+            molePopUpMedium();
+        }
+    }, time)
+}
+
+function molePopUpHard() {
+    const hole = pickRandomHole(holes);
+    hole.classList.add("up");
+    const time = Math.floor(Math.random() * 650 + 200); 
+    setTimeout(() => {
+        hole.classList.remove("up");
+        if (!timeUp) {
+            molePopUpHard();
         }
     }, time)
 }
@@ -76,17 +111,33 @@ moles.forEach(mole => mole.addEventListener("click", whackMole));
 
 function whackMole(e) {
     score ++;
+
     // change mole image when hit
     this.style.backgroundImage = "url('assets/img/whack-a-mole/angrymole.png')";
     // disable clicks once a mole has been hit
     this.style.pointerEvents = "none"; 
-    // sets image back to default after being hit
+
+    // Set value of timeoutSpeed
+    if (countdown == 60) {
+        timeoutSpeed = 800;
+    }
+    if (countdown == 40) {
+        timeoutSpeed = 800;
+    }
+    else if (countdown == 25) {
+        timeoutSpeed = 600;
+    }
+
+    // Set image back to default after being hit
     setTimeout(() => {
         this.style.backgroundImage = "url('assets/img/whack-a-mole/mole.png')";
         this.style.pointerEvents = "all"; 
-    }, 800)
+    }, timeoutSpeed)
+
     scoreBoard.textContent = score;
 }
+
+// Check high score
 
 function checkHighScore() {
     if (score > localStorage.getItem("game1HighScore")) {
