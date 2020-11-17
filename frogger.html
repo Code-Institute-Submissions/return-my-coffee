@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Mono:wght@400;700&family=Source+Code+Pro:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/frogger.css">
+    <link rel="stylesheet" href="assets/css/interface.css">
+    <title>Return myCoffee</title>
+</head>
+<body>
+    <section>
+        <!-- WIN GAME -->
+        <div class="end-game-modal" id="winModal">
+            <div class="container end-game-content">
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center modal-game-logo">
+                        <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
+                        <h1 class="overlay-text">return myCoffee</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>You Win!</h2>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <button id="continueBtn">Continue</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!-- / WIN GAME -->
+        <!-- LOSE GAME -->
+        <div class="end-game-modal" id="loseModal">
+            <div class="container end-game-content">
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center modal-game-logo">
+                        <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
+                        <h1 class="overlay-text">return myCoffee</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>Better luck next time!</h2>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <button id="replayBtn">Try Again</button>
+                    </div>
+                    <div class="col">
+                        <button id="quitBtn">Quit</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <!-- / LOSE GAME -->
+    </section>
+    <section class="container">
+        <!-- USER INTERFACE -->
+        <div class="user-interface">
+            <!-- SCORE COUNT -->
+            <div class="collisions">
+                <img src="assets/img/frogger/gravestone.png" alt="gravestone to count frog collisions">
+                <span>0</span>
+            </div>
+            <div class="score">
+                <img src="assets/img/frogger/heart.png" alt="heart to count score">
+                <span>0</span>
+            </div>
+            <div class="highscore">
+                <h3>High Score:</h3>
+                <span>0</span>
+            </div>
+            <!-- / SCORE COUNT -->
+            <!-- COUNTDOWN TIMER -->
+            <div class="game-hud">
+                <div class="countdown">
+                    <div class="clock">
+                        <div class="top"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                        <div class="left"></div>
+                        <div class="center"></div>
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+                    </div>
+                </div>
+                <div id="progressBar">
+                    <div class="inner-bar"></div>
+                </div>
+                <div class="time-left">Time Left: <span></span></div>
+            </div>
+            <!-- / COUNTDOWN TIMER -->
+        </div>
+        <!-- / USER INTERFACE -->
+        <!-- GAMEBOARD -->
+        <div class="frogger-board">
+            <canvas id="canvas1"></canvas>
+            <canvas id="canvas2"></canvas>
+            <canvas id="canvas3"></canvas>
+            <canvas id="canvas4"></canvas>
+            <canvas id="canvas5"></canvas>
+        </div>
+        <!-- / GAMEBOARD -->
+    </section>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/frogger/setup.js"></script>
+    <script src="assets/js/frogger/frogger.js"></script>
+    <script src="assets/js/frogger/dust.js"></script>
+    <script src="assets/js/frogger/ripples.js"></script>
+    <script src="assets/js/frogger/obstacles.js"></script>
+    <script src="assets/js/frogger/utilities.js"></script>
+</body>
+</html>
