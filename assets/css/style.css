@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* HOMEPAGE BACKGROUND SETUP */ 
+/* ---------------------------------------------- Homepage background setup */
 
 body {
     font-family: "Source Code Pro", monospace;
@@ -18,9 +18,7 @@ section {
     background-color: #FFF0E5;
 }
 
-/* / HOMEPAGE BACKGROUND SETUP */ 
-
-/* NAVBAR */ 
+/* ---------------------------------------------- Navbar */
 
 .navbar {
     font-family: "Nanum Gothic Coding", monospace;
@@ -39,9 +37,7 @@ section {
     width: 80px;
 }
 
-/* / NAVBAR */ 
-
-/* GAME LOGO */ 
+/* ---------------------------------------------- Game logo */
 
 #gameLogo {
     height: 500px;
@@ -120,9 +116,7 @@ section {
     }
 }
 
-/* / GAME LOGO */ 
-
-/* HOMEPAGE */ 
+/* ---------------------------------------------- Homepage content */
 
 .start-game-text {
     font-weight: 700;
@@ -163,9 +157,7 @@ button a:hover {
     border-radius: 5px;
 }
 
-/* / HOMEPAGE */ 
-
-/* FOOTER */ 
+/* ---------------------------------------------- Footer */
 
 footer {
     background-color: #dbc7b99d;
@@ -174,9 +166,7 @@ footer {
     text-align: center;
 }
 
-/* / FOOTER */ 
-
-/* START GAME MODAL */
+/* ---------------------------------------------- Start game menu modal */
 
 .startup-modal {
     width: 100vw;
@@ -221,9 +211,8 @@ footer {
     border: 1px solid #707070;
     transform: translate(0, 8rem);
 }
-/* / MODAL GAME LOGO */
 
-/* MODAL CONTENT */ 
+/* ------------------------- Menu modal content */
 
 .startup-content h2 {
     width: 85%;
@@ -291,9 +280,8 @@ footer {
     color: #707070;
 }
 
-/* / MODAL CONTENT */ 
+/* ------------------------- Menu modal media queries */
 
-/* MEDIA QUERIES */
 
 @media (max-width: 1199px) {
     .startup-content img {
@@ -351,5 +339,3 @@ footer {
         width: 200px;
     }
 }
-
-/* / START GAME MODAL */

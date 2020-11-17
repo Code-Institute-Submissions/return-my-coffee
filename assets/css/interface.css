@@ -1,4 +1,4 @@
-/* IN-GAME COUNTDOWN TIMER */
+/* ---------------------------------------------- In-game countdown timer */
 
 .game-hud {
     position: absolute;
@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-/* CLOCK */
+/* ---------------------------------------------- Animated clock */
 /* This code was based upon the following source:
 "https://codepen.io/MyXoToD/pen/psLen" */
 
@@ -138,9 +138,7 @@
     to {transform: rotate(360deg);}
 }
 
-/* / CLOCK */
-
-/* PROGRESS BAR */
+/* ---------------------------------------------- Progress bar timer */
 
 #progressBar {
     position: absolute;
@@ -165,9 +163,7 @@
     border-radius: 15px;
 }
 
-/* / PROGRESS BAR */
-
-/* NUMBERED TIMER */
+/* ---------------------------------------------- Numbered timer */
 
 .time-left {
     margin: auto;
@@ -178,11 +174,7 @@
     text-transform: uppercase;
 }
 
-/* / NUMBERED TIMER */
-
-/* / IN-GAME COUNTDOWN TIMER */
-
-/* MEDIA QUERIES */
+/* ---------------------------------------------- Media queries */
 
 @media (max-width: 1110px) {
     .game-hud {
@@ -266,5 +258,3 @@
         font-size: 18px;
     }
 }
-
-/* / MEDIA QUERIES */

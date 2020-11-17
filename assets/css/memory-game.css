@@ -1,5 +1,5 @@
 /*
-** The styling for this game application was based 
+The styling for this game application was based 
 upon a video guide from the following source:
 "https://www.youtube.com/watch?v=ZniVgo8U7ek"
 */
@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-/* START GAME COUNTDOWN */
+/* ---------------------------------------------- Start game countdown */
 
 .start-timer h1 {
     display: none;
@@ -42,10 +42,7 @@ body {
     text-align: center;
     margin: auto;
 }
-
-/* START GAME COUNTDOWN */
-
-/* START GAME COUNTDOWN MEDIA QUERIES */
+/* ------------------------- Start game countdown media queries */
 
 @media (max-width: 521px) {
     .start-timer h1 {
@@ -80,25 +77,24 @@ body {
     }
 }
 
-/* / START GAME COUNTDOWN MEDIA QUERIES */
-
-/* GAMEBOARD */
+/* ---------------------------------------------- Gameboard */
 
 .memory-game-board {
     width: 900px;
     height: 600px;
-    margin: 180px auto;   /* to center the card deck */
+    margin: 180px auto;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25vh;
     perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
 }
 
-/* CARDS */
+/* ------------------------- Cards */
+
 
 .memory-card {
-    width: 200px;   /* to give the cards a width (ensure they're visible) once the front-face and back-face are stacked */
-    height: 225px;  /* to give the cards a height (ensure they're visible) once the front-face and back-face are stacked */
+    width: 200px;  
+    height: 225px;
     position: relative;
     margin: 5px auto; 
     /* Initialize 3D effect */
@@ -124,11 +120,7 @@ body {
     transform: rotateY(180deg);
 }
 
-/* / CARDS */
-
-/* /GAMEBOARD */
-
-/* END GAME MODAL */
+/* ---------------------------------------------- End game modal */
 
 .end-game-modal {
     display: none;
@@ -183,7 +175,7 @@ body {
     font-weight: 700;
 }
 
-/* MODAL GAME LOGO */
+/* ------------------------- End game modal game logo */
 
 .modal-game-logo {
     width: 100%;
@@ -213,11 +205,7 @@ body {
     z-index: 10;
 }
 
-/* / MODAL GAME LOGO */
-
-/* / END GAME MODAL */
-
-/* END GAME MODAL MEDIA QUERIES */
+/* ------------------------- End game modal media queries */
 
 @media (max-width: 1170px) {
     .end-game-content {
@@ -310,5 +298,3 @@ body {
         height: 55%;
     }
 }
-
-/* / END GAME MODAL MEDIA QUERIES */
