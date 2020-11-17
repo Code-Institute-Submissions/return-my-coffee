@@ -11,11 +11,41 @@ class Frogger {
         this.frameY = 0;
     }
     update() {
-        console.log("update");
+        // Up
+        if (keys[38] || keys[87]) {     
+            if (this.moving === false) { 
+                this.y -= grid;             // frog will jump up 80 pixels
+                this.moving = true;
+            }
+        }
+        // Down
+        if (keys[40] || keys[83]) {
+            if (this.moving === false && this.y < canvas.height - this.height * 2) {
+                this.y += grid;
+                this.moving = true;
+            }
+        }
+        // Left
+        if (keys[37] || keys[65]) {
+            if (this.moving === false && this.x > this.width) {
+                this.x -= grid;
+                this.moving = true;
+            }
+        }
+        // Right
+        if (keys[39] || keys[68]) {
+            if (this.moving === false && this.x < canvas.width - this.width * 2) {
+                this.x += grid;
+                this.moving = true;
+            }
+        }
     }
     draw() {
         ctx3.fillStyle = "green";
         ctx3.fillRect(this.x, this.y, this.width, this.height);
+    }
+    jump() {
+        console.log("jump");
     }
 }
 

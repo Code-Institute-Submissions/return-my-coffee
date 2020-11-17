@@ -6,3 +6,18 @@ function animate() {
 }
 
 animate(); 
+
+// Key input
+
+window.addEventListener("keydown", function(e) {
+    keys = [];
+    keys[e.keyCode] = true;
+    if ((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) {
+        frogger.jump();
+    }
+})
+
+window.addEventListener("keyup", function(e) {
+    delete keys[e.keyCode];
+    frogger.moving = false;
+})
