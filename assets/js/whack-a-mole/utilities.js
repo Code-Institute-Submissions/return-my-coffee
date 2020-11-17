@@ -43,6 +43,7 @@ function whackMole(e) {
     this.style.pointerEvents = "none"; 
 
     // Set value of timeoutSpeed
+    var timeoutSpeed = 800;
     if (countdown == 60) {
         timeoutSpeed = 800;
     }
