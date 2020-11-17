@@ -59,7 +59,7 @@ function endGame() {
     if (totalMatches === 8) {
         winGameModal.style.display = "block";
         continueBtn.addEventListener("click", function(){
-            console.log("Prepare next game")
+            window.location.replace("game-two-menu.html");
         });
     }
     // Check for loss
