@@ -5,6 +5,13 @@ const mediumBtn = document.querySelector("#mediumBtn");
 const hardBtn = document.querySelector("#hardBtn");
 const confirmSetting = document.querySelector(".setting-confirmation span");
 
+// End game - win/lose modal variables
+const winGameModal = document.querySelector("#winModal");
+const loseGameModal = document.querySelector("#loseModal");
+const continueBtn = document.querySelector("#continueBtn");
+const replayBtn = document.querySelector("#replayBtn");
+const quitBtn = document.querySelector("#quitBtn");
+
 // Game Difficulty Settings
 
 var settingBtnClicked = false;

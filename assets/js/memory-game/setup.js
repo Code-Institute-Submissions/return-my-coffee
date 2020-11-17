@@ -1,10 +1,3 @@
-// End game - win/lose modal variables
-const winGameModal = document.querySelector("#winModal");
-const loseGameModal = document.querySelector("#loseModal");
-const continueBtn = document.querySelector("#continueBtn");
-const replayBtn = document.querySelector("#replayBtn");
-const quitBtn = document.querySelector("#quitBtn");
-
 // Constant game variables
 const cards = document.querySelectorAll(".memory-card");
 const cardBoard = document.querySelector(".memory-game-board");
