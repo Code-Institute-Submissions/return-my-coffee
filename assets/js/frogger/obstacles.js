@@ -50,7 +50,12 @@ function initObstacles() {
     // Logs
     for (let i = 0; i < 2; i++) {
         let x = i * 400;    
-        logsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, "log"));
+        logsArray.push(new Obstacle(x, canvas.height - grid * 5 - 25, grid * 2, grid, -2, "log"));
+    }
+    // Turtles 
+    for (let i = 0; i < 3; i++) {
+        let x = i * 200;    
+        logsArray.push(new Obstacle(x, canvas.height - grid * 6 - 25, grid, grid, 1, "turtle"));
     }
 }
 
