@@ -111,5 +111,12 @@ function handleObstacles() {
                 safe = true;
             }
         }
+        // Fall in water detection
+        if (!safe) {
+            for (let i = 0; i < 30; i++) {
+                ripplesArray.unshift(new Ripple(frogger.x, frogger.y));
+            }
+            newFrog();
+        }
     }
 } 
