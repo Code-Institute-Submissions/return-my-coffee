@@ -23,6 +23,10 @@ class Obstacle {
             ctx1.fillRect(this.x, this.y, this.width, this.height);     // to see the collision radius
             ctx1.drawImage(turtle, this.frameX * 70, this.frameY * 70, 70, 70, this.x, this.y, this.width, this.height);
         }
+        else if (this.type === "log") {
+            ctx1.fillRect(this.x, this.y, this.width, this.height)
+            ctx1.drawImage(log, this.x, this.y, this.width, this.height);
+        }
         //ctx3.fillStyle = "blue";
         //ctx3.fillRect(this.x, this.y, this.width, this.height);
     }  
