@@ -45,7 +45,8 @@ class Obstacle {
         }
         // Speed is less than zero - moving to the left
         else {
-            if (this.x < 0 - this.width) {
+            if (this.x < 0 - this.width) { 
+                this.frameX = 1; 
                 this.x = canvas.width + this.width;     // '+ this.width' will give the cars a small delay before they appear again
                 this.carType = (Math.floor(Math.random() * numberOfCars));
             }
