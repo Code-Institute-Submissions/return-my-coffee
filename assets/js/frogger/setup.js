@@ -55,3 +55,6 @@ grass.src = "./assets/img/frogger/grass.png";
 
 const collisions = new Image();
 collisions.src = "./assets/img/frogger/collisions.png";
+
+const turtle = new Image();
+turtle.src = "./assets/img/frogger/turtles.png";
