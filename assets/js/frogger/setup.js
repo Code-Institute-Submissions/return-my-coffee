@@ -48,3 +48,6 @@ const logsArray = [];
 
 const background_lvl2 = new Image();
 background_lvl2.src = "./assets/img/frogger/background_lvl2.png";
+
+const grass = new Image();
+grass.src = "./assets/img/frogger/grass.png";
