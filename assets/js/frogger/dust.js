@@ -4,7 +4,7 @@ class Dust {
         this.y = y;
         this.radius = Math.random() * 20 + 1;
         this.opacity = 1;
-        // Positive numbers will make the particles go up
+        // Positive numbers will make the ust go up
         // Minus numbers will makes the particles go down
         this.directionX = Math.random() * 1 - 0.5;
         this.directionY = Math.random() * 1 - 0.5;
@@ -21,3 +21,22 @@ class Dust {
         this.y += this.directionY;
     }
 }
+
+function handleDust() {
+    for (let i = 0; i < dustArray.length; i++) {
+        dustArray[i].update();
+        dustArray[i].draw();
+    }
+    if (dustArray.length > maxDust) {
+        // If we have more than 300 dust particles remove 30 - for performance
+        for (let i = 0; i < 30; i++) {
+            dustArray.pop()
+        }
+    }
+    if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) 
+    && frogger.y > 100 && dustArray.length < maxDust + 10) {
+        for (let i = 0; i < 10; i++) {
+            dustArray.unshift(new Dust(frogger.x, frogger.y));
+        }
+    }
+} 
