@@ -29,6 +29,8 @@ canvas5.height = 600;
 
 // Global game variables
 
+const scoreBoard = document.querySelector(".score span");
+
 const grid = 80;
 let keys = [];
 let score= 0;
@@ -41,3 +43,8 @@ const maxDust = 300;
 const ripplesArray = [];
 const carsArray = [];
 const logsArray = [];
+
+// Images
+
+const background_lvl2 = new Image();
+background_lvl2.src = "./assets/img/frogger/background_lvl2.png";
