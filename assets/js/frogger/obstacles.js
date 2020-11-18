@@ -102,4 +102,14 @@ function handleObstacles() {
             newFrog();
         }
     }
+    // Log and turtle collision
+    if (frogger.y < 250 && frogger.y > 100) {
+        safe = false;
+        for (let i = 0; i < logsArray.length; i++) {
+            if (collisionDetection(frogger, logsArray[i])) {
+                frogger.x += logsArray[i].speed;    // allows frogger to ride on logs and turtles
+                safe = true;
+            }
+        }
+    }
 } 

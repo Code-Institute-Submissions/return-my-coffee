@@ -38,6 +38,7 @@ let score= 0;
 let collisionCount = 0;
 let frame = 0;
 let gamespeed = 1;
+let safe = false;
 
 const dustArray = [];
 const maxDust = 300;
