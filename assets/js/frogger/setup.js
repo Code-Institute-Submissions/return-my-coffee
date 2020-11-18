@@ -1,4 +1,12 @@
-const gameboard = document.querySelector(".frogger-board");
+// Open Game from game menu
+function findYourCoffee() {
+    if (settingBtnClicked === false) {
+        alert("Please pick a setting before you play")
+    }
+    else if (settingBtnClicked === true) {
+        window.location.replace("frogger.html");
+    }
+}
 
 // Canvas 
 
@@ -29,6 +37,7 @@ canvas5.height = 600;
 
 // Global game variables
 
+const gameboard = document.querySelector(".frogger-board");
 const scoreBoard = document.querySelector(".score span");
 const collisionBoard = document.querySelector(".collisions span");
 
