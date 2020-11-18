@@ -11,6 +11,7 @@ function animate() {
     frogger.draw();
     frogger.update();
     handleObstacles();
+    frame++;
     requestAnimationFrame(animate);
 }
 
