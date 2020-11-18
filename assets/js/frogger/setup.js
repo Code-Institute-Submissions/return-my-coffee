@@ -52,3 +52,6 @@ background_lvl2.src = "./assets/img/frogger/background_lvl2.png";
 
 const grass = new Image();
 grass.src = "./assets/img/frogger/grass.png";
+
+const collisions = new Image();
+collisions.src = "./assets/img/frogger/collisions.png";
