@@ -30,6 +30,7 @@ canvas5.height = 600;
 // Global game variables
 
 const scoreBoard = document.querySelector(".score span");
+const collisionBoard = document.querySelector(".collisions span");
 
 const grid = 80;
 let keys = [];

@@ -70,4 +70,10 @@ function handleObstacles() {
         logsArray[i].update();
         logsArray[i].draw();
     }
+    // Car collision
+    for (let i = 0; i < carsArray.length; i++) {
+        if (collisionDetection(frogger, carsArray[i])) {
+            newFrog();
+        }
+    }
 } 

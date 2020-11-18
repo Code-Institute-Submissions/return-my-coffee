@@ -38,3 +38,16 @@ function addScore() {
     frogger.x = canvas.width/2 - frogger.width/2;  
     frogger.y = canvas.height - frogger.height - 50;
 }
+
+function collisionDetection(first, second) {
+    return !(first.x > second.x + second.width || first.x + first.width < second.x ||
+            first.y > second.y + second.height || first.y + first.height < second.y)
+}
+
+function newFrog() {
+    frogger.x = canvas.width/2 - frogger.width/2;  
+    frogger.y = canvas.height - frogger.height - 40;
+    score = 0;
+    collisionCount++;
+    collisionBoard.textContent = collisionCount;
+}
