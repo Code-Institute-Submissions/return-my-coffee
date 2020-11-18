@@ -80,7 +80,7 @@ function endGame() {
     if (score === 25 || score > 25) {
         winGameModal.style.display = "block";
         continueBtn.addEventListener("click", function(){
-            console.log("Prepare game 3");
+            window.location.replace("game-three-menu.html");
         });
     }
     // Lose
