@@ -21,7 +21,7 @@ class Ripple {
             this.y -= 0.03;
         }
         if (this.opacity > 0) {
-            this.opacity -= 0.01;  // decrease by small amount so the ripples slowly disappear
+            this.opacity -= 0.03;
         }
     }
 }
