@@ -35,7 +35,7 @@ class Obstacle {
     update() {
         this.x += this.speed * gamespeed;
         // Moving to the right
-        if (this.x > canvas.width + this.width) {
+        if (this.speed > 0) {
             // Reset cars behind the left edge of the canvas
             if (this.x > canvas.width + this.width) {
                 this.x = 0 - this.width;
