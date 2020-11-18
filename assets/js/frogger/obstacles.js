@@ -32,20 +32,25 @@ class Obstacle {
 // Add new obstacle to car array
 
 function initObstacles() {
-    // Lane 1
+    // Car lane 1
     for (let i = 0; i < 2; i++) {
         let x = i * 350;    
         carsArray.push(new Obstacle(x, canvas.height - grid * 2 - 20, grid * 2, grid, 1, "car"));
     }
-    // Lane 2
+    // Carlane 2
     for (let i = 0; i < 2; i++) {
         let x = i * 300;
         carsArray.push(new Obstacle(x, canvas.height - grid * 3 - 20, grid * 2, grid, -2, "car"));
     }
-    // Lane 3
+    // Car lane 3
     for (let i = 0; i < 2; i++) {
         let x = i * 400;  
         carsArray.push(new Obstacle(x, canvas.height - grid * 4 - 20, grid * 2.5, grid, 2, "car"));
+    }
+    // Logs
+    for (let i = 0; i < 2; i++) {
+        let x = i * 400;    
+        logsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, "log"));
     }
 }
 
@@ -55,5 +60,9 @@ function handleObstacles() {
     for (let i = 0; i < carsArray.length; i++) {
         carsArray[i].update();
         carsArray[i].draw();
+    }
+    for (let i = 0; i < logsArray.length; i++) {
+        logsArray[i].update();
+        logsArray[i].draw();
     }
 } 
