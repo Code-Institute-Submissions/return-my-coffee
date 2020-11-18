@@ -40,7 +40,7 @@ function handleDust() {
         }
     }
     if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) 
-    && frogger.y > 100 && dustArray.length < maxDust + 10) {
+    && frogger.y > 250 && dustArray.length < maxDust + 10) {
         for (let i = 0; i < 10; i++) {
             dustArray.unshift(new Dust(frogger.x, frogger.y));
         }
