@@ -3,6 +3,7 @@ function animate() {
     ctx2.drawImage(background_lvl2, 0, 0, canvas.width, canvas.height);
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
     handleDust();
+    handleRipples();
     frogger.draw();
     frogger.update();
     handleObstacles();
