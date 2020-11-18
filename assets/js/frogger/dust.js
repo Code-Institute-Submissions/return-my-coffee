@@ -10,7 +10,7 @@ class Dust {
         this.directionY = Math.random() * 1 - 0.5;
     }
     draw() {
-        ctx3.fillStyle = "rgba(150, 150, 150,"+ this.opacity + ")";
+        ctx3.fillStyle = `rgba(150, 150, 150, ${this.opacity})`;
         ctx3.beginPath();
         ctx3.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx3.fill();
