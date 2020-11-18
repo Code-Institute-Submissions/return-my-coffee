@@ -98,7 +98,7 @@ function handleObstacles() {
     // Car collision
     for (let i = 0; i < carsArray.length; i++) {
         if (collisionDetection(frogger, carsArray[i])) {
-            ctx4.drawImage(collisions, 0, 100, 100, 100, frogger.x, frogger.y, 50, 50);
+            ctx4.drawImage(crash, 0, 0, 100, 100, frogger.x, frogger.y, 50, 50);
             newFrog();
         }
     }
@@ -116,6 +116,7 @@ function handleObstacles() {
             for (let i = 0; i < 30; i++) {
                 ripplesArray.unshift(new Ripple(frogger.x, frogger.y));
             }
+            ctx4.drawImage(splash, 0, 0, 100, 100, frogger.x, frogger.y, 50, 50);
             newFrog();
         }
     }

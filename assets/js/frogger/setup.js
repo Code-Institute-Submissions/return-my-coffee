@@ -54,8 +54,11 @@ background_lvl2.src = "./assets/img/frogger/background_lvl2.png";
 const grass = new Image();
 grass.src = "./assets/img/frogger/grass.png";
 
-const collisions = new Image();
-collisions.src = "./assets/img/frogger/collisions.png";
+const crash = new Image();
+crash.src = "./assets/img/frogger/crash.png";
+
+const splash = new Image();
+splash.src = "./assets/img/frogger/splash.png";
 
 const turtle = new Image();
 turtle.src = "./assets/img/frogger/turtles.png";
