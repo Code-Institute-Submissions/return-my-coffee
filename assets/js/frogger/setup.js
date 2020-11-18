@@ -61,3 +61,6 @@ turtle.src = "./assets/img/frogger/turtles.png";
 
 const log = new Image();
 log.src = "./assets/img/frogger/log.png";
+
+const car = new Image();
+car.src = "./assets/img/frogger/cars.png";

@@ -27,8 +27,10 @@ class Obstacle {
             ctx1.fillRect(this.x, this.y, this.width, this.height)
             ctx1.drawImage(log, this.x, this.y, this.width, this.height);
         }
-        //ctx3.fillStyle = "blue";
-        //ctx3.fillRect(this.x, this.y, this.width, this.height);
+        else {
+            ctx2.fillRect(this.x, this.y, this.width, this.height)
+            ctx2.drawImage(car, 0, 0, grid * 2, grid, this.x, this.y, this.width, this.height);
+        }
     }  
     update() {
         this.x += this.speed * gamespeed;
