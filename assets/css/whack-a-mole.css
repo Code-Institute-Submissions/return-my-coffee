@@ -22,7 +22,11 @@ body {
     width: 85vw;
     height: 80vh;
     margin: 5vh auto;
+    background-image: url("../img/whack-a-mole/background.png");
     background-color: #9EDEEF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
