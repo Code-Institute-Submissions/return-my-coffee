@@ -9,8 +9,9 @@
     <title>Return myCoffee</title>
 </head>
 <body>
+    <!-- End game modals -->
     <section>
-        <!-- WIN GAME -->
+        <!-- Win game modal -->
         <div class="end-game-modal" id="winModal">
             <div class="container end-game-content">
                 <div class="row">
@@ -36,8 +37,8 @@
                 </div>   
             </div>
         </div>
-        <!-- / WIN GAME -->
-        <!-- LOSE GAME -->
+        <!-- / Win game modal -->
+        <!-- Lose game modal -->
         <div class="end-game-modal" id="loseModal">
             <div class="container end-game-content">
                 <div class="row">
@@ -66,25 +67,32 @@
                 </div>   
             </div>
         </div>
-        <!-- / LOSE GAME -->
+        <!-- / Lose game modal -->
     </section>
+    <!-- / End game modals -->
+
+    <!-- Game and user interface -->
     <section class="container">
-        <!-- USER INTERFACE -->
+    <!-- User interface -->
         <div class="user-interface">
-            <!-- SCORE COUNT -->
+        <!-- Score count -->
+            <!-- Score -->
             <div class="score">
                 <h3>Score: </h3> 
                 <span>0</span>
             </div>
+            <!-- High score -->
             <div class="highscore">
                 <h3>High Score: </h3>
                 <span>0</span>
             </div>
-            <!-- / SCORE COUNT -->
+        <!-- / Score count -->
+            <!-- Game title -->
             <div class="game-title">Whack-A-Mole</div>
-            <!-- COUNTDOWN TIMER -->
+            <!-- Countdown timer -->
             <div class="game-hud">
                 <div class="countdown">
+                    <!-- Animated clock -->
                     <div class="clock">
                         <div class="top"></div>
                         <div class="right"></div>
@@ -95,23 +103,28 @@
                         <div class="minute"></div>
                         <div class="second"></div>
                     </div>
+                    <!-- / Animated clock -->
                 </div>
+                <!-- Progress bar timer -->
                 <div id="progressBar">
                     <div class="inner-bar"></div>
                 </div>
+                <!-- Numbered timer -->
                 <div class="time-left">Time Left: <span></span></div>
             </div>
-            <!-- COUNTDOWN TIMER -->
-            <!-- START GAME AND TEXT -->
+            <!-- / Countdown timer -->
             <div class="dynamic-text">
+                <!-- Dynamic text -->
                 <h4>Get the moles!</h4>
+                <!-- Start game -->
                 <button id="startButton">Start</button>
             </div>
-            <!-- / START GAME AND TEXT -->
         </div>
-        <!-- / USER INTERFACE -->
-        <!-- GAMEBOARD -->
+    <!-- User interface -->
+
+    <!-- Gameboard -->
         <div class="whack-a-mole-board">
+            <!-- Holes and moles -->
             <div class="hole" id="hole1">
                 <img src="assets/img/whack-a-mole/hole.png" alt="Hole for the moles to pop out of">
                 <div class="mole small"></div>
@@ -148,9 +161,12 @@
                 <img src="assets/img/whack-a-mole/hole.png" alt="Hole for the moles to pop out of">
                 <div class="mole large"></div>
             </div>
+            <!-- / Holes and moles -->
         </div>
-        <!-- / GAMEBOARD -->
+    <!-- / Gameboard -->
     </section>
+    <!-- / Game and user interface -->
+
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/whack-a-mole/setup.js"></script>
     <script src="assets/js/whack-a-mole/game.js"></script>

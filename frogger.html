@@ -9,8 +9,9 @@
     <title>Return myCoffee</title>
 </head>
 <body>
+    <!-- End game modals -->
     <section>
-        <!-- WIN GAME -->
+        <!-- Win game modal -->
         <div class="end-game-modal" id="winModal">
             <div class="container end-game-content">
                 <div class="row">
@@ -36,8 +37,8 @@
                 </div>   
             </div>
         </div>
-        <!-- / WIN GAME -->
-        <!-- LOSE GAME -->
+        <!-- / Win game modal -->
+        <!-- Lose game modal -->
         <div class="end-game-modal" id="loseModal">
             <div class="container end-game-content">
                 <div class="row">
@@ -66,28 +67,35 @@
                 </div>   
             </div>
         </div>
-        <!-- / LOSE GAME -->
+        <!-- / Lose game modal -->
     </section>
+    <!-- / End game modals -->
+
+    <!-- Game and user interface -->
     <section class="container">
-        <!-- USER INTERFACE -->
+    <!-- User interface -->
         <div class="user-interface">
-            <!-- SCORE COUNT -->
+        <!-- Score count -->
+            <!-- Collisions -->
             <div class="collisions">
                 <img src="assets/img/frogger/gravestone.png" alt="gravestone to count frog collisions">
                 <span>0</span>
             </div>
+            <!-- Score -->
             <div class="score">
                 <img src="assets/img/frogger/heart.png" alt="heart to count score">
                 <span>0</span>
             </div>
+            <!-- High score -->
             <div class="highscore">
                 <h3>High Score:</h3>
                 <span>0</span>
             </div>
-            <!-- / SCORE COUNT -->
-            <!-- COUNTDOWN TIMER -->
+        <!-- / Score count -->
+            <!-- Countdown timer -->
             <div class="game-hud">
                 <div class="countdown">
+                    <!-- Animated clock -->
                     <div class="clock">
                         <div class="top"></div>
                         <div class="right"></div>
@@ -98,17 +106,22 @@
                         <div class="minute"></div>
                         <div class="second"></div>
                     </div>
+                    <!-- / Animated clock -->
                 </div>
+                <!-- Progress bar timer -->
                 <div id="progressBar">
                     <div class="inner-bar"></div>
                 </div>
+                <!-- Numbered timer -->
                 <div class="time-left">Time Left: <span></span></div>
             </div>
+            <!-- Coffee gif -->
             <img src="assets/img/frogger/coffee-gif.gif" alt="" id="coffeeGif">
-            <!-- / COUNTDOWN TIMER -->
+            <!-- / Countdown timer -->
         </div>
-        <!-- / USER INTERFACE -->
-        <!-- GAMEBOARD -->
+    <!-- / User interface -->
+
+    <!-- Gameboard -->
         <div class="frogger-board">
             <canvas id="canvas1"></canvas>
             <canvas id="canvas2"></canvas>
@@ -116,8 +129,10 @@
             <canvas id="canvas4"></canvas>
             <canvas id="canvas5"></canvas>
         </div>
-        <!-- / GAMEBOARD -->
+    <!-- / Gameboard -->
     </section>
+    <!-- / Game and user interface -->
+
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/frogger/setup.js"></script>
     <script src="assets/js/frogger/frogger.js"></script>

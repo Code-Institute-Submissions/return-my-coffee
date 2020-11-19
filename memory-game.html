@@ -9,86 +9,115 @@
     <title>Return myCoffee</title>
 </head>
 <body>
-    <div class="start-timer">
-        <h1 id="startGameCountdown">5</h1>
-        <h1 id="startGameText">GO!</h1>
-    </div>
-    <div class="game-hud">
-        <div class="countdown">
-            <div class="clock">
-                <div class="top"></div>
-                <div class="right"></div>
-                <div class="bottom"></div>
-                <div class="left"></div>
-                <div class="center"></div>
-                <div class="hour"></div>
-                <div class="minute"></div>
-                <div class="second"></div>
+    <!-- End game modals -->
+    <section>
+        <!-- Win game modal -->
+        <div class="end-game-modal" id="winModal">
+            <div class="container end-game-content">
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center modal-game-logo">
+                        <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
+                        <h1 class="overlay-text">return myCoffee</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>You Win!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <!-- Next game --> 
+                        <button id="continueBtn">Continue</button>
+                    </div>
+                </div>   
             </div>
         </div>
-        <div id="progressBar">
-            <div class="inner-bar"></div>
+        <!-- / Win game modal -->
+        <!-- Lose game modal -->
+        <div class="end-game-modal" id="loseModal">
+            <div class="container end-game-content">
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center modal-game-logo">
+                        <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
+                        <h1 class="overlay-text">return myCoffee</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>Better luck next time!</h2>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <!-- Replay game --> 
+                        <button id="replayBtn">Try Again</button>
+                    </div>
+                    <div class="col">
+                        <!-- Exit game --> 
+                        <button id="quitBtn">Quit</button>
+                    </div>
+                </div>   
+            </div>
         </div>
-        <div class="time-left">Time Left: <span></span></div>
-    </div>
-    <div class="end-game-modal" id="winModal">
-        <div class="container end-game-content">
-            <div class="row">
-                <div class="col">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center modal-game-logo">
-                    <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
-                    <h1 class="overlay-text">return myCoffee</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h2>You Win!</h2>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col">
-                    <button id="continueBtn">Continue</button>
-                </div>
-            </div>   
-        </div>
-    </div>
-    <div class="end-game-modal" id="loseModal">
-        <div class="container end-game-content">
-            <div class="row">
-                <div class="col">
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center modal-game-logo">
-                    <img src="assets/img/main/coffee.png" alt="game logo" id="gameLogo">
-                    <h1 class="overlay-text">return myCoffee</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h2>Better luck next time!</h2>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col">
-                    <button id="replayBtn">Try Again</button>
-                </div>
-                <div class="col">
-                    <button id="quitBtn">Quit</button>
-                </div>
-            </div>   
-        </div>
-    </div>
+        <!-- / Lose game modal -->
+    </section>
+    <!-- / End game modals -->
     
+    <!-- User interface -->
+    <section>
+        <!-- Start-game countdown -->
+        <div class="start-timer">
+            <h1 id="startGameCountdown">5</h1>
+            <h1 id="startGameText">GO!</h1>
+        </div>
+        <!-- / Start-game countdown -->
+
+        <!-- Countdown timer -->
+        <div class="game-hud">
+            <div class="countdown">
+                <!-- Animated clock -->
+                <div class="clock">
+                    <div class="top"></div>
+                    <div class="right"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="hour"></div>
+                    <div class="minute"></div>
+                    <div class="second"></div>
+                </div>
+                <!-- / Animated clock -->
+            </div>
+            <!-- Progress bar timer -->
+            <div id="progressBar">
+                <div class="inner-bar"></div>
+            </div>
+            <!-- Numbered timer -->
+            <div class="time-left">Time Left: <span></span></div>
+        </div>
+        <!-- / Countdown timer -->
+    </section>
+    <!-- / User interface -->
+
+    <!-- Game --> 
     <section class="game-container">
         <div class="game-desk">
+            <!-- Game desk -->
             <img src="assets/img/memory-game/coffee.gif" id="deskCoffee" alt="animated coffee art from a bird's eye view perspective">
+            <!-- / Game desk -->
             <div class="memory-game-board">
+                <!-- Memory cards -->
                 <div class="memory-card" data-cardname="coffee-bag">
                     <img src="assets/img/memory-game/coffee-bag.png" alt="Coffee bag card front-face" class="front-face">
                     <img src="assets/img/memory-game/card-back.png" alt="Return myCoffee game logo card back-face" class="back-face">
@@ -153,9 +182,11 @@
                     <img src="assets/img/memory-game/mole.png" alt="Mole card front-face" class="front-face">
                     <img src="assets/img/memory-game/card-back.png" alt="Return myCoffee game logo card back-face" class="back-face">
                 </div>
+                <!-- / Memory cards -->
             </div>
         </div>
     </section>
+    <!-- / Game -->
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/memory-game/setup.js"></script>
