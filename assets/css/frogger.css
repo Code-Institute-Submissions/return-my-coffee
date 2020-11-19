@@ -118,6 +118,13 @@ canvas {
 				    1px -1px 0 white;
 }
 
+#coffeeGif {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+}
+
 /* ---------------------------------------------- Media queries */
 
 @media (max-width: 860px) {
