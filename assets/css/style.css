@@ -33,6 +33,19 @@ section {
     width: 80px;
 }
 
+/* ---------------------------------------------- Hero image */
+
+.hero-image {
+    background-image: url("../img/main/hero-image.gif");
+    height: 93vh;
+    width: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
 /* ---------------------------------------------- Footer */
 
 footer {
