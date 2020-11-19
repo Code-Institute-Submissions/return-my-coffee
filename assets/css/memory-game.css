@@ -100,11 +100,12 @@ body {
 }
 
 .memory-game-board {
-    width: 900px;
+    width: 750px;
     height: 600px;
-    margin: 180px auto;
+    margin: 95px 30%;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
     padding-bottom: 25vh;
     perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
 }
@@ -113,8 +114,8 @@ body {
 
 
 .memory-card {
-    width: 200px;  
-    height: 225px;
+    width: 175px;  
+    height: 200px;
     position: relative;
     margin: 5px auto; 
     /* Initialize 3D effect */
