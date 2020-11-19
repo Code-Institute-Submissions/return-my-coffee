@@ -83,6 +83,22 @@ body {
 
 /* ---------------------------------------------- Gameboard */
 
+.game-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.game-desk {
+    background-image: url("../img/memory-game/desk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 115rem;
+    height: 65rem;
+    margin: 12vh auto;
+}
+
 .memory-game-board {
     width: 900px;
     height: 600px;
