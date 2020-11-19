@@ -102,6 +102,53 @@ section {
     border-radius: 10px;
 }
 
+/* ---------------------------------------------- Jumbotron */
+
+.jumbotron {
+    position: relative;
+    background: none
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #707070;
+    letter-spacing: 3px;
+}
+
+.jumbotron p {
+    color: black;
+    font-size: 18px;
+    padding-right: 150px;
+}
+
+.jumbotron .my-4 {
+    border: 1px solid #707070;
+    width: 90%;
+    margin: auto;
+}
+
+/* ---------------------------------------------- Jumbotron background image */
+
+/* Based upon the following code: "https://coder-coder.com/background-image-opacity/" */
+
+.jumbotron:before {
+    content: "";
+    background-image: url("../img/main/game-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    margin: auto;
+}
+
 /* ---------------------------------------------- Footer */
 
 footer {
