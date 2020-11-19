@@ -63,20 +63,20 @@ canvas {
 
 .user-interface .game-hud {
     position: absolute;
-    top: 90%;
+    top: 88%;
     bottom: 0;
     left: 0;
     right: 0;
 }
 
 .collisions {
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 45px;
 }
 
 .score {
-    top: 10px;
-    left: 150px; 
+    top: 15px;
+    left: 185px; 
 }
 
 .collisions span,
@@ -92,8 +92,8 @@ canvas {
 }
 
 .highscore {
-    top: 15px;
-    right: 15px;
+    top: 25px;
+    right: 65px;
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 2px;
