@@ -102,6 +102,15 @@ section {
     border-radius: 10px;
 }
 
+.hero-text button a {
+    color: #212529;
+}
+
+.hero-text button a:hover {
+    text-decoration: none;
+}
+
+
 /* ---------------------------------------------- Jumbotron */
 
 .jumbotron {
