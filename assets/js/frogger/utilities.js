@@ -38,7 +38,7 @@ function addScore() {
     scoreBoard.textContent = score;
     // Add new frogger
     frogger.x = canvas.width/2 - frogger.width/2;  
-    frogger.y = canvas.height - frogger.height - 50;
+    frogger.y = canvas.height - frogger.height - 40;
 }
 
 function collisionDetection(first, second) {
@@ -47,9 +47,9 @@ function collisionDetection(first, second) {
 }
 
 function newFrog() {
-    frogger.x = canvas.width/2 - frogger.width/2;  
-    frogger.y = canvas.height - frogger.height - 40;
-    score = 0;
     collisionCount++;
     collisionBoard.textContent = collisionCount;
+    // Add new frogger
+    frogger.x = canvas.width/2 - frogger.width/2;  
+    frogger.y = canvas.height - frogger.height - 40;
 }
