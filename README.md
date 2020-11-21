@@ -4,6 +4,24 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 ![Mockup image](assets/img/main/smartmockups.jpg)
 
+## Project Purpose 
+
+Return myCoffee is aimed at a target audience of all ages, who want to play a fun and simple browser game on their computer or on their tablet or mobile device. The aim of the application is to provide a fun and easy experience for users. It gives users a new way of playing popular mini-games by linking each game in a fun narrative, which allows the audience to immerse themselves into the game in an interactive, intuitive way.
+
+### Project Goals
+
+The most significant goal of this project is to ensure that the game is entertaining and easy to play. No downloads are necessary to play the game and it can be enjoyed on any device, making it easily accessible. This project strives to offer something new by presenting familiar mini-games to users in an unqiue and immersive way.
+
+### Project Owner Goals
+
+The primary goal is to create something unique - presenting a browser game that is responsive and enjoyable.
+
+### Target Audience 
+
+The target audience is open to anyone who is fond of playing quick fun mini-games such as the *memory card game*, *whack-a-mole* and *frogger*. However, there are subtle references to coding that an astute eye may pick up on - the most obvious one can be found in the game title name. 
+
+
+
 ## User Experience (UX)
 
 ### User Stories
