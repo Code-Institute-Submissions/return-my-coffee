@@ -221,3 +221,93 @@ body {
         margin: 2.5px; 
     }
 }
+
+@media (max-width: 1015px) {
+    .game-container {
+        background-color: #0b6736;
+        margin: auto;
+    }
+    .game-desk {
+        background-image: none;
+        margin: auto;
+    }
+    .memory-game-board {
+        width: 600px;
+        height: 600px;
+        margin: auto;
+
+    }
+    .memory-card {
+        width: 140px;  
+        height: 165px;
+        margin: 3px auto; 
+    }
+    #deskCoffee {
+        display: none;
+    } 
+    .game-hud {
+        z-index: 50;
+    }
+}
+
+/* ------------------------- Smaller tablet and mobile devices */
+
+@media (max-width: 650px) {
+    body {
+        background-image: none;
+        background-color: #0b6736;
+    }
+    .memory-game-board {
+        width: 450px;
+        height: 600px;
+        padding: -5px;
+        margin-right: 15vw;
+        margin-left: 15vw;
+
+    }
+    .memory-card {
+        width: 100px;  
+        height: 125px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 550px) {
+    .memory-game-board {
+        width: 450px;
+        height: 600px;
+        padding: -5px;
+        margin-right: 5vw;
+        margin-left: 5vw;
+
+    }
+}
+
+@media (max-width: 445px) {
+    .memory-game-board {
+        width: 350px;
+        margin: 0 25px;
+    }
+    .game-container {
+        height: 80vh;
+    }
+    .game-container,
+    .body {
+        overflow: auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .memory-game-board {
+        width: 300px;
+        margin: 0 15px;
+    }
+    .memory-card {
+        width: 65px;  
+        height: 85px;
+        margin: 2px;
+    }
+    .time-left {
+        font-size: 16px;
+    }
+}
