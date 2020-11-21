@@ -266,10 +266,6 @@ canvas {
         margin: 5vh auto;
         border: 0;
     }
-    .container {
-        background-image: none;
-        background-color: #c7dfef;
-    }
     #coffeeGif {
         display: none;
     }
@@ -288,10 +284,6 @@ canvas {
         right: 0;
         margin: 10vh auto;
         border: 0;
-    }
-    .container {
-        background-image: none;
-        background-color: #c7dfef;
     }
     .user-interface .game-hud {
         top: 88%;
@@ -339,10 +331,6 @@ canvas {
         width: 100vw;
         height: 80vh;
         margin: 5vh auto;
-    }
-    .container {
-        background-image: none;
-        background-color: #c7dfef;
     }
     .highscore {
         width: 150px;
