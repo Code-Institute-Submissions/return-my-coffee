@@ -24,6 +24,7 @@ This web-application is a fun, interactive game that combines popular mini-games
 
   - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
+- [Deployment](#deployment)
 
   -----
 
@@ -147,5 +148,43 @@ In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding
 
 - [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
   - Paint 3D is a free photo editing program which is pre-installed on Windows 10. I used Paint 3D to make minor adjustments to images and remove whitespace with the cropping tool so that they were easier to minipulate with CSS.
+
+-----
+
+## Deployment 
+
+The website was developed using [Visual Studio Code](https://code.visualstudio.com/), while [Git](https://git-scm.com/) was used for version control - to push commits to GitHub, which hosts the repository. I deployed the website to GitHub Pages using the following steps:
+
+### GitHub Pages 
+
+1. Open **GitHub** in your browser and **sign in** to your GitHub account.
+2. Locate the project's GitHub **repository**.
+3. At the top of the project's repository (not the top of the screen) select the **'Setting'** button from the menu.
+4. On the Settings, scroll down the default page until you locate the **'GitHub Pages'** section (near the bottom of the page). 
+5. Under **'Source'**, click the **dropdown-menu** called 'None' and in **'select branch' choose 'master'**.)
+6. Click **Save** to confirm your selection. The page will automatically refresh.
+7. Scroll back down to 'GitHub Pages' and you will see a link to your deployed site.
+8. You're done!
+
+### Make a Local Clone
+
+1. **Sign in** to your **GitHub** and locate the project's GitHub **repository**.
+2. Under the repository name, click the **green 'Clone' button**.
+3. To clone the repository using **HTTPS**, make sure the **HTTPS** is clicked (it will be underlined in orange) and **copy the link** provided.
+4. Open **Git Bash**
+5. Change your current working directory to the location where you want the cloned directory to be.
+6. In the **terminal** type `git clone` and **paste the URL** you copied in step 3.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+7. Press **Enter** - your local clone is created.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
 -----
