@@ -1,3 +1,34 @@
+// Start game
+
+playGame.addEventListener("click", startGame);
+
+function startGame() {
+    let modal = document.querySelector(".start-game-modal");
+    modal.style.display = "none";
+    // Reset game variables
+    score= 0;
+    collisionCount = 0;
+    frame = 0;
+    safe = false;
+    // Start animation and key-input event listeners
+    logKeys();
+    animate();
+
+    let startCountdown = setInterval(() => {
+        countdown -= 1;
+        timeLeft.textContent = countdown;
+        if (countdown <= 0) {
+            countdown = 0;
+            clearInterval(startCountdown);
+            countdownBoard.textContent = "Time's Up!";
+        }
+    }, 1000);
+    progressBar.animate({
+        width: "0%"
+    }, animateSpeed)
+}
+
+
 function animate() {
     ctx1.clearRect(0, 0, canvas.width, canvas.height);
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
@@ -15,23 +46,23 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-animate(); 
-
 // Key input
 
-window.addEventListener("keydown", function(e) {
-    keys = [];
-    keys[e.keyCode] = true;
-    if ((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) {
-        frogger.jump();
-    }
-})
-
-window.addEventListener("keyup", function(e) {
-    delete keys[e.keyCode];
-    frogger.moving = false;
-    frogger.frameX = 0;
-})
+function logKeys() {
+    window.addEventListener("keydown", function(e) {
+        keys = [];
+        keys[e.keyCode] = true;
+        if ((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) {
+            frogger.jump();
+        }
+    })
+    
+    window.addEventListener("keyup", function(e) {
+        delete keys[e.keyCode];
+        frogger.moving = false;
+        frogger.frameX = 0;
+    })
+}
 
 function addScore() {
     score ++;

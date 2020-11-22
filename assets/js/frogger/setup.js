@@ -8,6 +8,13 @@ function findYourCoffee() {
     }
 }
 
+// Begin game variables
+const countdownBoard = document.querySelector(".time-left");
+const timeLeft = document.querySelector(".time-left span");
+const progressBar = document.querySelector(".inner-bar");
+const playGame = document.querySelector("#playGame");
+
+
 // Canvas 
 
 const canvas = document.getElementById("canvas1");
@@ -40,6 +47,9 @@ canvas5.height = 600;
 const gameboard = document.querySelector(".frogger-board");
 const scoreBoard = document.querySelector(".score span");
 const collisionBoard = document.querySelector(".collisions span");
+
+let countdown = localStorage.getItem("countdownSpeed") || 20;
+let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 
 const grid = 80;
 let keys = [];
