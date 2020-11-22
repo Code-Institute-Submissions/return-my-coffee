@@ -26,6 +26,16 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 - [Deployment](#deployment)
 
+- [Credits](#credits)
+
+  - [Code](#code)
+
+  - [Content](#content)
+
+  - [Inspiration](#inspiration)
+
+  - [Acknowledgements](#acknowledgements)
+
   -----
 
 ## Project Purpose 
@@ -188,3 +198,76 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
 -----
+
+## Credits
+
+### Code
+
+- [Bootstrap 4](https://getbootstrap.com/) was used for the Homepage and Game Setting Modals. It has been used to construct the following features:
+  - Mobile responsiveness through use of its grid system.
+  - Responsive navbar
+  - Design foundation for some buttons
+  - Jumbotron in the Homepage
+
+- [W3Schools](https://www.w3schools.com/) was used as guidance when creating my own modals that were not influenced by Bootstrap.
+
+- The jumbotron background image on the homepage was based upon [this source](https://coder-coder.com/background-image-opacity/")
+
+- Code for the Memory Game (HTML, CSS and JavaScript) was based upon [this YouTube tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek) by FreeCodeCamp.org
+
+- Code for the Whack-A-Mole game (HTML, CSS and JavaScript) was based upon [this YouTube tutorial](https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=3) by Franks Laboratory.
+
+- Code for the Frogger game (HTML, CSS and JavaScript) was based upon [this YouTube tutorial](https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4) by Franks Laboratory.
+
+- The code used to shuffle the cards in the Memory Game was based upon [this code snipppet](https://jsfiddle.net/z503fjv9/)
+
+- To fix null errors in the console, I looked to [this Stack Overflow post](https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null)
+
+- To animate the progress bar timer, I based my code of [this source](https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar)
+
+- The pulsing animation for the 'Start Game' button in Frogger was based upon [this Codepen source](https://codepen.io/seansean11/pen/dhwzj)
+
+- The code to make the animated clock in each game was taken from [this Codepen source](https://codepen.io/MyXoToD/pen/psLen)
+
+
+### Content
+
+- All content was written by the developer
+
+- However, please note that the games would not exist without the tutorial guides from the following channels:
+
+  - [Franks Laboratory](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ) - [this](https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=3) and [this](https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4) video were used for the project.
+
+  - [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) - [this](https://www.youtube.com/watch?v=ZniVgo8U7ek) video was used for the project.
+
+- The majority of the web-application's media content (gifs and images) were **not** created by the developer.
+
+
+### Media 
+
+- A variety of coffee-themed gifs were taken from [here](https://giphy.com/stickers/g0HiibIiGp2oWQjMy5) and were created by the talented Dave Gamez.
+
+- The remaining gifs and images were taken from Google, apart from the memory game cards, which I made myself.
+
+
+### Acknowledgements
+
+- [CodeInstitute](https://codeinstitute.net/) for the course material, knowledge and inspiration.
+
+- [W3Schools](https://www.w3schools.com/) for its high quality guides.
+
+- [StackOverflow](https://stackoverflow.com/) for the perpetual source of help and inspiration.
+
+- [Slack Community](https://slack.com/intl/en-gb/) for all the help, advice and inspiration.
+
+- [Bootstrap](https://getbootstrap.com/) for the CSS and JQuery framework.
+
+- [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) for the great tutorial on how to make your own memory game.
+
+- [Franks Laboratory](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ) for the amazing, high-quality tutorial videos which were used for the Whack-A-Mole game and Frogger. 
+
+- [Franks Laboratory](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ) for the media content used in the Frogger game (spritesheets and background images), which he has made accessible to the public.
+
+- I also want to thank my mentor, Can Sucullu, for his help and valuable suggestions throughout this project.
+
+- Finally, I want to thank friends and family members for their continual support and feedback. 
