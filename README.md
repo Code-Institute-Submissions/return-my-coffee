@@ -4,6 +4,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 ![Mockup image](assets/img/main/smartmockups.jpg)
 
+
+
 ## Project Purpose 
 
 Return myCoffee is aimed at a target audience of all ages, who want to play a fun and simple browser game on their computer or on their tablet or mobile device. The aim of the application is to provide a fun and easy experience for users. It gives users a new way of playing popular mini-games by linking each game in a fun narrative, which allows the audience to immerse themselves into the game in an interactive, intuitive way.
@@ -46,3 +48,26 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 - As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score for the game.
 
 - As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
+
+
+
+### Design 
+
+#### Typography 
+
+In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding](), [Inconsolata](), [Roboto]() and [Roboto Mono]() from the [Google Fonts]() library. Each page uses the following fonts: 
+
+- Hompage 
+    - Source Code Pro
+    - Nanum Gothic Coding
+    - Inconsolata
+    - Roboto Mono
+
+- Memory Game 
+    - Source Code Pro
+
+- Whack-A-Mole
+    - Roboto 
+
+- Frogger
+    - Roboto
