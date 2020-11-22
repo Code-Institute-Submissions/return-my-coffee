@@ -1,5 +1,7 @@
 # Return myCoffee
 
+[View live project here](https://ellenst264.github.io/return-my-coffee/)
+
 This web-application is a fun, interactive game that combines popular mini-games together into one immersive experience. In Return myCoffee users must complete each mini-game in order to retrieve a cup of coffee that has been stolen from them!
 
 ![Mockup image](assets/img/main/smartmockups.jpg)
