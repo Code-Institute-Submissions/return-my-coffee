@@ -4,7 +4,28 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 ![Mockup image](assets/img/main/smartmockups.jpg)
 
+-----
 
+## Contents 
+
+- [Project Purpose](#project-purpose)
+
+- [User Experience (UX)](#user-experience-ux)
+
+    - [User Stories](#user-stories)
+
+- [Design](#design)
+        
+    - [Typography](#typography)
+
+- [Technologies Used](#technologies-used)
+
+  - [Languages](#languages)
+
+  - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+
+
+  -----
 
 ## Project Purpose 
 
