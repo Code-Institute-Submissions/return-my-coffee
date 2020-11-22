@@ -125,6 +125,12 @@ canvas {
     bottom: 50px;
 }
 
+.time-left {
+    background-color: red;
+    width: 25%;
+    color: white;
+}
+
 /* ---------------------------------------------- Media queries */
 
 /* ------------------------- Large screens (desktop and laptop) */
