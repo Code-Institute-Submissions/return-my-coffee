@@ -22,7 +22,7 @@ The primary goal is to create something unique - presenting a browser game that 
 
 The target audience is open to anyone who is fond of playing quick fun mini-games such as the *memory card game*, *whack-a-mole* and *frogger*. However, there are subtle references to coding that an astute eye may pick up on - the most obvious one can be found in the game title name. 
 
-
+-----
 
 ## User Experience (UX)
 
@@ -49,7 +49,7 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 
 - As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
 
-
+-----
 
 ### Design 
 
@@ -71,3 +71,60 @@ In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding
 
 - Frogger
     - Roboto
+
+
+-----
+
+## Technologies Used
+
+### Languages 
+
+- HTML (5)
+- CSS (3)
+- Javascript
+
+### Frameworks, Libraries and Programs 
+
+- [Bootstrap 4.4.1](https://getbootstrap.com/)
+  - Bootstrap was used to aid with responsiveness of the homepage and formed a foundation for styling the website.
+  
+- [Google Fonts](https://fonts.google.com/)
+  - Google fonts was used to add visual variety to the typography and help maintain a visual theme.
+
+- [Font Awesome 5.14](https://fontawesome.com/)
+  - Font Awesome was used sparingly for adding icons or image cues to the project to employ a good UX design.
+  
+- [Adobe XD](https://www.adobe.com/uk/products/xd.html)
+  - Adobe XD was used to create the wireframes during the design process.
+  
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - Visual Studio Code was the software used to write the code. 
+  
+- [Git](https://git-scm.com/)
+  - Git was used for version control by utilising the PowerShell terminal in Visual Studio Code to commit to Git and push to GitHub.
+  
+- [GitHub](https://github.com/)
+  - GitHub is used to store the project's code after being pushed to Git. It acts as a cloud-based service to store the project’s assets and code, which means we need not rely on saving locally alone. 
+
+- [Smartmockups - Free Product Mockup Generator](https://smartmockups.com/)
+  - Smartmocks is a web-application that allows you to create free mockup images. I used it in this readme file to present a mockup image of the project.
+
+- [PicResize - Crop, Resize, Edit images online](https://picresize.com/)
+  - PicResize is a web-application that allows you to resize images and alter their width/height and pixel size. I used PicResize to resize a variety of images in the project, such as the navbar brand, memory-game cards and mole images.
+
+- [Asana](https://app.asana.com/0/home/1192103038725952)
+  - Asana is a web and mobile application designed to help you organise, track and manage your projects. It was used to organise my project and schedule each task efficiently.
+
+- [Autoprefixer CSS Online](https://autoprefixer.github.io/)
+  - Autoprefixer is a PostCSS plugin which parses your CSS and adds vendor prefixes. It was used to prefix my main CSS file to ensure greater compatibility on a wide range of devices and browsers. 
+
+- [Ezgif.com](https://ezgif.com/webp-to-png)
+  - Ezgif is an online gif editor and image editor. It was used to edit some of the gif images that have been used throught the project.
+
+- [Krita](https://krita.org/en/)
+  - Krita is a free art software which can be downloaded on your desktop. I used Krita to make the memory-card images and the mole art in the settings menu modal.
+
+- [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
+  - Paint 3D is a free photo editing program which is pre-installed on Windows 10. I used Paint 3D to make minor adjustments to images and remove whitespace with the cropping tool so that they were easier to minipulate with CSS.
+
+-----
