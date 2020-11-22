@@ -8,11 +8,14 @@ function findYourCoffee() {
     }
 }
 
-// Begin game variables
+// Begin game
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
 const progressBar = document.querySelector(".inner-bar");
 const playGame = document.querySelector("#playGame");
+
+// End game modals
+const endGameModal = document.querySelector("#gameFinish");
 
 
 // Canvas 

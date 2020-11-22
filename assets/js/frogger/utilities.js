@@ -21,6 +21,7 @@ function startGame() {
             countdown = 0;
             clearInterval(startCountdown);
             countdownBoard.textContent = "Time's Up!";
+            endGame();
         }
     }, 1000);
     progressBar.animate({
@@ -83,4 +84,8 @@ function newFrog() {
     // Add new frogger
     frogger.x = canvas.width/2 - frogger.width/2;  
     frogger.y = canvas.height - frogger.height - 40;
+}
+
+function endGame() {
+    endGameModal.style.display = "block";
 }
