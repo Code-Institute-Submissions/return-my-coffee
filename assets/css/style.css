@@ -195,7 +195,7 @@ button,
 #startGameBtn {
     font-family: "Roboto Mono", monospace;
     border: 2px solid black;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -217,18 +217,41 @@ button,
     letter-spacing: 3px;
 }
 
+/* ------------------------- Narrative text content */
+
 .startup-content p {
-    padding: 25px 18px;
+    padding: 8px 22px;
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
 }
 
-#gameRules {
-    margin-left: 98px;
+.narrative {
+    width: 75%;
+    margin-left: 18%;
     margin-top: 35px;
     background-color:#000000a1;
     border-radius: 35px;
+    overflow-x: hidden;
+}
+
+.narrative .first-line {
+    padding-top: 35px;
+}
+
+.narrative .last-line {
+    padding-bottom: 35px;
+}
+
+.help {
+    margin-top: 35px;
+    margin-left: 98px;
+    padding: inherit;
+    text-align: center;
+}
+
+.help p {
+    font-size: 14px;
 }
 
 .startup-content img {
@@ -237,6 +260,8 @@ button,
     transform: translate(5%, 0%);
     padding: 15px;
 }
+
+/* ------------------------- Difficulty options */
 
 .startup-content h3 {
     width: 60%;
@@ -274,6 +299,8 @@ button,
     text-transform: uppercase;
     padding: 5px;
 }
+
+/* ------------------------- Mobile return to homepage arrow */
 
 .fa-level-down-alt {
     transform: rotate(90deg);
