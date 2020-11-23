@@ -324,6 +324,17 @@ button,
     text-transform: uppercase;
 }
 
+#froggerHelp .game-controls em {
+    font-style: normal;
+    color: black;
+}
+
+#froggerHelp .key-img {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
 /* ------------------------- Mobile return to homepage arrow */
 
 .fa-level-down-alt {
