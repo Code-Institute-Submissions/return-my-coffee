@@ -249,6 +249,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - A variety of coffee-themed gifs were taken from [here](https://giphy.com/stickers/g0HiibIiGp2oWQjMy5) and were created by the talented Dave Gamez.
 
+- The keyboard icon images used in the help page for Frogger, was taken from [this GitHub page](https://github.com/q2apro/keyboard-keys-speedflips)
+
+- The background images and spritesheets used in the Frogger game were taken from [Franks Laboratory's](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ) website, [found here](http://frankslaboratory.co.uk/frogger-game-with-vanilla-javascript/)
+
 - The remaining gifs and images were taken from Google, apart from the memory game cards, which I made myself.
 
 
