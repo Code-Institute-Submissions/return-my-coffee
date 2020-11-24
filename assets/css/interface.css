@@ -338,22 +338,16 @@
 
 /* ---------------------------------------------- End game modal */
 
-#gameLogo {
-    position: absolute;
-    z-index: 100;
-}
-
 .end-game-modal {
     display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    overflow: auto;
     background-color: #9d9d9dce;
+    overflow: hidden;
 }
 
 .end-game-content {
@@ -361,19 +355,20 @@
     height: 500px;
     margin: 10% auto;
     border: 2px solid #888;
-    background-color: #FFF9F5;
-}
-
-.end-game-content hr {
-    border: 1px solid #707070;
-    transform: translate(0, 8rem);
+    background-image: url("../img/whack-a-mole/background.png");
+    background-color: #9EDEEF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .end-game-content h2 {
     width: 85%;
-    margin: 0 auto;
+    margin: 25% auto;
     text-align: center;
-    background-color: #dbc7b99d;
+    background-color: white;
+    border-radius: 15px;
     padding: 10px;
     font-family: "Nanum Gothic Coding", monospace;
     font-size: 30px;
@@ -382,48 +377,18 @@
 }
 
 .end-game-content button {
-    display: block;
     font-family: "Roboto Mono", monospace;
+    display: block;
+    width: 150px;
+    margin: 25% auto;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 2px;
     background-color: white;
-    padding: 10px;
-    width: 150px;
-    margin: 25px auto;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-/* ------------------------- End game modal game logo */
-
-.modal-game-logo {
-    width: 100%;
-    height: 250px;
-}
-
-.end-game-content #gameLogo {
-    width: 400px;
-    height: 400px;
-    transform: translate(25%, -40%);
-    padding: 0;
-    margin: 0;
-}
-
-.end-game-content .overlay-text {
-    font-family: "Roboto Mono", monospace;
-    width: 65%;
-    background-color: #dbc7b99d;
-    padding: 10px;
-    border-radius: 50px;
-    font-size: 25px;
-    letter-spacing: 4px;
-    font-weight: 800;
-    transform: translate(0%, -23rem);
-    margin: 0 auto;
-    text-align: center;
-    z-index: 10;
 }
 
 /* ------------------------- End game modal media queries */
