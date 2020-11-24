@@ -223,6 +223,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - The code used to shuffle the cards in the Memory Game was based upon [this code snipppet](https://jsfiddle.net/z503fjv9/)
 
+- The code used to add touchscreen swipe controls to Frogger was written by Kirupa Chinnathambi and can be accessed via [here](https://stackoverflow.com/questions/53192433/how-to-detect-swipe-in-javascript) or [here](https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm)
+
 - To fix null errors in the console, I looked to [this Stack Overflow post](https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null)
 
 - To animate the progress bar timer, I based my code of [this source](https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar)
