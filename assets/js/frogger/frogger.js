@@ -50,6 +50,41 @@ class Frogger {
             addScore();
         }
     }
+
+    /* For touchscreen controls */
+    
+    moveLeft() {
+        if (this.moving === false && this.x > this.width) {
+            this.x -= grid;
+            this.moving = true;
+            this.frameX = 1;
+            this.frameY = 2;
+        }
+    }
+    moveRight(){
+        if (this.moving === false && this.x < canvas.width - this.width * 2) {
+            this.x += grid;
+            this.moving = true;
+            this.frameX = 1;
+            this.frameY = 1;
+        }
+    }
+    moveUp() {
+        if (this.moving === false) { 
+            this.y -= grid;
+            this.moving = true;
+            this.frameX = 1;
+            this.frameY = 0;
+        }
+    }
+    moveDown() {
+        if (this.moving === false && this.y < canvas.height - this.height * 2) {
+            this.y += grid;
+            this.moving = true;
+            this.frameY = 3;
+        }
+    }
+
     draw() {
         ctx3.drawImage(frogSprite, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, 
                 this.spriteWidth, this.spriteHeight, this.x - 25 , this.y - 25, this.width * 2, this.height * 2);
