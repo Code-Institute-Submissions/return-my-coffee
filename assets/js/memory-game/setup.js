@@ -4,8 +4,6 @@ const cardBoard = document.querySelector(".memory-game-board");
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
 const progressBar = document.querySelector(".inner-bar");
-const startGameCountdownBoard = document.querySelector(".start-timer h1"); 
-const startText = document.querySelector("#startGameText");
 
 /*
 The if statements check if the variables are 

@@ -1,30 +1,4 @@
-// Begin start-game countdown
-(function startGameTimer() {
-    startGameCountdownBoard.style.display = "block";
-    let gameStartCountdown = setInterval(() => {
-        lockBoard = true;
-        startGameCountdown -= 1;
-        startGameCountdownBoard.textContent = startGameCountdown;
-        if (startGameCountdown < 1) {
-            startGameCountdown = 1;
-            clearInterval(gameStartCountdown);
-            startGameCountdownBoard.style.display = "none";
-            displayStartGameText();
-        }
-    }, 1000)
-})();
 
-// Show start-game text after countdown
-function displayStartGameText() {
-    startText.style.display = "block";
-    let beginGame = setInterval(() => {
-        lockBoard = true;
-        startText.style.display = "none";
-        clearInterval(beginGame);
-        startTimer();
-        startGame();
-    }, 1000)
-}
 
 // Unlock the board to start the game
 function startGame() {
