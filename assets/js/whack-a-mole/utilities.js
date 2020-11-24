@@ -1,8 +1,10 @@
 // Start game 
 
-startGameBtn.addEventListener("click", startGame);
+playGame.addEventListener("click", startGame);
 
 function startGame() {
+    let modal = document.querySelector(".start-game-modal");
+    modal.style.display = "none";
     scoreBoard.textContent = 0;
     score = 0;
     timeUp = false;

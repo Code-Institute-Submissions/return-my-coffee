@@ -6,7 +6,7 @@ const highScoreBoard = document.querySelector(".highscore span")
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
 const progressBar = document.querySelector(".inner-bar");
-const startGameBtn = document.querySelector("#startButton");
+const playGame = document.querySelector("#playGame");
 
 // Open Game from game menu
 function findYourCoffee() {
