@@ -21,6 +21,7 @@ function startGame() {
             countdown = 0;
             clearInterval(startCountdown);
             countdownBoard.textContent = "Time's Up!";
+            checkHighScore();
             endGame();
         }
     }, 1000);
@@ -71,6 +72,14 @@ function addScore() {
     // Add new frogger
     frogger.x = canvas.width/2 - frogger.width/2;  
     frogger.y = canvas.height - frogger.height - 40;
+}
+
+function checkHighScore() {
+    if (score > localStorage.getItem("game2HighScore")) {
+        localStorage.setItem("game2HighScore", score);
+        highscore = score - collisionCount;
+        highScoreBoard.textContent = highscore;
+    }
 }
 
 function collisionDetection(first, second) {
