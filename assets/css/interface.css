@@ -343,7 +343,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     top: 0;
     background-color: #9d9d9dce;
@@ -353,7 +353,7 @@
 .end-game-content {
     width: 600px;
     height: 500px;
-    margin: 10% auto;
+    margin: 15vh auto;
     border: 2px solid #888;
     background-image: url("../img/whack-a-mole/background.png");
     background-color: #9EDEEF;
@@ -380,7 +380,7 @@
     font-family: "Roboto Mono", monospace;
     display: block;
     width: 150px;
-    margin: 25% auto;
+    margin: 5% auto;
     padding: 10px;
     border: 2px solid black;
     border-radius: 2px;
@@ -393,94 +393,12 @@
 
 /* ------------------------- End game modal media queries */
 
-@media (max-width: 1170px) {
+@media (max-width: 615px) {
     .end-game-content {
-        margin: 20% auto;
-    }
-}
-
-@media (max-width: 760px) {
-    .end-game-content {
-        margin: 30% auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .end-game-content {
-        width: 100%;
-    }
-    .end-game-content #gameLogo {
-        width: 300px;
-        height: 300px;
-        transform: translate(44%, -30%);
-    }
-    .modal-game-logo {
-        height: 200px;
-    }
-    .end-game-content .overlay-text {
-        width: 65%;
-        font-size: 22px;
-        transform: translate(0%, -15.5rem);
-        margin: auto;
-    }
-}
-
-@media (max-width: 520px) {
-    .end-game-content #gameLogo {
-        transform: translate(32%, -30%);
-    }
-    .end-game-content .overlay-text {
-        font-size: 18px;
-        transform: translate(3.5%, -15.5rem);
-    }
-}
-
-@media (max-width: 480px) {
-    .end-game-content #gameLogo {
-        width: 250px;
-        height: 250px;
-        transform: translate(40%, -20%);
-    }
-    .end-game-content .overlay-text {
-        font-size: 18px;
-        transform: translate(-1%, -11.5rem);
-    }
-}
-
-@media (max-width: 430px) {
-    .end-game-content {
-        width: 100%;
-        height: 62%;
-        margin: 50% auto;
-    }
-    .end-game-content #gameLogo {
-        transform: translate(33%, -20%);
-    }
-    .end-game-content .overlay-text {
-        font-size: 18px;
-        transform: translate(-1%, -11.5rem);
-    }
-}
-
-@media (max-width: 395px) {
-    .end-game-content {
-        height: 50%;
-        margin: 50% auto;
-    }
-    .modal-game-logo {
-        display: none;
-    }
-    .end-game-content hr {
-        display: none;
+        width: 100vw;
+        overflow-x: hidden;
     }
     .end-game-content h2 {
-        width: 65%;
-        margin: 10% auto 10% auto;
-    }
-}
-
-@media (max-width: 320px) {
-    .end-game-content {
-        height: 55%;
+        font-size: 25px;
     }
 }
