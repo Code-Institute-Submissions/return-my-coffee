@@ -47,7 +47,6 @@ canvas5.height = 600;
 
 // Global game variables
 
-const gameboard = document.querySelector(".frogger-board");
 const scoreBoard = document.querySelector(".score span");
 const collisionBoard = document.querySelector(".collisions span");
 
