@@ -251,6 +251,61 @@
     text-transform: uppercase;
 }
 
+/* ---------------------------------------------- End game modal */
+
+.end-game-modal {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: #9d9d9dce;
+    overflow: hidden;
+}
+
+.end-game-content {
+    width: 600px;
+    height: 500px;
+    margin: 15vh auto;
+    border: 2px solid #888;
+    background-image: url("../img/whack-a-mole/background.png");
+    background-color: #9EDEEF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.end-game-content h2 {
+    width: 85%;
+    margin: 25% auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.end-game-content button {
+    font-family: "Roboto Mono", monospace;
+    display: block;
+    width: 150px;
+    margin: 5% auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 /* ---------------------------------------------- Media queries */
 
 @media (max-width: 1110px) {
@@ -318,6 +373,13 @@
         margin-top: 10px;
         padding: 10px;
     }
+    .end-game-content {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .end-game-content h2 {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 455px) {
@@ -332,72 +394,5 @@
     }
     .time-left {
         font-size: 18px;
-    }
-}
-
-/* ---------------------------------------------- End game modal */
-
-.end-game-modal {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    background-color: #9d9d9dce;
-    overflow: hidden;
-}
-
-.end-game-content {
-    width: 600px;
-    height: 500px;
-    margin: 15vh auto;
-    border: 2px solid #888;
-    background-image: url("../img/whack-a-mole/background.png");
-    background-color: #9EDEEF;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.end-game-content h2 {
-    width: 85%;
-    margin: 25% auto;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    font-family: "Nanum Gothic Coding", monospace;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.end-game-content button {
-    font-family: "Roboto Mono", monospace;
-    display: block;
-    width: 150px;
-    margin: 5% auto;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 2px;
-    background-color: white;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-/* ------------------------- End game modal media queries */
-
-@media (max-width: 615px) {
-    .end-game-content {
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    .end-game-content h2 {
-        font-size: 25px;
     }
 }
