@@ -3,15 +3,16 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------------------------------------------- Homepage background setup */
 
 body {
     font-family: "Source Code Pro", monospace;
     font-weight: 400;
-}
-
-section {
-    background-color: #FFF0E5;
+    overflow: hidden;
 }
 
 /* ---------------------------------------------- Navbar */
@@ -33,17 +34,49 @@ section {
     width: 65px;
 }
 
-/* ---------------------------------------------- Hero image */
+/* ---------------------------------------------- Parallax scrolling - page setup */
 
-.hero-image {
+/*
+The following code is based upon this source: 
+"https://www.digitalocean.com/community/tutorials/css-pure-css-parallax"
+*/
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.section { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background: white;
+}
+
+.hero-image::after {
     background-image: url("../img/main/hero-image.gif");
-    height: 93vh;
-    width: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin: 0 auto;
 }
 
 /* ---------------------------------------------- Hero image text content */
@@ -128,7 +161,6 @@ section {
 .jumbotron p {
     color: black;
     font-size: 18px;
-    padding-right: 150px;
 }
 
 .jumbotron .my-4 {
@@ -165,6 +197,7 @@ footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
+    z-index: 100;
 }
 
 /* ---------------------------------------------- Start game menu modal */
@@ -343,7 +376,6 @@ button,
 }
 
 /* ------------------------- Menu modal media queries */
-
 
 @media (max-width: 1199px) {
     .startup-content img {
