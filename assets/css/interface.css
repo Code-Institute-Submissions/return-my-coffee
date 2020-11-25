@@ -28,8 +28,8 @@
     position: absolute;
     top: 5px; left: 0; bottom: 0; right: 0;
 
-    width: 285px;
-    height:100px;
+    width: 330px;
+    height: 120px;
     padding: 20px 25px;
     background-color: red;
     border-radius: 85px;
@@ -394,5 +394,28 @@
     }
     .time-left {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .button-shade {
+        width: 190px;
+        height: 100px;
+    }
+    .pulse-button {
+        width: 180px;
+        height: 100px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 205px) {
+    .button-shade {
+        display: none;
+    }
+    .pulse-button {
+        width: 140px;
+        height: 100px;
+        font-size: 26px;
     }
 }
