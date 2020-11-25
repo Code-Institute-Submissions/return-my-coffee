@@ -306,6 +306,10 @@
     font-weight: 700;
 }
 
+.end-game-content a {
+    text-decoration: none;
+}
+
 /* ---------------------------------------------- Media queries */
 
 @media (max-width: 1110px) {
