@@ -10,8 +10,8 @@ const gameboard = document.querySelector(".frogger-board");
     ** Original Author: Kirupa Chinnathambi
 */
 
-gameboard.addEventListener("touchstart", startTouch, false);
-gameboard.addEventListener("touchmove", moveTouch, false);
+gameboard.addEventListener("touchstart", startTouch, {passive: true});
+gameboard.addEventListener("touchmove", moveTouch, {passive: true});
 
 // Swipe Up / Down / Left / Right
 var initialX = null;
