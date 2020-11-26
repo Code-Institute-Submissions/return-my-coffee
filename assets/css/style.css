@@ -99,6 +99,7 @@ The following code is based upon this source:
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+    text-shadow: 2px 2px #000000;
     z-index: 5;
 }
 
@@ -117,69 +118,6 @@ The following code is based upon this source:
     letter-spacing: 2px;
     font-weight: 700;
 }
-
-/* .hero-coffee {
-    position: absolute;
-    top: -32vh;
-    bottom: 0;
-    left: 550px;
-    right: 0;
-    height: 900px;
-    width: auto;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.game-title {
-    text-align: left;
-    position: relative;
-    top: -5vh;
-    left: 40%;
-    font-size: 95px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.game-title span {
-    position: absolute;
-    left: 50px;
-}
-
-.play-now {
-    position: absolute;
-    top: 42vh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.hero-text button {
-    font-size: 32px;
-    padding: 0px 40px;
-    font-family: "Inconsolata" monospace;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 800;
-    border: 1px solid #707070;
-    border-radius: 10px;
-}
-
-.hero-text button a {
-    color: #212529;
-}
-
-.hero-text button a:hover {
-    text-decoration: none;
-} */
-
 
 /* ---------------------------------------------- Jumbotron */
 
@@ -241,7 +179,136 @@ footer {
 
 /* ---------------------------------------------- Homepage media queries */
 
-@media (max-width: 360px) {
+@media (min-width: 2025px) {
+    .game-title {
+        position: relative;
+        top: 250px;
+        bottom: 0;
+        right: 0;
+        left: 300px;
+        text-align: left;
+        font-size: 95px;
+        font-weight: 600;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -250px;
+        bottom: 0;
+        right: 0;
+        left: 760px;
+        height: 800px;
+        width: auto;
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -150px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1351px) and (max-width: 2024px) {
+    .game-title {
+        position: relative;
+        top: 180px;
+        bottom: 0;
+        right: 0;
+        left: 180px;
+        text-align: left;
+        font-size: 85px;
+        font-weight: 600;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -250px;
+        bottom: 0;
+        right: 0;
+        left: 600px;
+        height: 700px;
+        width: auto;
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -120px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+    .game-title {
+        position: relative;
+        top: 150px;
+        bottom: 0;
+        right: 0;
+        left: 50px;
+        text-align: left;
+        font-size: 75px;
+        font-weight: 600;
+        text-shadow: 2px 2px #000000;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -150px;
+        bottom: 0;
+        right: 0;
+        left: 425px;
+        max-height: 500px;
+        max-width: 290px; 
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -120px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-coffee {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; 
+        display: block;
+        margin: auto;
+        max-height: 500px;
+        max-width: 290px; 
+    }
+}
+
+@media (max-width: 540px) and (min-height: 720px) {
+    .game-title {
+        position: relative;
+        top: 65px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -120px;
+        bottom: 0;
+        right: 0;
+        left: 0; 
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 375px) {
     .navbar {
         padding-top: 0;
         padding-bottom: 0;
@@ -252,6 +319,30 @@ footer {
     .navbar .navbar-brand img {
         width: 45px;
         height: 45px;
+    }
+    .game-title {
+        position: relative;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 50px;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -125px;
+        bottom: 0;
+        right: 0;
+        left: -10px; 
+        height: 400px;
+        width: auto;
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }
 
