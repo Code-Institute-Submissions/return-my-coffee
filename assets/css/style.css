@@ -386,7 +386,7 @@ footer {
 
 .startup-content {
     width: 100%;
-    margin: 5% auto;
+    margin: 25px auto;
     background-color: #1b1b1b4a;
     border-radius: 125px;
 }
@@ -407,7 +407,7 @@ button,
 
 .startup-content h2 {
     width: 85%;
-    margin: 0 auto;
+    margin: 5px auto;
     text-align: center;
     background-color: white;
     padding: 10px;
@@ -420,9 +420,9 @@ button,
 /* ------------------------- Narrative text content */
 
 .startup-content p {
-    padding: 8px 22px;
+    padding: 0 22px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -543,60 +543,3 @@ button,
 }
 
 /* ------------------------- Menu modal media queries */
-
-@media (max-width: 1199px) {
-    .startup-content img {
-        height: 300px;
-        width: 300px;
-        transform: translate(30%, 0%);
-        padding: 15px;
-    }
-}
-
-@media (max-width: 991px) {
-    .startup-content {
-        margin: 5% auto;
-    }
-    
-    .startup-content p {
-        padding: 2rem 5rem;
-    }
-    .setting-confirmation p {
-        padding: 0;
-    }
-    .setting-confirmation span {
-        width: 60%;
-        margin: 0 auto;
-    }
-    .startup-content #gameLogo {
-        width: 300px;
-        height: 300px;
-    }
-    .modal-game-logo {
-        height: 200px;
-    }
-    .startup-content .overlay-text {
-        width: 60%;
-        font-size: 22px;
-        transform: translate(0%, -17rem);
-    }
-}
-
-@media (max-width: 515px) {
-    .startup-content .overlay-text {
-        width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    #startGameBtn {
-        width: 250px;
-    }
-}
-
-@media (max-width: 465px) {
-    #startGameBtn {
-        font-size: 16px;
-        width: 200px;
-    }
-}
