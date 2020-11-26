@@ -419,20 +419,21 @@ button,
 
 /* ------------------------- Narrative text content */
 
-.startup-content p {
-    padding: 0 22px;
-    color: white;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
 .narrative {
+    position: relative;
+    display: block;
+    margin: 15px auto;
     width: 75%;
-    margin-left: 18%;
-    margin-top: 35px;
     background-color:#000000a1;
     border-radius: 35px;
     overflow-x: hidden;
+}
+
+.narrative p {
+    padding: 5px 22px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .narrative .first-line {
@@ -444,13 +445,13 @@ button,
 }
 
 .help {
-    margin-top: 35px;
-    margin-left: 98px;
+    position: relative;
+    display: block;
+    margin: 15px auto;
+    width: 75%;
+    color: white;
     padding: inherit;
     text-align: center;
-}
-
-.help p {
     font-size: 14px;
 }
 
@@ -465,10 +466,10 @@ button,
 
 .startup-content h3 {
     width: 60%;
-    margin: 0 auto;
+    margin: 15px auto;
     text-align: center;
     background-color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     padding: 10px;
 }
