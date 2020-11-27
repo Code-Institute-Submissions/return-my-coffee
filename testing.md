@@ -56,3 +56,12 @@ I looked to [this StackOverflow post](https://stackoverflow.com/questions/391528
 gameboard.addEventListener("touchstart", startTouch, {passive: true});
 gameboard.addEventListener("touchmove", moveTouch, {passive: true});
 ```
+
+
+- After that I had the following console error whenever a swipe motion was logged by the application:
+
+```
+swipe.js:73 Unable to preventDefault inside passive event listener invocation
+```
+
+I removed `e.preventDefault();` from swipe.js to fix the issue.
