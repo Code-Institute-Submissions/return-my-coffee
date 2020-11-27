@@ -6,7 +6,12 @@ const playGame = document.querySelector("#playGame");
 
 // End game modals
 const endGameModal = document.querySelector("#gameFinish");
-
+const totalScoreDiv = document.querySelector("#totalScore");
+const zeroScore = document.querySelector("#zeroScore");
+const totalCollisionsDiv = document.querySelector("#totalCollisions");
+const zeroCollisions = document.querySelector("#noCollisions");
+const showNewHighscore = document.querySelector("#beatHighscore");
+const showHighscoreDiv = document.querySelector("#showHighscore");
 
 // Canvas 
 

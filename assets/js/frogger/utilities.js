@@ -75,9 +75,9 @@ function addScore() {
 }
 
 function checkHighScore() {
-    if (score > localStorage.getItem("game2HighScore")) {
-        localStorage.setItem("game2HighScore", score);
-        highscore = score - collisionCount;
+    highscore = score - collisionCount;
+    if (highscore > localStorage.getItem("game2HighScore")) {
+        localStorage.setItem("game2HighScore", highscore);
         highScoreBoard.textContent = highscore;
     }
 }
@@ -97,4 +97,34 @@ function newFrog() {
 
 function endGame() {
     endGameModal.style.display = "block";
+    updateModal();
+}
+
+function updateModal() {
+    if (score === 0) {
+        zeroScore.style.display = "block";
+    }
+    else {
+        let totalScore = document.querySelector("#totalScore span");
+        totalScore.textContent = score;
+        totalScoreDiv.style.display = "block";
+    }
+    if (collisionCount === 0) {
+        zeroCollisions.style.display = "block";
+    }
+    else {
+        let totalCollisions = document.querySelector("#totalCollisions span");
+        totalCollisionsDiv.style.display = "block";
+        totalCollisions.textContent = collisionCount;
+    }
+    if (highscore < localStorage.getItem("game2HighScore")) {
+        let showHighscore = document.querySelector("#showHighscore span");
+        showHighscoreDiv.style.display = "block";
+        showHighscore.textContent = localStorage.getItem("game2HighScore");
+    }
+    else {
+        let newHighscore = document.querySelector("#beatHighscore span");
+        showNewHighscore.style.display = "block";
+        newHighscore.textContent = highscore;
+    }
 }
