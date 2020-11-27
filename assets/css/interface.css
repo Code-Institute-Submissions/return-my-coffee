@@ -1,6 +1,6 @@
 /* ---------------------------------------------- Start game modal */
 
-.start-game-modal {
+.custom-modal {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -11,7 +11,7 @@
     background-color: #4e4e4eee;
 }
 
-.modal-content {
+.custom-modal-content {
     display: block;
     position: relative;
     margin: 35vh auto;
