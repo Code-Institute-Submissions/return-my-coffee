@@ -21,6 +21,6 @@ function findYourCoffee() {
         alert("Please pick a setting before you play")
     }
     else if (settingBtnClicked === true) {
-        window.location.replace("memory-game.html");
+        window.location.replace("load-game-one.html");
     }
 }
