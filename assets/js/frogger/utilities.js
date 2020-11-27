@@ -76,7 +76,7 @@ function addScore() {
 
 function checkHighScore() {
     highscore = score - collisionCount;
-    if (highscore > localStorage.getItem("game2HighScore")) {
+    if (highscore > 0 && highscore > localStorage.getItem("game2HighScore")) {
         localStorage.setItem("game2HighScore", highscore);
         highScoreBoard.textContent = highscore;
     }
