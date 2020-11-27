@@ -4,6 +4,6 @@ function findYourCoffee() {
         alert("Please pick a setting before you play")
     }
     else if (settingBtnClicked === true) {
-        window.location.replace("frogger.html");
+        window.location.replace("load-game-three.html");
     }
 }
