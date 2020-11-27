@@ -402,7 +402,6 @@ button,
     padding: 10px;
 }
 
-
 /* ------------------------- Menu modal content */
 
 .startup-content h2 {
@@ -490,6 +489,7 @@ button,
     text-align: center;
     font-size: 18px;
     padding: 0;
+    color: white;
 }
 
 .setting-confirmation span {
@@ -499,6 +499,7 @@ button,
     letter-spacing: 4px;
     text-transform: uppercase;
     padding: 5px;
+    color: white;
 }
 
 /* ------------------------- Help page */
@@ -538,9 +539,45 @@ button,
 
 /* ------------------------- Mobile return to homepage arrow */
 
+.back-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
 .fa-level-down-alt {
     transform: rotate(90deg);
     color: white;
+    color: black;
 }
 
 /* ------------------------- Menu modal media queries */
+
+@media (min-height: 768px) {
+    .narrative p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .narrative {
+        width: 95%;
+    }
+    .startup-content h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 540px) {
+    .startup-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .back-arrow,
+    .fa-level-down-alt {
+        font-size: 3rem;
+    }
+}
