@@ -11,7 +11,6 @@ let timeUp = false;
 let score = 0;
 
 let highscore = localStorage.getItem("game1HighScore") || 0;
-highScoreBoard.textContent = highscore;
 
 // Pick random hole
 function pickRandomHole() {
