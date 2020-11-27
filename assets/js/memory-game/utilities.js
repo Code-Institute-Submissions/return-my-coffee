@@ -2,7 +2,7 @@ playGame.addEventListener("click", startGame);
 
 // Unlock the board to start the game
 function startGame() {
-    let modal = document.querySelector(".start-game-modal");
+    let modal = document.querySelector(".custom-modal");
     modal.style.display = "none";
     lockBoard = false;
     startTimer();

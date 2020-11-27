@@ -3,7 +3,7 @@
 playGame.addEventListener("click", startGame);
 
 function startGame() {
-    let modal = document.querySelector(".start-game-modal");
+    let modal = document.querySelector(".custom-modal");
     modal.style.display = "none";
     // Reset game variables
     score= 0;
