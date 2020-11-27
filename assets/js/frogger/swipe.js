@@ -45,12 +45,10 @@ function moveTouch(e) {
         // Swipe left
         if (diffX > 0) {
         frogger.moveLeft();
-        console.log("swiped left");
         } 
         // Swipe right
         else {
         frogger.moveRight();
-        console.log("swiped right");
         }  
     } 
     // Swipe vertically
@@ -58,12 +56,10 @@ function moveTouch(e) {
         // Swipe up
         if (diffY > 0) {
         frogger.moveUp();
-        console.log("swiped up");
         } 
         // Swipe down
         else {
         frogger.moveDown();
-        console.log("swiped down");
         }  
     }
 
