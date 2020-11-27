@@ -254,6 +254,8 @@ body {
 
 /* ------------------------- Smaller tablet and mobile devices */
 
+
+
 @media (max-width: 650px) {
     body {
         background-image: none;
@@ -264,7 +266,6 @@ body {
         height: 600px;
         padding: -5px;
         margin-top: -100px;
-        overflow-y: scroll;
 
     }
     .memory-card {
@@ -283,13 +284,28 @@ body {
     }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 445px) and (min-height: 731px) {
+    .memory-game-board {
+        width: 400px;
+        margin-top: 0;
+    }
+    .game-container {
+        height: 85vh;
+    }
+}
+
+@media (max-width: 375px) and (min-height: 640px) {
     .memory-game-board {
         width: 350px;
         margin-top: 0;
     }
     .game-container {
-        height: 80vh;
+        height: 85vh;
+    }
+    .memory-card {
+        width: 80px;  
+        height: 105px;
+        margin: 1px auto;
     }
 }
 
@@ -306,9 +322,9 @@ body {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 280px) {
     .memory-game-board {
-        width: 200px;
+        width: 280px;
     }
     .memory-card {
         width: 65px;  
@@ -319,7 +335,7 @@ body {
     }
 }
 
-@media (max-width: 230px) {
+@media (max-width: 280px) {
     .time-left {
         width: 50%;
         font-size: 14px;
