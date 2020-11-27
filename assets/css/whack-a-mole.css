@@ -15,6 +15,10 @@ body {
     overflow: hidden;
 }
 
+input:focus {
+    outline: none !important;
+}
+
 /* ---------------------------------------------- Game Container */
 
 .container {
