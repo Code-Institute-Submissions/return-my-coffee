@@ -109,8 +109,11 @@ function updateModal() {
         totalScore.textContent = score;
         totalScoreDiv.style.display = "block";
     }
-    if (collisionCount === 0) {
+    if (collisionCount === 0 && score > 0) {
         zeroCollisions.style.display = "block";
+    }
+    else if (collisionCount === 0 && score === 0) {
+        zeroCollisions2.style.display = "block";
     }
     else {
         let totalCollisions = document.querySelector("#totalCollisions span");

@@ -10,6 +10,7 @@ const totalScoreDiv = document.querySelector("#totalScore");
 const zeroScore = document.querySelector("#zeroScore");
 const totalCollisionsDiv = document.querySelector("#totalCollisions");
 const zeroCollisions = document.querySelector("#noCollisions");
+const zeroCollisions2 = document.querySelector("#noCollisions2");
 const showNewHighscore = document.querySelector("#beatHighscore");
 const showHighscoreDiv = document.querySelector("#showHighscore");
 
