@@ -546,6 +546,8 @@ button,
     left: 0;
     right: 0;
     z-index: 5;
+    max-width: 64px;
+    max-height: 40px;
 }
 
 .fa-level-down-alt {
@@ -579,5 +581,47 @@ button,
     .back-arrow,
     .fa-level-down-alt {
         font-size: 3rem;
+    }
+}
+
+/* ---------------------------------------------- End Game */
+
+.end-game-gif img {
+    width: 450px;
+    height: 450px;
+}
+
+@media (min-height: 800px) {
+    .end-game-gif img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 800px)  {
+    .end-game-gif img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 540px) {
+    .end-game-gif img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    #endGameModal h2 {
+        position: relative;
+        top: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .end-game-gif img {
+        width: 200px;
+        height: 200px;
     }
 }
