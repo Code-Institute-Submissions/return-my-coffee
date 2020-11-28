@@ -353,4 +353,11 @@ body {
         width: 50%;
         font-size: 14px;
     }
+    .memory-game-board {
+        width: 250px;
+    }
+    .memory-card {
+        width: 55px;  
+        height: 75px;
+    }
 }
