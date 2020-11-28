@@ -391,7 +391,8 @@ footer {
     border-radius: 125px;
 }
 
-button, 
+button,
+.btn, 
 #startGameBtn {
     font-family: "Roboto Mono", monospace;
     border: 2px solid black;
