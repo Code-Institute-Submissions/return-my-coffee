@@ -308,6 +308,7 @@ body {
 @media (max-width: 385px) and (min-height: 500px) {
     .memory-game-board {
         width: 350px;
+        max-height: 500px;
         margin-top: 0;
     }
     .game-container {
@@ -323,7 +324,7 @@ body {
 @media (max-width: 350px) {
     .memory-game-board {
         width: 300px;
-        max-height: 500px;
+        max-height: 450px;
     }
     .memory-card {
         width: 65px;  
