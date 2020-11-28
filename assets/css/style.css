@@ -403,6 +403,11 @@ button,
     padding: 10px;
 }
 
+.btn:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
 /* ------------------------- Menu modal content */
 
 .custom-modal-content h2 {
