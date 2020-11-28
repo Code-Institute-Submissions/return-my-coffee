@@ -275,6 +275,12 @@ body {
     }
 }
 
+@media (max-width: 600px) and (min-height: 960px) {
+    .memory-game-board {
+        margin-top: 10px;
+    }
+}   
+
 @media (max-width: 550px) {
     .memory-game-board {
         width: 450px;
@@ -284,7 +290,7 @@ body {
     }
 }
 
-@media (max-width: 445px) and (min-height: 731px) {
+@media (max-width: 445px) and (min-height: 650px) {
     .memory-game-board {
         width: 400px;
         margin-top: 0;
@@ -292,9 +298,14 @@ body {
     .game-container {
         height: 85vh;
     }
+    .memory-card {
+        width: 90px;  
+        height: 115px;
+        margin: 2px auto;
+    }
 }
 
-@media (max-width: 375px) and (min-height: 640px) {
+@media (max-width: 385px) and (min-height: 500px) {
     .memory-game-board {
         width: 350px;
         margin-top: 0;
@@ -312,6 +323,7 @@ body {
 @media (max-width: 350px) {
     .memory-game-board {
         width: 300px;
+        max-height: 500px;
     }
     .memory-card {
         width: 65px;  
