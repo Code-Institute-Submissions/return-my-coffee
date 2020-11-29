@@ -11,90 +11,84 @@
 </head>
 <body>
     <!-- Start game modal button -->
-    <section>
-        <div class="custom-modal">
-            <div class="custom-modal-content">
-                <div class="button-shade"></div>
-                <button id="playGame" class="pulse-button">Start Game</button>
-            </div>
+    <div class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="button-shade"></div>
+            <button id="playGame" class="pulse-button">Start Game</button>
         </div>
-    </section>
+    </div>
     <!-- / Start game modal button -->
 
     <!-- End game modals -->
-    <section>
-        <!-- Win game modal -->
-        <div class="end-game-modal" id="winModal">
-            <div class="container end-game-content">
-                <div class="row">
-                    <div class="col">
-                        <h2>You Win!</h2>
-                    </div>
+    <!-- Win game modal -->
+    <div class="end-game-modal" id="winModal">
+        <div class="container end-game-content">
+            <div class="row">
+                <div class="col">
+                    <h2>You Win!</h2>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <!-- Next game --> 
-                        <button id="continueBtn">Continue</button>
-                    </div>
-                </div>   
             </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Next game --> 
+                    <button id="continueBtn">Continue</button>
+                </div>
+            </div>   
         </div>
-        <!-- / Win game modal -->
-        <!-- Lose game modal -->
-        <div class="end-game-modal" id="loseModal">
-            <div class="container end-game-content">
-                <div class="row">
-                    <div class="col">
-                        <h2>Better luck next time!</h2>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col">
-                        <!-- Replay game --> 
-                        <button id="replayBtn">Try Again</button>
-                    </div>
-                    <div class="col">
-                        <!-- Exit game --> 
-                        <button id="quitBtn">Quit</button>
-                    </div>
-                </div>   
-            </div>
+    </div>
+    <!-- / Win game modal -->
+    <!-- Lose game modal -->
+    <div class="end-game-modal" id="loseModal">
+        <div class="container end-game-content">
+            <div class="row">
+                <div class="col">
+                    <h2>Better luck next time!</h2>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col">
+                    <!-- Replay game --> 
+                    <button id="replayBtn">Try Again</button>
+                </div>
+                <div class="col">
+                    <!-- Exit game --> 
+                    <button id="quitBtn">Quit</button>
+                </div>
+            </div>   
         </div>
-        <!-- / Lose game modal -->
-    </section>
+    </div>
+    <!-- / Lose game modal -->
     <!-- / End game modals -->
     
     <!-- User interface -->
-    <section>
-        <!-- Countdown timer -->
-        <div class="game-hud">
-            <div class="countdown">
-                <!-- Animated clock -->
-                <div class="clock">
-                    <div class="top"></div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                    <div class="left"></div>
-                    <div class="center"></div>
-                    <div class="hour"></div>
-                    <div class="minute"></div>
-                    <div class="second"></div>
-                </div>
-                <!-- / Animated clock -->
+    <!-- Countdown timer -->
+    <div class="game-hud">
+        <div class="countdown">
+            <!-- Animated clock -->
+            <div class="clock">
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
             </div>
-            <!-- Progress bar timer -->
-            <div id="progressBar">
-                <div class="inner-bar"></div>
-            </div>
-            <!-- Numbered timer -->
-            <div class="time-left">Time Left: <span></span></div>
+            <!-- / Animated clock -->
         </div>
-        <!-- / Countdown timer -->
-    </section>
+        <!-- Progress bar timer -->
+        <div id="progressBar">
+            <div class="inner-bar"></div>
+        </div>
+        <!-- Numbered timer -->
+        <div class="time-left">Time Left: <span></span></div>
+    </div>
+    <!-- / Countdown timer -->
     <!-- / User interface -->
 
     <!-- Game --> 
-    <section class="game-container">
+    <div class="game-container">
         <div class="game-desk">
             <!-- Game desk -->
             <img src="assets/img/memory-game/coffee.gif" id="deskCoffee" alt="animated coffee art from a bird's eye view perspective">
@@ -168,7 +162,7 @@
                 <!-- / Memory cards -->
             </div>
         </div>
-    </section>
+    </div>
     <!-- / Game -->
 
     <script src="assets/js/menu.js"></script>
