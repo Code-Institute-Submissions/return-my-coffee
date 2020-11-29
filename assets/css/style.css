@@ -43,7 +43,7 @@ The following code is based upon this source:
 
 .wrapper {
     top: 0;
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden;
     perspective: 10px;
 }
@@ -166,15 +166,6 @@ The following code is based upon this source:
     left: 0px;
     opacity: 0.15;
     margin: auto;
-}
-
-/* ---------------------------------------------- Footer */
-
-footer {
-    background-color: #dbc7b99d;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    text-align: center;
 }
 
 /* ---------------------------------------------- Homepage media queries */
