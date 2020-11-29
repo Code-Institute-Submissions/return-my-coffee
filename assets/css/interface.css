@@ -275,6 +275,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -293,7 +294,7 @@
     letter-spacing: 3px;
 }
 
-.end-game-content button {
+.end-game-content a {
     font-family: "Roboto Mono", monospace;
     display: block;
     width: 150px;
@@ -302,14 +303,11 @@
     border: 2px solid black;
     border-radius: 2px;
     background-color: white;
+    text-align: center;
     font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-.end-game-content a {
-    text-decoration: none;
 }
 
 .game-results {
