@@ -264,8 +264,8 @@ body {
     .memory-game-board {
         width: 450px;
         height: 600px;
-        padding: -5px;
-        margin-top: -100px;
+        padding: 0;
+        margin-top: 0;
 
     }
     .memory-card {
@@ -285,7 +285,7 @@ body {
     .memory-game-board {
         width: 450px;
         height: 600px;
-        padding: -5px;
+        padding: 0;
         margin-top: 10px;
     }
 }
@@ -296,7 +296,7 @@ body {
         margin-top: 0;
     }
     .game-container {
-        height: 85vh;
+        height: 95vh;
     }
     .memory-card {
         width: 90px;  
@@ -312,7 +312,7 @@ body {
         margin-top: 0;
     }
     .game-container {
-        height: 85vh;
+        height: 95vh;
     }
     .memory-card {
         width: 80px;  
@@ -324,7 +324,7 @@ body {
 @media (max-width: 350px) {
     .memory-game-board {
         width: 300px;
-        max-height: 450px;
+        max-height: 400px;
     }
     .memory-card {
         width: 65px;  
