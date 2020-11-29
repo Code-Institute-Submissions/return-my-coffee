@@ -113,7 +113,7 @@ The following code is based upon this source:
 
 #playNowHeroBtn {
     font-size: 22px;
-    font-family: "Inconsolata" monospace;
+    font-family: "Inconsolata", monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
