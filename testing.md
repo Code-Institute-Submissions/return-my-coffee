@@ -1,5 +1,40 @@
 # Testing
 
+
+
+## Automated Testing
+
+[W3C Markup Validation Service](https://validator.w3.org/) and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate the project's HTML and CSS files. 
+
+### W3C Markup Validation Service
+
+![Validator screenshot](assets/img/main/html-markup.png)
+
+- The validator found errors in my HTML code relating to the nesting of button and anchor tags.
+
+    - Where relevant, I removed button tags from the HTML and added the `btn class` to anchor elements so that no visual aesethic was changed, meanining the anchor tags could still look like buttons.d
+
+- The validator also flagged a warning relating to section tags in some of the HTML files, stating how every section should contain a header element.
+
+    - I removed and/or replaced the section tags with div tags, where appropriate. 
+
+![Validator screenshot](assets/img/main/html-validation-screenshot.png)
+
+- No other errors were found.
+
+
+### W3C CSS Validation Service
+
+- Found no errors in my code.
+
+![Validator screenshot](assets/img/main/css-validation.png)
+
+- However, it found some errors with the Bootstrap CDN, but this is something that I cannot rectify.
+
+-----
+
+
+
 ## Memory Game
 
 ### JavaScript Creation and Testing Process
