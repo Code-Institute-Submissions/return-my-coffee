@@ -8,6 +8,15 @@ const timeLeft = document.querySelector(".time-left span");
 const progressBar = document.querySelector(".inner-bar");
 const playGame = document.querySelector("#playGame");
 
+let countdown = localStorage.getItem("countdownSpeed") || 20;
+let animateSpeed = localStorage.getItem("animateSpeed") || 20;
+let lastHole;
+let timeUp = false;
+let score = 0;
+let highscore = localStorage.getItem("game1HighScore") || 0;
+highScoreBoard.textContent = highscore;
+
+
 // Open Game from game menu
 function findYourCoffee() {
     if (settingBtnClicked === false) {

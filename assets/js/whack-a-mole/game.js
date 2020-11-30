@@ -3,15 +3,6 @@ The following code for this game was based upon a video guide from the following
 "https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=2"
 */
 
-let countdown = localStorage.getItem("countdownSpeed") || 20;
-let animateSpeed = localStorage.getItem("animateSpeed") || 20;
-
-let lastHole;
-let timeUp = false;
-let score = 0;
-
-let highscore = localStorage.getItem("game1HighScore") || 0;
-
 // Pick random hole
 function pickRandomHole() {
     const randomHole = Math.floor(Math.random() * holes.length);
