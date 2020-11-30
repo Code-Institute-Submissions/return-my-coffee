@@ -151,10 +151,21 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
     ![Hompage Screenshot](assets/img/main/homepage2.png)
 
-    - Users can scroll down to read more about the application. The text immerses users into a game narrative and again emphaises the application's purpose with the 'Play Now' button. Users can also read about the application's creation by clicking the read more button.
+    - Users can scroll down to read more about the application. The text immerses users into a game narrative and again emphaises the application's purpose with the 'Play Now' button. Users can read about the application's creation by clicking the 'Read More' button.
 
 
 2. As a first time visitor I want to play an interactive browser based game that is easy to use, fun and intuitive.
+
+    | Memory Game | Whack-A-Mole | Frogger |
+    | ----------- | ------------ | ------- |
+    | ![Memory Game Screenshot](assets/img/main/memory-game-desktop.png) | ![Whack-A-Mole Screenshot](assets/img/main/whack-a-mole-desktop.png) | ![Frogger Screenshot](assets/img/main/frogger-desktop.png) |
+    | ![Memory Game Screenshot - mobile](assets/img/main/memory-game-mobile.png) | ![Whack-A-Mole Screenshot -mobile](assets/img/main/whack-a-mole-mobile.png) | ![Frogger Screenshot - mobile](assets/img/main/frogger-mobile.png) |
+
+    - Each game has a clear and visually pleasing user-interface that does not hinder the user when playing the game. 
+    
+    - Each game is relatively simple to play and the games themselvers are widely popular, making it very likely that the user would already know the game rules. 
+
+    - Each game stresses visual importance. Text is kept to a minimum, while game art, pictures and vibrant colours are used to make the game more visually stimulating and encourage a positive user response.
 
 
 3. I want the game to have a challenge in terms of a timelimit or a score I need to beat.
