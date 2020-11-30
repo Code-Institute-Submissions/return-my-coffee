@@ -45,7 +45,7 @@ canvas5.height = 600;
 
 const scoreBoard = document.querySelector(".score span");
 const collisionBoard = document.querySelector(".collisions span");
-const highScoreBoard = document.querySelector(".highscore span")
+const highScoreBoard = document.querySelector(".highscore span");
 
 let countdown = localStorage.getItem("countdownSpeed") || 20;
 let animateSpeed = localStorage.getItem("animateSpeed") || 20;

@@ -36,11 +36,10 @@ function handleDust() {
     if (dustArray.length > maxDust) {
         // If we have more than 300 dust particles remove 30 - for performance
         for (let i = 0; i < 30; i++) {
-            dustArray.pop()
+            dustArray.pop();
         }
     }
-    if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) 
-    && frogger.y > 250 && dustArray.length < maxDust + 10) {
+    if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) && frogger.y > 250 && dustArray.length < maxDust + 10) {
         for (let i = 0; i < 10; i++) {
             dustArray.unshift(new Dust(frogger.x, frogger.y));
         }

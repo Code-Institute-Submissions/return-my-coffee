@@ -27,7 +27,7 @@ function startGame() {
     }, 1000);
     progressBar.animate({
         width: "0%"
-    }, animateSpeed)
+    }, animateSpeed);
 }
 
 
@@ -57,13 +57,13 @@ function logKeys() {
         if ((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) {
             frogger.jump();
         }
-    })
+    });
     
     window.addEventListener("keyup", function(e) {
         delete keys[e.keyCode];
         frogger.moving = false;
         frogger.frameX = 0;
-    })
+    });
 }
 
 function addScore() {
@@ -84,7 +84,7 @@ function checkHighScore() {
 
 function collisionDetection(first, second) {
     return !(first.x > second.x + second.width || first.x + first.width < second.x ||
-            first.y > second.y + second.height || first.y + first.height < second.y)
+            first.y > second.y + second.height || first.y + first.height < second.y);
 }
 
 function newFrog() {

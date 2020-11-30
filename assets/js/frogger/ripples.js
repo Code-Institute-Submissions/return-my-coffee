@@ -33,11 +33,10 @@ function handleRipples() {
     }
     if (ripplesArray.length > 20) {
         for (let i = 0; i < 5; i++) {
-            ripplesArray.pop()
+            ripplesArray.pop();
         }
     }
-    if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83]))
-    && frogger.y < 250 && frogger.y > 50) {
+    if (((keys[37] || keys[38] || keys[39] || keys[40]) || (keys[65] || keys[87] || keys[68] || keys[83])) && frogger.y < 250 && frogger.y > 50) {
         for (let i = 0; i < 20; i++) {
             ripplesArray.unshift(new Ripple(frogger.x, frogger.y));
         }
