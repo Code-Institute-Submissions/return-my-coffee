@@ -1,10 +1,11 @@
 # Testing
 
 
-
 ## Automated Testing
 
-[W3C Markup Validation Service](https://validator.w3.org/) and [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) were used to validate the project's HTML and CSS files. 
+
+[W3C Markup Validation Service](https://validator.w3.org/), [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) and [JShint](https://jshint.com/) were used to validate the project's HTML, CSS and JS files.
+
 
 ### W3C Markup Validation Service
 
@@ -55,7 +56,7 @@ After deeming these warning undetrimental to the overall functionality of my pro
 
 -----
 
-#### Memory Game JS Files
+#### Memory Game JShint
 
 When running `memory-cards.js` for **memory-game** in JShint, it gave the following warnings:
 
@@ -103,6 +104,24 @@ function resetBoard() {
     ```
 
 -----
+
+### Page Performance 
+
+I used [UpTrends](https://www.uptrends.com/tools/website-speed-test) and Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) to check the speed of my website. Here are my results when using the service:
+
+#### Test 1
+
+| Desktop | Mobile |
+| ------- | ------ |
+| ![UpTrends test 1 - desktop](assets/img/main/uptrends-speed-test.png) | ![Uptrends test 1 - mobile](assets/img/main/uptrends-speed-mobile.png)
+
+
+Although the test for desktop devices gave a good score, the mobile results could have been better. However, as this is a game-orientated application, most optimised for desktop, I did not see this matter as a raise for concern. No further action was taken.
+
+
+-----
+
+
 
 
 ## Memory Game
