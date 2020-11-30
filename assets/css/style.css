@@ -43,7 +43,7 @@ The following code is based upon this source:
 
 .wrapper {
     top: 0;
-    height: 90vh;
+    height: 100vh;
     overflow-x: hidden;
     perspective: 10px;
 }
@@ -127,7 +127,8 @@ The following code is based upon this source:
     background: none;
 }
 
-.jumbotron h2 {
+.jumbotron h2,
+.jumbotron h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #707070;
@@ -145,6 +146,10 @@ The following code is based upon this source:
     border: 1px solid #707070;
     width: 90%;
     margin: auto;
+}
+
+label {
+    color: black;
 }
 
 /* ---------------------------------------------- Jumbotron background image */
