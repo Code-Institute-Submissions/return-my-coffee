@@ -534,6 +534,12 @@ button,
     padding: 0;
 }
 
+#froggerHelp .swipe-img {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+}
+
 /* ------------------------- Mobile return to homepage arrow */
 
 .back-arrow {
