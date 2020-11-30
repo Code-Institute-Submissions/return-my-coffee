@@ -18,6 +18,8 @@
 
     - [Returning Visitor Goals](#returning-visitor-goals)
 
+- [Manual Testing](#manual-testing)
+
 -----
 
 
@@ -239,7 +241,41 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
 -----
 
+## Manual Testing
 
+## Homepage 
+
+### Navigation Bar - Desktop
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Navigate to `About` | Click the `About` nav link | The site will navigate to the `About` section | Navigates to `About` section | Pass |
+|  2  | Navigate to `Contact` | Click the `Contact` nav link | The site will navigate to the `Contact` section | Navigates to `Contact` section | Pass |
+|  3  | Navigate to the top of the homepage | Click the `navbar brand` | The site will navigate back up to the top of the homepage or stay where it is if already there | When at another section, the site navigates back up to the top of the homepage when the navbar brand is clicked. If already at the top of the page, it stays where it is | Pass |
+|  4  | Start game | Click the `Play Now` button | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
+
+
+### Navigation Bar - Mobile and Tablet
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Navbar links collapse on smaller devices | On `Chrome DevTools`, toggle device toolbar and change the viewport to a tablet or mobile device with a max width of 990px | Nav links should disappear and a `hamburger icon` should appear to the right. When clicked, it should open a `dropdown menu` with the nav links inside | The navbar collapses at 990px and a `hamburger icon` displays to the right. It displays the nav links via a `dropdown menu` when clicked | Pass |
+|  2  | Navigate to `About` via the `dropdown menu` | Click the `About` nav link in the `dropdown menu` | The site will navigate to the `About` section | Navigates to `About` section | Pass |
+|  3  | Navigate to `Contact` via the `dropdown menu` | Click the `Contact` nav link in the `dropdown menu` | The site will navigate to the `Contact` section | Navigates to `Contact` section | Pass |
+|  4  | Navigate to the top of the homepage | Click the `navbar brand` | The site will navigate back up to the top of the homepage or stay where it is if already there | When at another section, the site navigates back up to the top of the homepage when the navbar brand is clicked. If already at the top of the page, it stays where it is | Pass |
+|  5  | Start game | Click the `Play Now` button via the `dropdown menu` | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
+
+
+### Homepage and About Section
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Start game when at the top of the homepage | Click the `Play Now` button when at the top of the homepage | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
+|  2  | Start game at `About` section | Click the `Play Now` when at `About` section | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
+
+
+
+-----
 
 ## Memory Game
 
