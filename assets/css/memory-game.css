@@ -199,7 +199,11 @@ body {
 
 /* ------------------------- Laptop and tablet devices */
 
-@media (max-width: 1315px) {
+@media (max-width: 1440px) {
+    .game-hud {
+        margin: -2vh auto;
+        z-index: 50;
+    }  
     .game-desk {
         width: 65rem;
         height: 45rem;
@@ -248,7 +252,7 @@ body {
         display: none;
     } 
     .game-hud {
-        z-index: 50;
+        margin: 0 auto;
     }
 }
 
