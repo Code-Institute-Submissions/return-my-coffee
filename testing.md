@@ -23,6 +23,8 @@
 - No other errors were found.
 
 
+-----
+
 ### W3C CSS Validation Service
 
 - Found no errors in my code.
@@ -32,6 +34,7 @@
 - However, it found some errors with the Bootstrap CDN, but this is something that I cannot rectify.
 
 
+-----
 
 ### JSHint
 
@@ -44,6 +47,13 @@ JShint gave the following warnings in relation to the syntax of my code:
 - `'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').`
 
 After deeming these warning undetrimental to the overall functionality of my project, I decided to ignore these warnings. 
+
+
+- All typos in the code that were found by JShint were corrected.
+
+- No major errors were found.
+
+-----
 
 #### Memory Game JS Files
 
@@ -79,9 +89,6 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 ```
-
------
-
 - Fix:
 
     - To fix this warning I changed the code to the following:
@@ -94,6 +101,8 @@ function resetBoard() {
         secondCard = null;
     }
     ```
+
+-----
 
 
 ## Memory Game
