@@ -1,5 +1,20 @@
 # Testing
 
+## Contents
+
+- [Automated Testing](#automated-testing)
+
+    - [W3C Validation Service](#w3c-markup-validation-service)
+
+    - [W3C CSS Validation Service](#w3c-css-validation-service)
+
+    - [JSHint](#jshint)
+
+    - [Page Speed / Performance](#page-performance)
+
+
+-----
+
 
 ## Automated Testing
 
@@ -54,7 +69,6 @@ After deeming these warning undetrimental to the overall functionality of my pro
 
 - No major errors were found.
 
------
 
 #### Memory Game JShint
 
@@ -107,9 +121,7 @@ function resetBoard() {
 
 ### Page Performance 
 
-I used [UpTrends](https://www.uptrends.com/tools/website-speed-test) and Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) to check the speed of my website. Here are my results when using the service:
-
-#### Test 1
+I used [UpTrends](https://www.uptrends.com/tools/website-speed-test) to check the speed of my website. Here are my results when using the service:
 
 | Desktop | Mobile |
 | ------- | ------ |
