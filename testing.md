@@ -12,6 +12,11 @@
 
     - [Page Speed / Performance](#page-performance)
 
+- [Testing User Stories](#testing-user-stories)
+
+    - [First Time Visitor Goals](#first-time-visitor-goals)
+
+    - [Returning Visitor Goals](#returning-visitor-goals)
 
 -----
 
@@ -133,6 +138,44 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
 -----
 
+
+## Testing User Stories
+
+### First Time Visitor Goals 
+
+1. As a first time visitor I want to immediately understand the purpose of the application.
+
+    ![Hompage Screenshot](assets/img/main/homepage.png)
+
+    - When first opening the site users are presented with a clean user-interface consisting of a navbar, hero-image, and a 'Play Now' button on top of the hero-image and in the navbar. The 'Play Now' button is distinct and repeated twice, which emphaises the purpose of the appliation to the user - with 'play' indicating it is a game.
+
+    ![Hompage Screenshot](assets/img/main/homepage2.png)
+
+    - Users can scroll down to read more about the application. The text immerses users into a game narrative and again emphaises the application's purpose with the 'Play Now' button. Users can also read about the application's creation by clicking the read more button.
+
+
+2. As a first time visitor I want to play an interactive browser based game that is easy to use, fun and intuitive.
+
+
+3. I want the game to have a challenge in terms of a timelimit or a score I need to beat.
+
+4. I want to be able to change the difficulty of the game.
+
+5. I want to be able to play the game on any device.
+
+6. I want the game instructions to be clear.
+
+7. I want the game's user interface to be pleasant.
+
+
+### Returning Vistor Goals
+
+1. As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score for the game.
+
+2. As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
+
+
+-----
 
 
 

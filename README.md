@@ -64,6 +64,8 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 
 ### First Time Visitor Goals
 
+- As a first time visitor I want to immediately understand the purpose of the application.
+
 - As a first time visitor I want to play an interactive browser based game that is easy to use, fun and intuitive.
 
 - I want the game to have a challenge in terms of a timelimit or a score I need to beat.
