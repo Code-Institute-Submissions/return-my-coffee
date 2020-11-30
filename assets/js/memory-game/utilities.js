@@ -17,7 +17,7 @@ function startTimer() {
         if (countdown < 0) {
             countdown = 0;
             clearInterval(startCountdown);
-            countdownBoard.textContent = "Time's Up!"
+            countdownBoard.textContent = "Time's Up!";
             endGame();
         }
     }, 1000);
@@ -26,7 +26,7 @@ function startTimer() {
     /* Based upon the following source: "https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar" */
     progressBar.animate({
         width: "0%"
-    }, animateSpeed)
+    }, animateSpeed);
 }
 
 // End game 
@@ -47,6 +47,6 @@ function endGame() {
         });
         quitBtn.addEventListener("click", function(){
             window.location.replace("index.html");
-        })
+        });
     }
 }

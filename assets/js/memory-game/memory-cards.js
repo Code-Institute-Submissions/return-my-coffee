@@ -33,7 +33,7 @@ function flipCard() {
         secondCard = this;
         checkForMatch();
     } 
-};
+}
 
 // Check for match
 function checkForMatch() {
@@ -45,7 +45,7 @@ function checkForMatch() {
         totalMatches ++;
     }
     checkForWin();
-};
+}
 
 // Check for win 
 function checkForWin() {
@@ -53,7 +53,7 @@ function checkForWin() {
         if (totalMatches === 8) {
             endGame();
         }
-    }, 1000)    // setInterval gives time to allow the final card to be flipped before the win condition is called
+    }, 1000);    // setInterval gives time to allow the final card to be flipped before the win condition is called
 }
 
 // Prevent matched cards from flipping back over
@@ -61,7 +61,7 @@ function disableCards() {
     firstCard.removeEventListener("click", flipCard, false);
     secondCard.removeEventListener("click", flipCard, false);
     resetBoard();
-};
+}
 
 // Unflip cards that do not match
 function unflipCards() {
@@ -96,6 +96,6 @@ function resetBoard() {
             }
             cardDeck.forEach(function(el) {
                 cardBoard.appendChild(el);
-            })
+            });
         }
 })();
