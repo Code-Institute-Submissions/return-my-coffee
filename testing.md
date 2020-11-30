@@ -168,22 +168,73 @@ Although the test for desktop devices gave a good score, the mobile results coul
     - Each game stresses visual importance. Text is kept to a minimum, while game art, pictures and vibrant colours are used to make the game more visually stimulating and encourage a positive user response.
 
 
-3. I want the game to have a challenge in terms of a timelimit or a score I need to beat.
+3. I want the game to have a challenge in terms of a time limit or a score I need to beat.
+
+    - There is a time limit for every game, which is indicated at the top of the screen via the game hud.
+
+    | Desktop | Mobile |
+    | ------- | ------ |
+    | ![Timer screenshot - desktop](assets/img/main/timer-desktop.png) | ![Timer screenshot - mobile](assets/img/main/timer-mobile.png)
+
+    - The timer includes a visual progress bar timer and a numbered timer to make the time limit more clear.
+
 
 4. I want to be able to change the difficulty of the game.
 
+    ![Difficulty settings screen capture](assets/img/main/difficulty-settings.gif)
+
+    - Before each game users can chose a **difficulty settings** for the game. 
+
+    - Users can see what each **difficulty settings** is by clicking the **Help** button in the modal.
+
+        ![Help menu difficulty settings screenshot](assets/img/main/help-difficulty.png)
+
+
 5. I want to be able to play the game on any device.
+
+| Homepage | Modal Menu |
+| -------- | ---------- |
+| ![Responsively screenshot 1](assets/img/main/responsively-homepage.png) | ![Responsively screenshot 1](assets/img/main/responsively-modal.png) | ![Responsively screenshot 1](assets/img/main/responsively-homepage.png) |
+
+| Memory Game | Whack-A-Mole | Frogger |
+| ----------- | ------------ | ------- |
+| ![Responsively screenshot 1](assets/img/main/responsively-game1.png) | ![Responsively screenshot 1](assets/img/main/responsively-game2.png) | ![Responsively screenshot 1](assets/img/main/responsively-game3.png) |
+
+- The project is fully responsive and can be played on any device.
+
+- All games, including Frogger, have touchscreen functionality, allowing the game to be played on touchscreen mobile devices as well as desktops.
+
 
 6. I want the game instructions to be clear.
 
+- Each game has a specifically designed help menu (which can be accessed via the game menu modal) where users can find instructions for each game.
+
+| Memory Game | Whack-A-Mole | Frogger |
+| ----------- | ------------ | ------- |
+| ![Help menu screenshot](assets/img/main/help-memory-game.png) | ![Help menu screenshot](assets/img/main/help-whack-mole.png) | ![Help menu screenshot](assets/img/main/help-frogger.png) |
+
+
 7. I want the game's user interface to be pleasant.
+
+    - The user interface for each game is clean, vibrant, interesting and responsive, with a UX design that was purposefully created to incite a positive emotional response from the user.
 
 
 ### Returning Vistor Goals
 
 1. As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score for the game.
 
+    - Whack-A-Mole and Frogger both have a local storage system where a highscore is stored. 
+
+    | Whack-A-Mole | Frogger |
+    | ------------ | ------- |
+    | ![Whack-A-Mole highscore screenshot](assets/img/main/whack-mole-highscore.png) | ![Frogger highscore screenshot](assets/img/main/frogger-highscore.png) |
+
+    - Memory game does not have a highscore system but one could be added in future developments.
+
+
 2. As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
+
+    - Users can find a bigger challenge by picking a harder difficulty setting in the game settings menu, which is presented to them before each game. The harder the difficulty, the less amount of time users have to complete the game.
 
 
 -----
