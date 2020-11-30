@@ -31,8 +31,69 @@
 
 - However, it found some errors with the Bootstrap CDN, but this is something that I cannot rectify.
 
+
+
+### JSHint
+
+JShint gave the following warnings in relation to the syntax of my code:
+
+- `'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).`
+
+- `'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).`
+
+- `'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').`
+
+After deeming these warning undetrimental to the overall functionality of my project, I decided to ignore these warnings. 
+
+#### Memory Game JS Files
+
+When running `memory-cards.js` for **memory-game** in JShint, it gave the following warnings:
+
+![Screenshot for JShint result for memory-cards.js file](assets/img/main/jshint-memory-cards-warning.png)
+
+- `Expected an assignment or function call and instead saw an expression.` referred to this line of code:
+
+```
+isMatch ? disableCards() : unflipCards();
+```
+
+- Fix:
+
+    - To fix this warning I changed the code from a ternary operator to a regular if statement:
+
+    ```
+    if (!isMatch) {
+        unflipCards();
+    }
+    else {
+        disableCards();
+        totalMatches ++;
+    }
+    ```
+
+- `'destructuring assignment' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).` referred to the following:
+
+```
+function resetBoard() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
+```
+
 -----
 
+- Fix:
+
+    - To fix this warning I changed the code to the following:
+
+    ```
+    function resetBoard() {
+        hasFlippedCard = false;
+        lockBoard =false;
+        firstCard = null;
+        secondCard = null;
+    }
+    ```
 
 
 ## Memory Game
