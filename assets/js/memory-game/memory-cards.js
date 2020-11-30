@@ -38,12 +38,14 @@ function flipCard() {
 // Check for match
 function checkForMatch() {
     let isMatch = firstCard.dataset.cardname === secondCard.dataset.cardname;
-    // Ternary operator
-    isMatch ? disableCards() : unflipCards();
-    // Increment card matches 
-    if (isMatch) {
+    if (!isMatch) {
+        unflipCards();
+    }
+    else {
+        disableCards();
         totalMatches ++;
     }
+    // Increment card matches 
     checkForWin();
 }
 
@@ -76,8 +78,10 @@ function unflipCards() {
 
 // Reset board upon a failed match to allow cards to be clicked again
 function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
+    hasFlippedCard = false;
+    lockBoard =false;
+    firstCard = null;
+    secondCard = null;
 }
 
 // Shuffle Cards
