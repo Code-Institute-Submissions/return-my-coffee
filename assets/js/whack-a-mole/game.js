@@ -46,7 +46,7 @@ function molePopUpEasy() {
         if (!timeUp) {
             molePopUpEasy();
         }
-    }, time)
+    }, time);
 }
 
 function molePopUpMedium() {
@@ -58,7 +58,7 @@ function molePopUpMedium() {
         if (!timeUp) {
             molePopUpMedium();
         }
-    }, time)
+    }, time);
 }
 
 function molePopUpHard() {
@@ -70,5 +70,5 @@ function molePopUpHard() {
         if (!timeUp) {
             molePopUpHard();
         }
-    }, time)
+    }, time);
 }

@@ -13,7 +13,7 @@ function startGame() {
     // Stop mole pop up when timer is finished
     setTimeout(() => {
         timeUp = true;
-    }, countdown * 1000)
+    }, countdown * 1000);
 
     let startCountdown = setInterval(() => {
         countdown -= 1;
@@ -29,7 +29,7 @@ function startGame() {
     
     progressBar.animate({
         width: "0%"
-    }, animateSpeed)
+    }, animateSpeed);
 }
 
 // Count player score
@@ -60,7 +60,7 @@ function whackMole(e) {
     setTimeout(() => {
         this.style.backgroundImage = "url('assets/img/whack-a-mole/mole.png')";
         this.style.pointerEvents = "all"; 
-    }, timeoutSpeed)
+    }, timeoutSpeed);
 
     scoreBoard.textContent = score;
 }
@@ -93,6 +93,6 @@ function endGame() {
         });
         quitBtn.addEventListener("click", function(){
             window.location.replace("index.html");
-        })
+        });
     }
 }
