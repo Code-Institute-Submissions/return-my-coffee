@@ -87,9 +87,9 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 
 -----
 
-### Design 
+## Design 
 
-#### Typography 
+### Typography 
 
 In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding](), [Inconsolata](), [Roboto]() and [Roboto Mono]() from the [Google Fonts]() library. Each page uses the following fonts: 
 
@@ -110,6 +110,26 @@ In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding
 
 
 -----
+
+### Wireframes 
+
+I prepared all my wireframes in [Adobe XD](https://www.adobe.com/uk/products/xd.html). Adobe XD allowed me to experiment with the appliation's design before creating any of the code and helped with the construction of the surface plane. After writing the code, however, some design choices were altered, and I even went back to Adobe XD to recreate the design for the homepage. All of these design stages can be accessed below.
+
+Each page has a wireframe for both desktop and mobile devices. I did not include a tablet wireframe in the design phase because there is no stark differences between tablet and desktop (for larger tablet devices) or tablet and mobile for smaller tablet devices. Additionally, many laptops also have touchscreen functionality, making the similarity even greater.
+
+The only difference between tablet and desktop is the collapsible navbar with the hamburger icon. This alteration is represented in the mobile wireframe.
+
+- [Homepage - old](assets/wireframes/homepage-old.png) 
+- [Homepage - new](assets/wireframes/homepage1.png) and [this](assets/wireframes/homepage2.png)
+- [Game setting menu](assets/wireframes/game-settings.png)
+- [Memory game](assets/wireframes/memory-game.png)
+- [Whack-A-Mole](assets/wireframes/whack-a-mole.png)
+- [Frogger](assets/wireframes/frogger.png)
+- [End game modal](assets/wireframes/end-modal.png)
+
+
+-----
+
 
 ## Technologies Used
 
