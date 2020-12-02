@@ -275,7 +275,74 @@ Although the test for desktop devices gave a good score, the mobile results coul
 | --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
 |  1  | Start game when at the top of the homepage | Click the `Play Now` button when at the top of the homepage | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
 |  2  | Start game at `About` section | Click the `Play Now` when at `About` section | The application will navigate to first game menu modal page so that users can start the game | Navigates to the first game menu modal page where users can start the game | Pass |
+|  3  | Show hidden text | Click `Read More` button | It should reveal hidden text content when the button is clicked. When clicked again, the button should then hide the content | Shows hidden text content when the `Read More` button is clicked. When clicked again, the button hides the content | Pass |
 
+
+### Contact Form
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Test `contact form` `input field` | Click a `text field` and input data by typing on the keyboard | Users will be able to `input data` into the `input field` of the `contact form` | Can input data into the `input field` | Pass | Tested for every `input field` |
+|  2  | Test `required boolean attribute` functionality | Click the `send` button without inputting data | A notification will show by the first empty `required text field` telling the user to `input data`. The `send` function will be blocked until all `required text fields` are filled out | Displays a notification by the first empty `required text field` (in this case, `first name`) and tells the user to `input data`. The `send` button will not function whilst the `required text fields` are empty | Pass |
+|  3  | Test `send button` with all data filled in | Fill in all data and click the `send` button | The form will send | Sends the form | Pass |
+|  4  | Test `send button` without `Last Name` filled in | Fill in all data **but last name** and click the `send` button | The form will send | Sends the form | Pass |
+|  5  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | When `send` is clicked, it will display a notification telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
+
+
+### Game settings menu
+
+- The following tests were made on all three game settings menu, which includes:
+    - `game-one-menu.html` (memory card game)
+    - `game-two-menu.html` (whack-a-mole)
+    - `game-three-menu.html` (frogger)
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Open `help page` | Click the `help` button | Should open the `help page` relevant to the game | Opens the relevant `help page` for the game | Pass |
+|  2  | Return to `homepage` via the `Return to homepage button` | Click the `Return to homepage` button | Should go back to the `homepage` | Directs users back to the `homepage` | Pass |
+|  3  | Return to `homepage` via the back button | Click the browser's back button | Should go back to the `homepage` | Directs users back to the `homepage` | Pass | 
+|  4  | Tell users to pick a `difficulty setting` | Click `Find Your Coffee` or `Play` (for Frogger) without picking a `difficulty setting` | Should display an alert box telling users to pick a `difficulty setting` before playing | Displays an alert box telling users to pick a `difficulty setting` before playing | Pass |
+|  5  | Provide feeback for a chosen `difficulty setting` | Click either the `Easy`, `Medium` or `Hard` button | Feedback should be provided below the text *you have chosen:*, based on what settings was chosen. For example, if `Easy` was chosen, it should display the text `Easy` below | Provides feedback based on what setting was chosen, which is displayed below the text *you have chosen:* | Pass | Tested for all three settings |
+|  6  | Open game | Click `Find Your Coffee` or `Play` (for Frogger) **after** picking a difficulty setting | Should open either memory game, whack-a-mole or frogger (depending on what game menu modal is opened) after a short loading screen. If on the first menu, memory game should open after a short loading screen | Directs uses to a loading screen which then opens the correct game shortly after - relevant to what game menu was opened prior. When on the first menu, clicking `Find Your Coffee` opens the memory game after a loading screen | Pass |
+
+
+### Memory Game 
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Start the game | Click the `start game modal button` | Should allow users to play the game and trigger the timer to start | Starts the game timer and allows users to interact with the game | Pass |
+|  2  | Timer starts | Click the `start game modal button` | Timer should start upon clicking `start game` | Timer starts | Pass | This includes both the `progress bar timer` and the `numbered timer`. A small bug is noted [here]() |
+|  2  | Flip a card | Click the card face | Should flip the card over with an elegant flip animation | Trigger an animation, flipping the card over so that users can see the card's front-face | Pass |
+|  3  | Can flip a second card | Click on a second card | Should flip the second card | Flips the second card over. Both cards remain with their faces shown to the user | Pass |
+|  4  | Check for a match | N/A | Should check to see if the two cards match | Checks for a match between the two cards by checking if the two `data-cardname` variables defined in the HTML file are the same | Pass |
+|  5  | Flip cards if a match is unsuccessful | N/A | Should flip the two cards back over to their back-face if they do not match | When the cards don't match, the flip over so that the user can no longer see their front-face | Pass |
+|  6  | Disable card flip is a match is found | N/A | Cards should remain unflipped if a match is found. Users should be able to interact with the board and click over cards to find more matches | Disables card flip when a successful match is found. Users can interact with the gameboard and click other cards to find more matches | Pass | 
+|  7  | `Lock board` when card flip animation is triggered | Click a card | When there are two cards that have a failed match, users should **not** be able to interact with any other cards until the two cards have flipped back over | The board **locks**, preventing users from clicking any other cards until completing the flip animation on the two cards that did not match. After that users are free to interact with the board again | Pass | This prevents the game from making a *fake* match. See [here]() for more details |
+|  8  | `Shuffle` cards | N/A | Cards should be shuffled on reload | Upon loading the game all cards are randomly shuffled. When reloading the game for a second time, the cards a shuffled **again** with the cards in a different order from the last | Pass |
+|  9  | `Lose game` when timer runs out | Wait for the timer to run out **without** making all, or any, card matches | Should display the `lose game modal` | Displays the `lose game modal` when the timer runs out without all the card matches | Pass | 
+|  10 | `Try again` via the `lose game modal` | Click the `Try Again` button in the `lose game modal` | Should reload the game, reseting the cards and the timer so that users can play again to try and win the game | Reloads the game, resets the timer and resets all cards | Pass |
+|  11 | Return to `homepage` via the `lose game modal` | Click the `Quit` button in the `lose game modal` | Should take users back to the `homepage` | Directs users to the `homepage` | Pass |
+|  12 | `Win game` when all matches are found | Find **all** card matches before the timer runs out | Once all matches are found the `win game modal` should display on screen | Displays the `win game modal` once **all** card matches are found | Pass |
+|  13 | Continue to next game via the `win game modal` | Click the `Continue` button via the `win game modal` | Should take users to the next game menu (for whack-a-mole) | Directs users to the next game menu | Pass |
+
+
+### Whack-A-Mole
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Start the game | Click the `start game modal button` | Should allow users to play the game and trigger the timer to start | Starts the game timer and allows users to interact with the game | Pass |
+|  2  | Timer starts | Click the `start game modal button` | Timer should start upon clicking `start game` | Timer starts | Pass | This includes both the `progress bar timer` and the `numbered timer`. A small bug is noted [here]() |
+|  3  | Trigger mole `pop-up` function | Click `start game modal button` | Moles should begin to pop up from their holes | Moles pop up from their holes once `start game` is clicked and the game timer begins | Pass | The mole pop-up speed depends on what `difficulty setting` was chosen in the previous game settings menu | 
+|  4  | Whack mole | Click on the `mole` as it pops up from the hole | Once clicked by the user, the mole image should change to an angry mole. The score should increment by 1 | When clicked, or whacked, the mole image changes to an angry mole in order to provide visual feedback to the user. The score increments by 1 | Pass |
+|  5  | Cheat test | Click a mole as it pops up from the hole, and **keep clicking** that **same mole** until it goes back down into its hole | The score should **only** increment by 1 | When clicking the **same mole** multiple times the score only increments by 1 to prevent *cheating* | Pass |
+|  6  | Increment score test 2 | Click **empty** holes | The score should **not** increment | Score is only added when a user clicks a `mole`. When elsewhere is clicked, the score is **not** incremented | Pass |
+|  7  | `Lose game` when timer runs out | Wait for the timer to run out **without** whacking any moles | Should display the `lose game modal` | Displays the `lose game modal` when the timer runs out without reaching the target score | Pass | 
+|  7  | `Lose game` when timer runs out - test 2 | Reach a score of anything below **25** (increment the score by whacking moles) and wait for the timer to run out | Should display the `lose game modal` | Displays the `lose game modal` when the timer runs out without reaching the target score | Pass |
+|  9  | `Try again` via the `lose game modal` | Click the `Try Again` button in the `lose game modal` | Should reload the game, reseting the cards and the timer so that users can play again to try and win the game | Reloads the game, resets the timer and resets all cards | Pass |
+|  10  | Return to `homepage` via the `lose game modal` | Click the `Quit` button in the `lose game modal` | Should take users back to the `homepage` | Directs users to the `homepage` | Pass |
+|  11 | `Win game` | Reach the **target score of 25** before the timer runs out | If the target score is met once time is up the `win game modal` should display on screen | Displays the `win game modal` if the target score as been met | Pass |
+|  12 | `Win game` | Pass the **target score of 25** before the timer runs out | Should display the `win game modal` when the timer runs out | Displays the `win game modal` once the timer runs out because the user has surpassed the target score | Pass |
+|  13 | Continue to next game via the `win game modal` | Click the `Continue` button via the `win game modal` | Should take users to the next game menu (for whack-a-mole) | Directs users to the next game menu | Pass |
 
 
 -----
