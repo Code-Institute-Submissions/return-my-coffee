@@ -149,10 +149,6 @@ The following code is based upon this source:
     margin: auto;
 }
 
-label {
-    color: black;
-}
-
 /* ---------------------------------------------- Jumbotron background image */
 
 /* Based upon the following code: "https://coder-coder.com/background-image-opacity/" */
@@ -172,6 +168,12 @@ label {
     left: 0px;
     opacity: 0.15;
     margin: auto;
+}
+
+/* ---------------------------------------------- Contact form */
+
+label {
+    color: black;
 }
 
 /* ---------------------------------------------- Homepage media queries */
