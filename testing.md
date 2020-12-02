@@ -20,6 +20,12 @@
 
 - [Manual Testing](#manual-testing)
 
+    - [Navigation Bar - Desktop](#navigation-bar---desktop)
+
+    - [Navigation Bar - Mobile and Tablet](#navigation-bar---mobile-and-tablet)
+
+    - [Homepage and About Section](#homepage-and-about-section)
+
 -----
 
 
@@ -46,7 +52,6 @@
 - No other errors were found.
 
 
------
 
 ### W3C CSS Validation Service
 
@@ -57,7 +62,6 @@
 - However, it found some errors with the Bootstrap CDN, but this is something that I cannot rectify.
 
 
------
 
 ### JSHint
 
@@ -124,7 +128,6 @@ function resetBoard() {
     }
     ```
 
------
 
 ### Page Performance 
 
