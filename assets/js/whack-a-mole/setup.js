@@ -14,7 +14,9 @@ let lastHole;
 let timeUp = false;
 let score = 0;
 let highscore = localStorage.getItem("game1HighScore") || 0;
-highScoreBoard.textContent = highscore;
+if (highScoreBoard) {
+    highScoreBoard.textContent = highscore;
+}
 
 
 // Open Game from game menu
