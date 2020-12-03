@@ -44,6 +44,12 @@
 
         - [Remove Event Listener Error](#remove-event-listener-error)
 
+    - [Whack-A-Mole](#whack-a-mole-1)
+
+        - [Touchscreen Blue Border Visual Bug](#touchscreen-blue-border-visual-bug)
+
+        - [Unclickable Mole](#unclickable-mole)
+
     - [Frogger](#frogger-1)
 
         - [Highscore modal](#highscore-modal)
@@ -457,7 +463,15 @@ I looked to this [StackOverflow post](https://stackoverflow.com/questions/134743
 
 #### Touchscreen Blue Border Visual Bug
 
+![Whack-a-mole visual bug screen recording](assets/img/main/mole-blue-border.gif)
 
+### Unclickable Mole
+
+Mole became unclickable after `whack-a-mole.css` was changed in order to make the moles pop up from *behind* the holes.
+
+- Adding `pointer-events: none;` to `.hole:after` in `whack-a-mole.css` fixed the issue.
+
+- I looked to [this StackOverflow post](https://stackoverflow.com/questions/3680429/click-through-div-to-underlying-elements) for aid.
 
 
 
