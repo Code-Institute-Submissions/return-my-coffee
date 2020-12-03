@@ -47,9 +47,31 @@ input:focus {
     padding: 15px;
 }
 
+/*
+Hole and mole styling based upon Frank's Labatory YouTube tutorial.
+Source can be found here: "https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=3&t=55s"
+*/
+
 .hole {
+    flex: 1 0 33.33%;
     position: relative;
     overflow: hidden;
+}
+
+.hole:after {
+    content: "";
+    display: block;
+    background-image: url("../img/whack-a-mole/hole.png");
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
 }
 
 .mole {
@@ -67,15 +89,15 @@ input:focus {
 
 .mole.small {
     width: 80%;
-    height:80%;
+    height: 80%;
     left: 15px;
     bottom: -128px;
-    transform: translate(0%, 15px);
+    transform: translate(0%, 35px); 
 }
 
 .mole.large {
     background-size: 100%;
-    transform: translate(0, -15px);
+    transform: translate(0, 7px);
 }
 
 .hole.up .mole {
@@ -272,7 +294,7 @@ input:focus {
     .user-interface .game-title {
         width: 350px;
         font-size: 35px;
-        top: 20.5vh;
+        top: 22vh;
     }
     .user-interface .score,
     .user-interface .highscore {
@@ -289,7 +311,7 @@ input:focus {
     .user-interface .highscore span {
         right: 80px;
     }
-    .whack-a-mole-board img {
+    .whack-a-mole-board .hole:after {
         position: relative;
         width: 120px;
         height: 120px;
@@ -311,6 +333,9 @@ input:focus {
         width: 300px;
         margin: 20vh auto;
     }
+    .user-interface .time-left {
+        top: -5vh;
+    }
     .user-interface .game-title {
         width: 250px;
         font-size: 24px;
@@ -331,7 +356,7 @@ input:focus {
     .user-interface .highscore span {
         right: 60px;
     }
-    .whack-a-mole-board img {
+    .whack-a-mole-board .hole:after {
         position: relative;
         width: 100px;
         height: 100px;
@@ -355,23 +380,54 @@ input:focus {
     }
 }
 
-/* For the iPhone 5/SE */
-@media (max-width: 320px) and (min-height: 568px) {
+@media (max-width: 320px) and (min-height: 500px) {
     .user-interface .game-title {
         width: 250px;
         font-size: 24px;
-        top: 15vh;
+        top: 14vh;
+    }
+    .whack-a-mole-board {
+        width: 300px;
+        height: 500px;
+    }
+    .mole.small {
+        width: 75%;
+        height: 75%;
+        left: 10px;
+        transform: translate(0, -20px);
+    }
+}
+
+@media (max-width: 320px) and (min-height: 450px) {
+    .user-interface .game-title {
+        width: 250px;
+        font-size: 24px;
+        top: 18vh;
+    }
+    .user-interface .time-left {
+        top: 0;
+    }
+    .whack-a-mole-board {
+        width: 300px;
+        height: 400px;
+    }
+    .mole.small {
+        width: 75%;
+        height: 75%;
+        left: 12px;
+        transform: translate(0, 5px);
     }
 }
 
 @media (max-width: 305px) {
     .whack-a-mole-board {
-        width: 200px;
+        width: 250px;
         margin: 20vh auto;
     }
-    .mole.small {
-        left: 10px;
-        transform: translate(0, 18px);
+    .whack-a-mole-board .hole:after {
+        position: relative;
+        width: 80px;
+        height: 80px;
     }
     .user-interface .score,
     .user-interface .highscore {
@@ -396,15 +452,28 @@ input:focus {
     .user-interface .highscore span {
         right: 60px;
     }
+    .mole {
+        width: 80px;
+        height: 80px;
+    }
+    .mole.small {
+        width: 75%;
+        height: 75%;
+        left: 10px;
+        transform: translate(0, -50px);
+    }
 }
 
-@media (max-width: 260px) {
-    .whack-a-mole-board {
-        margin: 20vh auto;
-    }
+@media (max-width: 280px) {
     .user-interface .game-title {
-        width: 200px;
-        font-size: 18px;
-        top: 16.5vh;
+        width: 250px;
+        font-size: 24px;
+        top: 14vh;
+    }
+    .mole.small {
+        width: 75%;
+        height: 75%;
+        left: 10px;
+        transform: translate(0, -10px);
     }
 }
