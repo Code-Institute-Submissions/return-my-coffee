@@ -120,10 +120,15 @@ function updateModal() {
         totalCollisionsDiv.style.display = "block";
         totalCollisions.textContent = collisionCount;
     }
-    if (highscore < localStorage.getItem("game2HighScore")) {
+    if (highscore === 0 || highscore < localStorage.getItem("game2HighScore")) {
         let showHighscore = document.querySelector("#showHighscore span");
         showHighscoreDiv.style.display = "block";
-        showHighscore.textContent = localStorage.getItem("game2HighScore");
+        if (localStorage.getItem("game2HighScore") === null) {
+            showHighscore.textContent = 0;
+        }
+        else {
+            showHighscore.textContent = localStorage.getItem("game2HighScore");
+        }
     }
     else {
         let newHighscore = document.querySelector("#beatHighscore span");
