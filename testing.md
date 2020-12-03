@@ -26,6 +26,16 @@
 
     - [Homepage and About Section](#homepage-and-about-section)
 
+    - [Contact Form](#contact-form)
+
+    - [Game Settings Menu](#game-settings-menu)
+
+    - [Memory Game](#memory-game)
+
+    - [Whack-A-Mole](#whack-a-mole)
+
+    - [Frogger](#frogger)
+
 -----
 
 
@@ -368,11 +378,29 @@ Although the test for desktop devices gave a good score, the mobile results coul
 |  15 | `Collsion detection` - **car** | Move the frogger up and wait for a car to hit it | Collsion should be detected. A new frogger should appear at the **starting point** on the game canvas and a small collison image should display beside the frogger that was hit. `Collision count` should increment by 1 | Collision detected. A new frogger appears at the **starting position** and the `collision count` increments by 1. When hit, a small collision image representing a bang displays for a short moment beside the frogger to provide visual feedback to the user | Pass | The collision image can be easily missed and is often not positioned directly on top of the frogger. For more details see [here]() |
 |  16 | `Collsion detection` - **water** | Move to the water, try to avoid any cars, but allow the frogger to **fall into the water** | Collsion should be detected. A new frogger should appear at the **starting point** on the game canvas and a small collison image should display beside the frogger once it falls into the water. `Collision count` should increment by 1 | Collision detected. A new frogger appears at the **starting position** and the `collision count` increments by 1. When the frogger falls into the water, a small collision image representing a splash displays for a short moment beside the frogger to provide visual feedback to the user, however this is very difficult to see | Pass | The collision image is quite difficult to see against the water which means it is easily missed. However as the ripple effect also provides visual feedback this is not a big issue. For more details see [here]() |
 |  17 | `Collsion detection` - **logs and turtle** | Move to the water, try to avoid any cars, and then jump onto a **log** and then a **turtle** | Collision should be detected. The frogger should be able to ride on the log and the turtle in order to avoid falling into the water. If motionless for too long (if the frogger reaches the left or right edge of game canvas) then the frogger will 'fall' into the water. This will not be seen like before but the `collision count` should increment by 1 | Collision detected. The frogger can ride on the log and the turtle but once it passes the left and/or right edge of the game canvas, then it is considered that the frogger has fallen into the water, which increments the `collision count` by 1 | Pass |
+|  18 | Count `score` | Reach the top of the canvas (past the water) without hitting any obstacles **or** falling into the water | The game `score` (represented by the heart icon) should increment by 1 | The game `score` increments by 1 once the frogger passes the top edge of the canvas | Pass | During the initial construction phases a bug was presented, which is explained in more detail [here]() however, this is now fixed |
+
+
+### Frogger - end game modal
+
+| No. |   Action    |   Input   |   Expected Output |   Actual Output   |   Result |  Further Comments |
+| --- | ----------- | --------- | ----------------- | ----------------- | ---------| ----------------- |
+|  1  | Open `end game modal` | Wait for the game timer to end | The frogger `end game modal` should display on screen | Displays the `end game modal` once the timer has run out | Pass |
+|  2  | Log `score count`| Save froggers to increment the score by reaching the top edge of the game canvas | The `end game modal` should log how many froggers have been saved. If you had a score of 3, it should say `You saved 3 froggers!` | Reached a `score count` of 4; in the `end game modal` it said: `You saved 4 froggers!` | Pass |
+|  3  | Log `score count` - test 2 | Wait for the game timer to end **without** moving the frogger from the starting position | The `end game modal` should log that **zero** froggers have been saved. It should say: `You didn't save any!` | The `end game modal` displayed the correct text. No froggers were saved, which meant the `score count` was zero, therefore the `end game modal` said: `You didn't save any!` | Pass |
+|  4  | Log `collision count` - test 1 | Allow the frogger to either be hit by the cars or fall into the water in order to increment the `collision score` | The `end game modal` should log the `collision score`. If the `collision count` is 5, the `end game modal` should say: `And only 5 of them didn't make it...` | Had 6 `collisions`, the `end game modal` logged the `collision count correctly`, stating `And only 6 of them didn't make it...` | Pass |
+|  5  |  Log `collision count` - test 2 | Wait for the game timer to end **without** moving the frogger from the starting position | The `end game modal` should log **zero** collisions **and** **zero** for the score count, therefore it should say `You didn't save any! But you also didn't lose any of them!` | The `end game modal` displayed the correct text. No froggers were saved and no collisions were detected, which meant the `score count` and the `collision count` were zero. The `end game modal` said: `You didn't save any! But you also didn't lose any of them!` | Pass |
+|  6  |  Log `collision count` - test 3 | Save froggers to increment the score by reaching the top edge of the game canvas **but do not** get hit by any obstacles or fall into the water | The `end game modal` should log the `score count` and say: `You saved [x amount of] frogger! And you didn't lose any of them!` | Reached a `score count` of 3 **without** incrementing the `collision count`. The `end game modal` displayed the text: `You saved 3 froggers! And you didn't lose any of them!` | Pass |
+|  7  | Log `highscore` | Play the game **without** beating the current highscore | The `end game modal` should log the existing highscore | The `end game modal` logs the existing highscore. In this case, the highscore was 3, so the modal said: `The highscore is 3, can you beat it next time?` | Pass |
+|  8  | Log **new** `highscore` | Beat the current highscore by saving as any froggers as possible and limiting collisions to a minimum. The highscore is calculated as `score - collisionCount`. The `highscore` will only be logged if it is **greater than zero** | The `end game modal` should log the `new highscore` and say: `And wow! You beat the highscore. It is now: [new highscore]` | After beating the `highscore` the `end game modal` correctly logs the **new** highscore, stating: `And wow! You beat the highscore. It is now: 4` | Pass |
+|  9  | Log `highscore` when highscore is **zero** | If the highscore needs to be cleared then type: `localStorage.clear("game2HighScore");` into the console in `Chrome DevTools`. Wait for the game timer to end | The `end game modal` should say: `The highscore is 0, can you beat it next time?` | The `end game modal` says: `And wow! You beat the highscore. It is now: 0` | Fail |
+|  10 | Log `highscore` when highscore is **zero** - test 2 | (Following from `test 9`) Increment the `score count` by 1 **without** incrementing the `collision count` | The `end game modal` should say: `And wow! You beat the highscore. It is now: 1` | The modal says: `And wow! You beat the highscore. It is now: 1` | Pass | The function still works correctly after clearing the local storage in the console. After altering the code in `utilities.js` a fix was found, see [here](#highscore-modal) for details | 
+
+
 -----
 
-## Memory Game
+## Bug Fixes 
 
-### JavaScript Creation and Testing Process
 
 ### Memory Game
 
@@ -409,7 +437,65 @@ function checkCards() {
 I looked to this [StackOverflow post](https://stackoverflow.com/questions/13474370/behavior-of-removeeventlistener) to help me fix the issue.
 
 
-### Frogger
+
+-----
+
+### Frogger 
+
+#### Highscore modal
+
+When reseting the local storage for the frogger highscore, as shown [here](), the Frogger `end game modal` began showing the incorrect modal text when logging the `highscore`. 
+
+- It displayed: `And wow! You beat the highscore. It is now: 0`
+
+    - When it should have displayed: `The highscore is 0, can you beat it next time?`
+
+This was fixed by altering the following code, from: 
+
+```
+if (highscore < localStorage.getItem("game2HighScore")) {
+        let showHighscore = document.querySelector("#showHighscore span");
+        showHighscoreDiv.style.display = "block";
+        showHighscore.textContent = localStorage.getItem("game2HighScore");
+    }
+```
+to:
+```
+if (highscore === 0 || highscore < localStorage.getItem("game2HighScore")) {
+        let showHighscore = document.querySelector("#showHighscore span");
+        showHighscoreDiv.style.display = "block";
+        showHighscore.textContent = localStorage.getItem("game2HighScore");
+    }
+```
+
+However this then created a new problem: 
+
+![Frogger modal bug - screenshot](assets/img/main/frogger-highscore-modal-bug.png)
+
+- The highscore count was blank, when it should have logged `0`
+
+    - The cause for this was found when logging `"game2HighScore"` into the console: 
+
+    ![Frogger console screenshot](assets/img/main/frogger-console.png)
+
+    - After **clearing** the local storage, `"game2HighScore"` was set to `null`. This was causing the bug.
+
+To fix this I made the following alteration to the code:
+
+```
+if (highscore === 0 || highscore < localStorage.getItem("game2HighScore")) {
+        let showHighscore = document.querySelector("#showHighscore span");
+        showHighscoreDiv.style.display = "block";
+        if (localStorage.getItem("game2HighScore") === null) {
+            showHighscore.textContent = 0;
+        }
+        else {
+            showHighscore.textContent = localStorage.getItem("game2HighScore");
+        }
+    }
+```
+
+#### Touchscreen controls
 
 - Once the touchscreen controls were added to Frogger, the following error was presented in the console:
 
