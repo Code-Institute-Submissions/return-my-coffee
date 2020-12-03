@@ -36,6 +36,20 @@
 
     - [Frogger](#frogger)
 
+    - [Frogger - End Game Modal](#frogger---end-game-modal)
+
+- [Bug Fixes](#bug-fixes)
+
+    - [Memory Game](#memory-game-1)
+
+        - [Remove Event Listener Error](#remove-event-listener-error)
+
+    - [Frogger](#frogger-1)
+
+        - [Highscore modal](#highscore-modal)
+
+        - [Touchscreen controls](#touchscreen-controls)
+
 -----
 
 
@@ -51,7 +65,7 @@
 
 - The validator found errors in my HTML code relating to the nesting of button and anchor tags.
 
-    - Where relevant, I removed button tags from the HTML and added the `btn class` to anchor elements so that no visual aesethic was changed, meanining the anchor tags could still look like buttons.d
+    - Where relevant, I removed button tags from the HTML and added the `btn class` to anchor elements so that no visual aesethic was changed, meanining the anchor tags could still look like buttons.
 
 - The validator also flagged a warning relating to section tags in some of the HTML files, stating how every section should contain a header element.
 
@@ -67,9 +81,11 @@
 
 - Found no errors in my code.
 
-![Validator screenshot](assets/img/main/css-validation.png)
+![Validator screenshot 1](assets/img/main/css-validator-results.png)
 
 - However, it found some errors with the Bootstrap CDN, but this is something that I cannot rectify.
+
+![Validator screenshot 2](assets/img/main/css-bootstrap-error.png)
 
 
 
@@ -404,9 +420,7 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
 ### Memory Game
 
-- To first test if the CSS "flip" class worked as intended, I used `card.classList.toggle("flip")` which allowed me to toggle the flip animation on and off when clicking the card.
-    - Once I knew this worked as intended, I replaced the toggle method with the `add` method, as I did not want users to be able to flip the cards back to the default back-face by themselves.
-    - The flip animation was then handled in its own function so that it could handle more complex behaviours.
+#### Remove Event Listener Error
 
 - Once the `checkCards()` function was made, I recieved the following error in the console: `Failed to execute 'removeEventListener' on 'EventTarget': 2 arguments required, but only 1 present.` 
     - This was caused by two snippets of code exisiting within the function:
@@ -437,12 +451,21 @@ function checkCards() {
 I looked to this [StackOverflow post](https://stackoverflow.com/questions/13474370/behavior-of-removeeventlistener) to help me fix the issue.
 
 
+-----
+
+### Whack-A-Mole
+
+#### Touchscreen Blue Border Visual Bug
+
+
+
+
 
 -----
 
 ### Frogger 
 
-#### Highscore modal
+#### Highscore Modal
 
 When reseting the local storage for the frogger highscore, as shown [here](), the Frogger `end game modal` began showing the incorrect modal text when logging the `highscore`. 
 
@@ -495,7 +518,7 @@ if (highscore === 0 || highscore < localStorage.getItem("game2HighScore")) {
     }
 ```
 
-#### Touchscreen controls
+#### Touchscreen Controls
 
 - Once the touchscreen controls were added to Frogger, the following error was presented in the console:
 
@@ -521,3 +544,17 @@ swipe.js:73 Unable to preventDefault inside passive event listener invocation
 ```
 
 I removed `e.preventDefault();` from swipe.js to fix the issue.
+
+
+-----
+
+
+## Some notes on the Construction Phase
+
+### Memory Game 
+
+- To first test if the CSS "flip" class worked as intended, I used `card.classList.toggle("flip")` which allowed me to toggle the flip animation on and off when clicking the card.
+
+    - Once I knew this worked as intended, I replaced the toggle method with the `add` method, as I did not want users to be able to flip the cards back to the default back-face by themselves.
+
+    - The flip animation was then handled in its own function so that it could handle more complex behaviours.
