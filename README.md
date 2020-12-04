@@ -20,6 +20,8 @@ This web-application is a fun, interactive game that combines popular mini-games
         
     - [Typography](#typography)
 
+    - [Colour Scheme](#colour-scheme)
+
 - [Technologies Used](#technologies-used)
 
   - [Languages](#languages)
@@ -91,7 +93,32 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 
 ### Typography 
 
-In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding](), [Inconsolata](), [Roboto]() and [Roboto Mono]() from the [Google Fonts]() library. Each page uses the following fonts: 
+I have imported the following fonts from the [Google Fonts](https://fonts.google.com/) library to use in my project:
+
+- [Source Code pro](https://fonts.google.com/specimen/Source+Code+Pro?query=code)
+
+- [Nanum Gothic Coding](https://fonts.google.com/specimen/Nanum+Gothic?query=nan)
+
+- [Inconsolata](https://fonts.google.com/specimen/Inconsolata?query=incon)
+
+- [Roboto](https://fonts.google.com/specimen/Roboto)
+
+- [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono?query=robot)
+
+Source Code Pro, Nanum Gothic Coding, Inconsolata and Roboto Mono have Monospace as a fallback font in case the fonts fail. 
+
+Roboto has a fallback font of Sans Serif incase it fails to import.
+
+All of the fonts have a similar style, but their subtle differences help add visual variety to the project to make it more interesting. I chose this style of font to stress the project's purpose. The fonts can easily be associated with arcade games, older RPG games and/or text-based games. Examples of this are displayed below:
+
+| Example 1 | Example 2 | Example 3 |
+| --------- | --------- | --------- |
+| ![Game font example screenshot 1](assets/img/main/font-example1.png) | ![Game font example screenshot 2](assets/img/main/font-example2.png) | ![Game font example screenshot 3](assets/img/main/font-example3.png) |
+
+
+It was important to ensure that I chose a typography style that was clear, readable and consistent. I believe each page achieves this and promotes the project theme effectively.
+
+Each page uses the following fonts:
 
 - Hompage 
     - Source Code Pro
@@ -108,6 +135,30 @@ In this project I have used the fonts: [Source Code pro](), [Nanum Gothic Coding
 - Frogger
     - Roboto
 
+- Roboto was used for the game user interface in Whack-A-Mole and Frogger.
+
+  - Roboto is more readble than the other fonts when against a visually packed background. When the screen size becomes smaller, it is increasingly easier to read than the former fonts. This is why Roboto was used for both Whack-A-Mole and Frogger - to ensure that users could see the user interface clearly. 
+
+
+### Colour Scheme
+
+In the initial design phase I opted to try out a 'coffee' colour scheme for the Homepage, which can be seen [here](assets/wireframes/homepage-old.png). However when the time came to write the code and I had the design properly laid out on the browser, the design choice didn't seem right. So I went back to the surface plane and redesigned the layout and colour scheme entirely.
+
+|  |  |
+| --------- | --------- |
+| ![Color pyschology](assets/img/main/color-psychology1.png) | ![Color pyschology](assets/img/main/color-psychology2.png) |
+
+I wanted the project to be vibrant, colourful and eye-catching, and it was imperative for the design to envoke a positive emotional response from the user.
+
+The primary colour scheme for the **Homepage** is blue, green and yellow. 
+
+- Blue is trustworthy and peaceful colour. It is a friendly colour, which makes the application more approachable and incites relaxtion. This ties in nicely with the application's purpose as people often play games to unwind.
+
+- Green is a calming, reassuring colour. It is heavily associated with nature which links with the project's visual imagery in regards to the background images that are used. It is also associated with moving forward, like green in a traffic light, which can incite users to play the game.
+
+- Yellow is a cheerful, optimistic colour, which is associated with the outdoors. Like green, this alludes to the project's visual theme. Yellow can also link to the colour of coffee!
+
+- Blue green and yellow all combine nicely to create the atmosphere of being outdoors. This is where I would like to imagine that the game narrative is set, which is implied with textual content, background images and colours.
 
 -----
 
