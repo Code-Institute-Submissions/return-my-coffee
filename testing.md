@@ -48,8 +48,6 @@
 
     - [Whack-A-Mole](#whack-a-mole-1)
 
-        - [Touchscreen Blue Border Visual Bug](#touchscreen-blue-border-visual-bug)
-
         - [Unclickable Mole](#unclickable-mole)
 
     - [Frogger](#frogger-1)
@@ -57,6 +55,16 @@
         - [Highscore modal](#highscore-modal)
 
         - [Touchscreen controls](#touchscreen-controls)
+
+- [Known Bugs](#known-bugs)
+
+    - [Whack-A-Mole](#whack-a-mole-2)
+
+        - [Blue Border Visual Bug](#blue-border-visual-bug)
+
+    - [Frogger](#frogger-2)
+
+        -[Game Canvas Clipping](#game-canvas-clipping)
 
 -----
 
@@ -512,10 +520,6 @@ if (totalMatches === 8) {
 
 ### Whack-A-Mole
 
-#### Touchscreen Blue Border Visual Bug
-
-![Whack-a-mole visual bug screen recording](assets/img/main/mole-blue-border.gif)
-
 #### Unclickable Mole
 
 The mole became unclickable after `whack-a-mole.css` was changed in order to make the moles pop up from *behind* the holes.
@@ -623,3 +627,41 @@ I removed `e.preventDefault();` from swipe.js to fix the issue.
     - Once I knew this worked as intended, I replaced the toggle method with the `add` method, as I did not want users to be able to flip the cards back to the default back-face by themselves.
 
     - The flip animation was then handled in its own function so that it could handle more complex behaviours.
+
+
+-----
+
+## Known Bugs 
+
+### Whack-A-Mole
+
+#### Blue Border Visual Bug
+
+![Whack-a-mole visual bug screen recording](assets/img/main/mole-blue-border.gif)
+
+- On touchscreen, a blue, or sometimes grey border appears once the mole is clicked by the user.
+
+- I attempted to fix this visual 'bug' with a variety of methods in CSS but failed to remove this effect.
+
+- As this bug is only present on touchscreen devices, and as it does not hinder the user from playing the game or effect the game's functionality, I decided to leave this bug for now. I may try to address it in possible future updates.
+
+-----
+
+### Frogger 
+
+#### Game canvas clipping 
+
+- For *some* viewports there is slight clipping, in which sections of the game canvas is cut off. 
+
+![Frogger clipping screenshot](assets/img/main/frogger-clipping.png)
+
+- This example is the viewport size for a **Macbook Pro (13 inch)** 
+
+    - Width: `1280px`
+    - Height: `767px`
+
+    - Pixel dimensions were taken from [this source](https://yesviz.com/devices/macbookpro-2018-13/)
+
+- I dealt with this issue as best as I could with custom media queries in CSS.
+
+- I believe that this bug is not detrimental to the project's UX design as the game is responsive for a vast majority of devices and this particular visual issue does not hinder users from playing the game. However, I may try to address this in the future.
