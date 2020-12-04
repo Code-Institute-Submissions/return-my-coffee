@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
 The styling for this game application was based 
 upon a video guide from the following source:
 "https://www.youtube.com/watch?v=ZniVgo8U7ek"
@@ -7,11 +14,14 @@ upon a video guide from the following source:
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-image: url("../img/main/hero-image.gif");
     background-color: #4a4a4a4a;
@@ -53,6 +63,8 @@ body {
 
 .game-container {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     overflow: hidden;
@@ -83,11 +95,15 @@ body {
     width: 750px;
     height: 600px;
     margin: 75px 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: absolute;
     padding-bottom: 25vh;
-    perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
+    -webkit-perspective: 1000px;
+            perspective: 1000px;    /* Make the cards 3D for the flip animation effect */
 }
 
 /* ------------------------- Cards */
@@ -99,8 +115,13 @@ body {
     position: relative;
     margin: 5px; 
     /* Initialize 3D effect */
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
     transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
 }
 
 .front-face,
@@ -110,15 +131,18 @@ body {
     position: absolute;     /* stacks the cards on top of eachother */  
     border-radius: 3px;
     border: 2px solid #1a66a5;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .front-face {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .memory-card.flip {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 /* ------------------------- Start game countdown media queries */
@@ -230,6 +254,8 @@ body {
 @media (max-width: 1015px) {
     .game-container {
         background-color: #0b6736;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: auto;
     }
@@ -238,6 +264,8 @@ body {
     }
     .memory-game-board {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: auto;
         width: 600px;
