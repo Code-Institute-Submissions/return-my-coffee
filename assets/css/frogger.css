@@ -165,10 +165,11 @@ canvas {
     }
 }
 
-@media (max-width: 1280px) and (min-height: 800px) {
+@media (max-width: 1280px) and (min-height: 767px) {
     .frogger-board {
         margin-top: 0;
         top: 0;
+        border: 3px solid #82a17c;
     }
 }
 
