@@ -53,7 +53,7 @@ function whackMole(e) {
         timeoutSpeed = 800;
     }
     else if (countdown == 25) {
-        timeoutSpeed = 400;
+        timeoutSpeed = 300;
     }
 
     // Set image back to default after being hit
