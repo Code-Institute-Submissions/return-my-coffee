@@ -44,6 +44,8 @@
 
         - [Remove Event Listener Error](#remove-event-listener-error)
 
+        - [Network Error](#network-error)
+
     - [Whack-A-Mole](#whack-a-mole-1)
 
         - [Touchscreen Blue Border Visual Bug](#touchscreen-blue-border-visual-bug)
@@ -457,6 +459,55 @@ function checkCards() {
 I looked to this [StackOverflow post](https://stackoverflow.com/questions/13474370/behavior-of-removeeventlistener) to help me fix the issue.
 
 
+#### Network Error
+
+When loading `game-two-menu.html` via Memory Game's `win game modal` the following error displayed in the console:
+
+![Network error screenshot](assets/img/main/network-error.png)
+
+The error was caused by a line of code within the `endGame()` function in `utilities.js`: 
+```
+if (totalMatches === 8) {
+        winGameModal.style.display = "block";
+        continueBtn.addEventListener("click", function(){
+            window.location.replace("game-two-menu.html");
+        });
+    }
+```
+- DevTools noted that line 39, `window.location.replace("game-two-menu.html");` was the cause of the error.
+
+    - However, after testing I found it wasn't actually this line of code that caused the issue.
+    
+    - The issue arised from having an event listener **inside** the `endGame()` function
+
+    - Moving the event listener for `continueBtn` **outside** of the function, resolved the error:
+
+    ```
+    continueBtn.addEventListener("click", function(){
+        window.location.replace("game-two-menu.html");
+    });
+
+    function endGame() {
+        lockBoard = true;
+        // Check for win
+        if (totalMatches === 8) {
+            winGameModal.style.display = "block";
+        }
+        // Check for loss
+        else {
+            loseGameModal.style.display = "block";
+            replayBtn.addEventListener("click", function(){
+                window.location.reload();
+            });
+            quitBtn.addEventListener("click", function(){
+                window.location.replace("index.html");
+            });
+        }
+    }
+    ```
+
+
+
 -----
 
 ### Whack-A-Mole
@@ -465,9 +516,9 @@ I looked to this [StackOverflow post](https://stackoverflow.com/questions/134743
 
 ![Whack-a-mole visual bug screen recording](assets/img/main/mole-blue-border.gif)
 
-### Unclickable Mole
+#### Unclickable Mole
 
-Mole became unclickable after `whack-a-mole.css` was changed in order to make the moles pop up from *behind* the holes.
+The mole became unclickable after `whack-a-mole.css` was changed in order to make the moles pop up from *behind* the holes.
 
 - Adding `pointer-events: none;` to `.hole:after` in `whack-a-mole.css` fixed the issue.
 
