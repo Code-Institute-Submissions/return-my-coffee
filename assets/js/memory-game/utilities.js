@@ -30,14 +30,16 @@ function startTimer() {
 }
 
 // End game 
+
+continueBtn.addEventListener("click", function(){
+    window.location.replace("game-two-menu.html");
+});
+
 function endGame() {
     lockBoard = true;
     // Check for win
     if (totalMatches === 8) {
         winGameModal.style.display = "block";
-        continueBtn.addEventListener("click", function(){
-            window.location.replace("game-two-menu.html");
-        });
     }
     // Check for loss
     else {
