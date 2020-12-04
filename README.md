@@ -28,6 +28,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
   - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
 
+- [Testing](#testing)
+
 - [Deployment](#deployment)
 
 - [Credits](#credits)
@@ -233,6 +235,13 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
   - Paint 3D is a free photo editing program which is pre-installed on Windows 10. I used Paint 3D to make minor adjustments to images and remove whitespace with the cropping tool so that they were easier to minipulate with CSS.
+
+-----
+
+## Testing
+
+Testing documentation can be found in a separate [testing.md](testing.md) file.
+
 
 -----
 
