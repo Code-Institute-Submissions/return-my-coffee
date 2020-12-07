@@ -22,6 +22,32 @@ This web-application is a fun, interactive game that combines popular mini-games
 
     - [Colour Scheme](#colour-scheme)
 
+- [Implemented Features](#implemented-features)
+
+  - [Homepage](#homepage)
+
+  - [Navigation Bar](#navigation-bar)
+
+  - [Homepage Content](#homepage-content)
+
+  - [Game settings menu](#game-settings-menu)
+
+  - [Loading Screen](#loading-screen)
+
+  - [Win Game Modal (Memory Card Game and Whack-A-Mole)](#win-game-modal-memory-card-game-and-whack-a-mole)
+
+  - [Lose Game Modal (Memory Card Game and Whack-A-Mole)](#lose-game-modal-memory-card-game-and-whack-a-mole)
+
+  - [Memory Game](#memory-game)
+
+  - [Whack-A-Mole](#whack-a-mole)
+
+  - [Frogger](#frogger)
+
+  - [Frogger - End Game Modal](#frogger---end-game-modal)
+
+  - [Final End Game Modal](#final-end-game-modal)
+
 - [Technologies Used](#technologies-used)
 
   - [Languages](#languages)
@@ -182,6 +208,362 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 
 -----
+
+## Implemented Features
+
+- Reponsive UX design that is user friendly and easy to navigate and use.
+
+
+### Homepage 
+
+
+#### Navigation Bar 
+
+- Fixed Navigation Bar 
+
+  - Built using Bootstrap framework to ensure responsive UX design across a wide range of devices.
+
+  - Allows users to easily navigate through the site.
+
+  - Allows users to navigate to any part of the site no matter where they are at that given moment.
+
+  - Improves user experience for mobile users by preventing the need to scroll to the top of the top of the screen, which may become a nuisance for small touchscreen devices.
+
+- Hamburger menu for mobile devices 
+
+  - Also built using Bootstrap framework.
+
+  - Limits the amount of real estate used on mobile devices.
+
+  - Conforms to web-design conventions, meeting the expectations of the user.
+
+- Navlinks hover effect
+
+  - A slight hover effect for the navbar links to provide feedback to user input.
+
+- Play Now button
+  
+  - A play now button within the navigation menu to allow users to start the game at any moment, no matter where they are on the homepage.
+
+- Smooth scroll effect
+
+  - Removes the abrupt choppiness of default scrolling.
+
+  - Correlates nicely the parrallax effect of the homepage.
+
+
+#### Homepage Content
+
+- Hero image
+
+  - A vibrant, eye-catching hero image (animated gif) to encourage a positive emotional repsonse from the user when they first enter the page.
+
+  - The art design can be associated with many older arcade and RPG styled games, and thus correlates well the project's purpose.
+
+  - The design makes the application *look like* a game.
+
+- Parrallax scrolling effect
+
+  - Improves the visual aesthetic of the site.
+
+  - Adds user interactivity to the homepage.
+
+  - Stresses the project's visual design.
+
+- Play now button
+
+  - Navigates users to the game. 
+
+  - Located where the **hero image** is, in the **navbar** and also in the **about section** of the homepage.
+
+- Contact form
+
+  - Allows users to contact the site owner easily, reducing the amount of steps they would need to take if they wanted to make contact.
+
+  - Follows typical web-design conventions by being located at the bottom of the page (where a footer would be if the homepage had need for one)
+
+  - Adds a personal touch to the site and makes the tonality more friendly and approachable, which could encourage users to visit the site again.
+
+
+### Game settings menu
+
+- Game narrative 
+
+  - Adds a story to the game application to link each game together in a seamless and fun way.
+
+- Difficulty buttons
+  
+  - Allows the users to choice a difficulty setting for each game.
+
+  - Gives users greater control in regards to how *they want to* play the game.
+
+  - Allows users to have more of a challenge if and when they choose to play the game again.
+
+  - Feedback is given underneath the buttons to confirm which difficulty setting has been chosen. 
+
+- Help button and Help page
+
+  - Allows users to read the game rules via a different page.
+
+  - Takes up less real estate on the page.
+
+  - Reduces cognitive overload by limiting the amount of information that is shown to the user.
+
+  - Many users may not want to even read game instructions and/or may already know how to the play the game.
+
+- Return to Homepage
+
+  - Allows users to quit the game and return to the homepage by clicking the 'Return to Homepage' button
+
+- Animated gif
+
+  - Adds visual variety to each game settings menu.
+
+  - Makes each menu more visually stimulating.
+
+
+### Loading Screen
+
+- A fake loading screen is added before each game to give users time to process what they have to do before the game starts.
+
+- The fake loading screen helps the project conform to a lot of game conventions. A loading screen would almost always be present before starting the game. 
+
+- Provides feedback to the user by 'pretending' that their input is being processed before the game loads. In reality, this information is processed in milliseconds, but this time can reassure users that their input is being processed successfully. 
+
+- Removes any suddeness from the game which prepares them to play the game.
+
+
+### Win Game Modal (Memory Card Game and Whack-A-Mole)
+
+- Provides feedback to the user by telling them that they have won that particular mini-game.
+
+- Allows users to easily move onto the next game.
+
+- Users recieve a positive emotional response and a 'dopamine hit' which will promote a good user experience and encourage users to replay the game because the effects of dopamine are addictive. More information about dopamine can be found [here](https://uxdesign.cc/ux-dopamine-and-motivation-9c63cabf25c7)
+
+
+### Lose Game Modal (Memory Card Game and Whack-A-Mole)
+
+- Provides feedback to the user by telling them that they have not met the requirements to move onto the next game.
+
+- 'Better Luck Next Game' is more positive than 'You Lose', which will enourage users to try again and discourage any negative responses which could stop users from playing the game.
+
+  - Doesn't punish users for 'losing'.
+
+- Provides the option for users to quit the game, with 'Return to Homepage'.
+
+  - Gives users greater control over their actions.
+
+
+### Memory Game
+
+- 8 Card pairs (12 cards in total)
+
+  - A large enough number to be a challenge yet small enough to not be too difficult or fustrating the user.
+
+  - Each card is coffee themed which correlates to the game's overall theme.
+
+  - The 'odd one out' is the **mole card** which is the "clue" that was referenced in the game setting menu. This provides a stable link with the next game - whack-a-mole.
+
+- Background image 
+
+  - The background image is the **hero image** used in the Homepage, which ensures that a consistent theme runs throughout the project.
+
+  - Makes the games more visually pleasing.
+
+- Game board - desk
+
+  - Added a card-game desk (or a green background for smaller mobile devices) to emulate the cards being spread out across the desk.
+
+  - On larger screens, an animated coffee cup is on the desk to keep the game theme flowing throughout.
+
+- Card flip animation
+
+  - Follows the conventions of card games, simulating the real action of flipping a card.
+
+  - Gives users time to process the front-face of the card.
+
+- Start Button modal
+
+  - Allows users to play the game once they're ready. Clicking the button would start the game timer and allow users to interact with the game board to play the game.
+
+  - The button has a pulsing animation to incite users to click it and also confirm to users that it is indeed clickable.
+
+  - The button is bright and vibrant to make it stand out.
+
+- Game timer - Numbered Timer
+
+  - Provides a clear indication to how much timer is left.
+
+- Game timer - Progress Bar
+
+  - Provides a visual timer which is easier to keep track of.
+
+  - Due limitations within the code, this is only available on larger screens. However, I would like to add this feature to smaller screens in future developments.
+
+
+### Whack-A-Mole
+
+- 6 holes for the moles to pop up out from.
+
+  - A large enough number to be a challenge yet small enough to not be too difficult or fustrating the user.
+
+  - The number of holes is a right to ensure responsive UX design on a wide range of devices.
+
+- Mole pop animation
+
+  - The mole pops up from the hole at different depending on what difficulty setting was chosen by the user.
+
+- Whack Mole Feedback
+
+  - When whacked (clicked by the user) the mole will change to a mole with an angry face.
+
+  - This gives the user appropriate feedback so that they know that their input was recognised by the game.
+
+  - The score increments by one to also provide feedback for user input.
+
+- Score Count
+
+  - Every time the user successfully whacks a mole, the score increments by one.
+
+- High Score
+
+  - A high score value is stored in the browser's local storage sytem to encourage users to replay the game.
+
+- Start Button modal
+
+  - Allows users to play the game once they're ready. Clicking the button would start the game timer and allow users to interact with the game board to play the game.
+
+  - The button has a pulsing animation to incite users to click it and also confirm to users that it is indeed clickable.
+
+  - The button is bright and vibrant to make it stand out.
+
+- Game timer - Numbered Timer
+
+  - Provides a clear indication to how much timer is left.
+
+- Game timer - Progress Bar
+
+  - Provides a visual timer which is easier to keep track of.
+
+  - Due limitations within the code, this is only available on larger screens. However, I would like to add this feature to smaller screens in future developments
+
+
+### Frogger
+
+- Frogger includes animated obstacles which the user must avoid by moving the frog to reach the top of the canvas.
+
+  - Users must *avoid* the moving cars.
+
+  - Users must *use* the logs and turtles to avoid falling into the water.
+
+  - Collision detection has been added to game to create the effect of the frog being hit by a car and/or falling into the water.
+
+- Animated frogger sprite which users can move across the canvas with their keyboard or with swipe motions on touchscreen devices.
+
+  - The frog animation is only activated when the input is registered via keyboard due to limitations with the code.
+
+- Animated Coffee Gif on game canvas - Desktop only
+
+  - Adds visual variety to the game.
+
+  - Provides a visual correlation to the coffee theme.
+
+  - Promotes a positive emotional response as the gif appears happy and fun.
+
+  - Makes Frogger more relaxed in comparison to the Memory Card game and Whack-A-Mole. In Frogger, users do not have win or lose conditions like in the previous games.
+
+- Collision Count 
+
+  - Every time a frog is hit by a car obstacle or falls into the water the collision count is incremented by 1.
+  
+  - The collision count is represented with a gravestone icon (to represent every frog that is lost) to make the user interface more visually interesting and reduce cognitive overload caused by having too much text on the screen.
+
+- Score Count
+
+  - Every time the user successfully reaches their frog to the top edge of the canvas the score count increments by 1.
+
+  - The score count is represented with a set of hearts (to represent every frog saved) which makes the user interface more visually interesting and prevents cognitive overload by reducing the amount of text on the screen.
+
+- High Score
+
+  - A high score value is stored in the browser's local storage sytem to encourage users to replay the game.
+
+- Start Button modal
+
+  - Allows users to play the game once they're ready. Clicking the button would start the game timer and allow users to interact with the game board to play the game.
+
+  - The button has a pulsing animation to incite users to click it and also confirm to users that it is indeed clickable.
+
+  - The button is bright and vibrant to make it stand out.
+
+- Game timer - Numbered Timer
+
+  - Provides a clear indication to how much timer is left.
+
+- Game timer - Progress Bar
+
+  - Provides a visual timer which is easier to keep track of.
+
+  - Due limitations within the code, this is only available on larger screens. However, I would like to add this feature to smaller screens in future developments
+
+
+### Frogger - End Game Modal
+
+- Logs score count
+
+  - Tells users how many frogs they saved.
+
+  - If less than zero the modal will say: `"You didn't save any!"`
+
+  - If the collision count is **also** zero, the modal will say: `"But you also didn't lose any of them!`
+
+- Logs collision count
+
+  - Tells the users how many frogs they didn't save.
+
+  - The tone is gentle so to **not** cause a negative response from the user. The modal will say: `"only [collision score] of them didn't make it"`
+
+  - If the collision count is less than zero the modal will say: `"And you didn't lose any of them!"`
+
+  - If the score count is zero **and** and the collision count is zero, the modal will say: `"But you also didn't lose any of them!"`
+
+- Logs highscore 
+
+  - If a user did not beat the highscore the modal will say `"can you beat it next time?"` after stating the current highscore, which can encourage users to replay the game.
+
+  - If a user beats the highscore the modal will say: `"And wow! You beat the highscore. It is now: [highscore]"`
+
+- Arrow button to continue
+
+  - Using an arrow icon rather than text reduces the amount of text on screen (preventing cognitive overload) and makes for a better user experience.
+
+
+### Final End Game Modal
+
+- Envokes a positive user response by celebrating their success.
+
+- Tempts the user to replay the game with `"How about you play the game again to beat your highscore? Who knows, perhaps the coffee will be hot this time?"`
+
+- Dancing Coffee Gif
+
+  - Helps produce a positive emotional response from the user and reinforces a friendly UX design. 
+
+  - The animated gif emphaises the coffee theme running throughout the game.
+
+  - It celebrates that the user has completed the game.
+
+- Play Again button
+
+  - Allows users to easily play again without needing to revisit the Homepage
+
+- Return to Hompage 
+
+  - Allows users to easily return to the Homepage.
+
+  - After playing the game users may want to know more, or may want to contact the site owner.
+
+  -----
 
 
 ## Technologies Used
