@@ -466,6 +466,9 @@ button,
 }
 
 @media (max-width: 380px) {
+    #gameFinish .end-game-content {
+        margin: 15px auto;
+    }
     .game-hud {
         width: 200px;
     }

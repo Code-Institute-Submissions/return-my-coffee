@@ -339,7 +339,7 @@ canvas {
 
 @media (max-width: 414px) {
     .score {
-        top: 0;
+        top: 5px;
         left: 0; 
     }
     .collisions {
@@ -347,17 +347,26 @@ canvas {
     }
     .score img, 
     .collisions img {
-        width: 40%;
-        height: 40%;
+        width: 35%;
+        height: 35%;
     }
     .game-hud .time-left {
-        font-size: 14px;
+        font-size: 10px;
     }
     .highscore {
-        font-size: 14px;
+        font-size: 12px;
     }
     .highscore span {
-        font-size: 18px;
+        top: 30px;
+    }
+    .highscore span,
+    .score span,
+    .collisions span {
+        font-size: 16px;
+    }
+    .score span,
+    .collisions span {
+        top: 5px;
     }
 }
 
@@ -371,11 +380,6 @@ canvas {
     .collisions img {
         width: 35%;
         height: 35%;
-    }
-    .score span,
-    .collisions span {
-        top: 5px;
-        font-size: 16px;
     }
     .collisions {
         top: 0;
