@@ -304,7 +304,8 @@
     left: 0;
     top: 0;
     background-color: #9d9d9dce;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .end-game-content {
@@ -452,7 +453,6 @@ button,
     }
     .end-game-content {
         width: 100vw;
-        overflow-x: hidden;
     }
     .end-game-content h2 {
         font-size: 25px;
