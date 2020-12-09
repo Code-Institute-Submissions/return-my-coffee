@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Return myCoffee</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/main/favicon.png">
+    <!-- Email JS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_Qyal6Cs5aKrtVTSnSDGtL");
+        var templateParams = {
+            name: 'James',
+            notes: 'Check this out!'
+        };
+        
+        emailjs.send('ellenst264', 'return_mycoffee', templateParams)
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+            console.log('FAILED...', error);
+            });
+    })();
+    </script>
 </head>
 <body>
     <!-- Navbar -->
