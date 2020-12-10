@@ -18,10 +18,10 @@ document.getElementById("contactForm").addEventListener("submit", function(event
                         className: "btn-confirm-send"
                     }
                 }
-            })
+            });
 
         }, function(error) {
             console.log("FAILED...", error);
             alert("Oops, something went wrong..." + JSON.stringify(error));
-        })
+        });
 });
