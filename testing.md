@@ -117,6 +117,12 @@ JShint gave the following warnings in relation to the syntax of my code:
 
 After deeming these warning undetrimental to the overall functionality of my project, I decided to ignore these warnings. 
 
+- JShint flags two *undefined variables* in `email.js`:
+    - `emailjs`
+    - `bootbox`
+
+    - As both variables are required by third party resources and work as intended, I have decided to ignore this warning.
+
 
 - All typos in the code that were found by JShint were corrected.
 
