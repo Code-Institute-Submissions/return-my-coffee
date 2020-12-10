@@ -286,6 +286,12 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - Adds a personal touch to the site and makes the tonality more friendly and approachable, which could encourage users to visit the site again.
 
+  - Implements EmailJS to add real-world functionality. When a user inputs their message within the contact form the site owner (me) will recieve an email containing the user's message. 
+
+  - Users will be notified via an alert box once the email is sent, confirming that their message was sent successfully.
+
+  - The form input fields will reset once the data has been sent.
+
 
 ### Game settings menu
 
