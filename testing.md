@@ -28,6 +28,8 @@
 
     - [Contact Form](#contact-form)
 
+        - [Email JS setup](#email-js-setup)
+
     - [Game Settings Menu](#game-settings-menu)
 
     - [Memory Game](#memory-game)
@@ -335,7 +337,35 @@ Although the test for desktop devices gave a good score, the mobile results coul
 |  3  | Test `send button` with all data filled in | Fill in all data and click the `send` button | The form will send | Sends the form | Pass |
 |  4  | Test `send button` without `Last Name` filled in | Fill in all data **but last name** and click the `send` button | The form will send | Sends the form | Pass |
 |  5  | Test `email input type` | Click on the `email input field` and input data that **is not** an email (e.g. a 'name' or 'hi') | When `send` is clicked, it will display a notification telling the user to `include a '@' in the email address`. The `send` button will not function until this is resolved | Shows a notification telling the user to `include a '@' in the email address`. The `send` button is blocked | Pass |
+|  6  | Test `alert box` pop up | Fill in the required input fields then click `send` | An `alert box` should pop up telling the users that the email has been sent successfully, or, if the email did not send, it should tell users of the fail | Upon clicking sending a `alert box` pops up telling me that the email was sent successfully | Pass | Look [here](#email-js-setup) for details regarding the setup of **EmailJS** |
+|  7  | Test if `EmailJS` works | Fill in the required input fields then click `send` | The site owner should recieve an email which includes the data filled in by the user | Upon clicking send and after the alert box pops up I recieve an email containing the information inputted by the user via the contact form on the homepage | Pass | Look [here](#email-js-setup) for details regarding the setup of **EmailJS** |
+|  8  | Test if the `input fields` reset upon form submission | Fill in the required input fields and click send | After the alert box is acknowledged and closed the input field in the contact form should reset | The input fields reset once the alert box is exited after submitting the form | Pass |
 
+### Email JS Setup
+
+After creating an account on [EmailJs](https://www.emailjs.com/) I created an email template for this project.
+
+![EmailJS email template screenshot](assets/img/main/email-template.png)
+
+- I ensured that the values in the email template matched the names given to the input fields in the form. This included:
+    - `{{fname}}` 
+    - `{{lname}}`
+    - `{{email}}`
+    - `{{message}}`
+
+- I kept to the default structure within the template to make it clear that the emails I would recieve where coming from the project. 
+```
+Hello {{to_name}},
+
+You got a new message from {{fname}} {{lname}}:
+
+{{message}}
+
+Best wishes,
+EmailJS team
+```
+
+-----
 
 ### Game settings menu
 
