@@ -592,6 +592,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - [Font Awesome 5.14](https://fontawesome.com/)
   - Font Awesome was used sparingly for adding icons or image cues to the project to employ a good UX design.
+
+- [Bootbox JS 5.5.2](http://bootboxjs.com/)
+  - Bootbox builds upon Bootstrap. It was used to style the alert box which is trigged when the contact form is submitted on the homepage.
   
 - [Adobe XD](https://www.adobe.com/uk/products/xd.html)
   - Adobe XD was used to create the wireframes during the design process.
@@ -625,6 +628,12 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - [Paint 3D](https://www.microsoft.com/en-gb/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
   - Paint 3D is a free photo editing program which is pre-installed on Windows 10. I used Paint 3D to make minor adjustments to images and remove whitespace with the cropping tool so that they were easier to minipulate with CSS.
+
+- [ScreenToGif](https://www.screentogif.com/)
+  -ScreenToGif is a user friendly screen, webcam and sketchboard recorder with an integrated editor. It was used to capture screen recording of sections of the project.
+
+- [EmailJS](https://www.emailjs.com/)
+  - EmailJS was used to add real world functionality to the contact form on the homepage. EmailJS notifies my via email when a form has been submitted.
 
 -----
 
@@ -679,6 +688,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
   - It should be `Refactor code`
   - Addressing this issue using the terminal command `git rebase -i HEAD~[number]` would imply that all the commit messages were made in one day (commit messages made between Dec 2 and Dec 10 were all moved to Dec 10 after using this command to fix the first instance of this typo), therefore, I have chosen to leave this as there are too many commit messages to sift through.
 
+- Return myCoffee is most optimal when played on desktop or laptop devices. Nevertheless, the game is highly reponsive and can be played on a wide range of devices easily.
 
 -----
 
@@ -692,9 +702,15 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
   - Design foundation for some buttons
   - Jumbotron in the Homepage
 
+- [Bootbox JS](http://bootboxjs.com/) was used to style the alert box which is trigged when the contact form is submitted on the homepage. Code provided on the Bootbox documentation pages found [here](http://bootboxjs.com/documentation.html#bb-options) was referenced to style the alert box further.
+
+- [EmailJS](https://www.emailjs.com/) was used to add real world functionality to the contact form on the homepage. When a user submits the form, EmailJS sends the content to me via email.
+
 - [W3Schools](https://www.w3schools.com/) was used as guidance when creating my own modals that were not influenced by Bootstrap.
 
 - The jumbotron background image on the homepage was based upon [this source](https://coder-coder.com/background-image-opacity/")
+
+- The parrallax scrolling effect used on the hompage was based upon [this source](https://www.digitalocean.com/community/tutorials/css-pure-css-parallax)
 
 - Code for the Memory Game (HTML, CSS and JavaScript) was based upon [this YouTube tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek) by FreeCodeCamp.org
 
@@ -704,7 +720,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - The code used to shuffle the cards in the Memory Game was based upon [this code snipppet](https://jsfiddle.net/z503fjv9/)
 
-- The code used to add touchscreen swipe controls to Frogger was written by Kirupa Chinnathambi and can be accessed via [here](https://stackoverflow.com/questions/53192433/how-to-detect-swipe-in-javascript) or [here](https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm)
+- The code used to add touchscreen swipe controls to Frogger was written by Kirupa Chinnathambi and can be accessed [here](https://stackoverflow.com/questions/53192433/how-to-detect-swipe-in-javascript) or [here](https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm)
 
 - To fix null errors in the console, I looked to [this Stack Overflow post](https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null)
 
@@ -750,6 +766,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - [Slack Community](https://slack.com/intl/en-gb/) for all the help, advice and inspiration.
 
 - [Bootstrap](https://getbootstrap.com/) for the CSS and JQuery framework.
+
+- [EmailJS](https://www.emailjs.com/) for adding real world functionality to the contact form.
+
+- [Bootbox JS](http://bootboxjs.com/) for building on Bootstrap to create a nice design for the alert box.
 
 - [FreeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) for the great tutorial on how to make your own memory game.
 
