@@ -1,4 +1,4 @@
-// Open Game from game menu
+// Open Game from game settings menu
 function findYourCoffee() {
     if (settingBtnClicked === false) {
         alert("Please pick a setting before you play");

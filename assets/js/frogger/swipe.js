@@ -1,5 +1,3 @@
-const gameboard = document.querySelector(".frogger-board");
-
 /*
 ** The following code was based upon this source:
     "https://stackoverflow.com/questions/53192433/how-to-detect-swipe-in-javascript"
@@ -10,8 +8,11 @@ const gameboard = document.querySelector(".frogger-board");
     ** Original Author: Kirupa Chinnathambi
 */
 
+const gameboard = document.querySelector(".frogger-board");
 gameboard.addEventListener("touchstart", startTouch, {passive: true});
 gameboard.addEventListener("touchmove", moveTouch, {passive: true});
+
+/* Touchscreen swipe controls */
 
 // Swipe Up / Down / Left / Right
 var initialX = null;

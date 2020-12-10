@@ -1,6 +1,6 @@
-/* 
-The following code for this game was based upon a video guide from the following source:
-"https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=2"
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=2"
 */
 
 // Pick random hole
@@ -15,7 +15,8 @@ function pickRandomHole() {
     return hole;
 }
 
-// Mole pop up
+/* Mole pop up */ 
+
 function molePopUp() {
     if (countdown == 60) {
         molePopUpEasy();
@@ -28,6 +29,7 @@ function molePopUp() {
     }
 }
 
+// Easy speed
 function molePopUpEasy() {
     const hole = pickRandomHole(holes);
     hole.classList.add("up");
@@ -40,6 +42,7 @@ function molePopUpEasy() {
     }, time);
 }
 
+// Medium speed
 function molePopUpMedium() {
     const hole = pickRandomHole(holes);
     hole.classList.add("up");
@@ -52,6 +55,7 @@ function molePopUpMedium() {
     }, time);
 }
 
+// Hard speed
 function molePopUpHard() {
     const hole = pickRandomHole(holes);
     hole.classList.add("up");

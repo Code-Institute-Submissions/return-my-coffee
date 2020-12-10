@@ -1,3 +1,8 @@
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4&t=2686s"
+*/
+
 class Frogger {
     constructor() {
         this.spriteWidth = 250;
@@ -10,6 +15,7 @@ class Frogger {
         this.frameX = 0;
         this.frameY = 0;
     }
+    // Add sprite animation to frogger movement
     update() {
         // Up
         if (keys[38] || keys[87]) {     

@@ -1,3 +1,9 @@
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=ZniVgo8U7ek"
+*/
+
+// Start Game
 playGame.addEventListener("click", startGame);
 
 // Unlock the board to start the game
@@ -29,7 +35,7 @@ function startTimer() {
     }, animateSpeed);
 }
 
-// End game 
+/* End game */
 
 continueBtn.addEventListener("click", function(){
     window.location.replace("game-two-menu.html");

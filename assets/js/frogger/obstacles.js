@@ -1,3 +1,8 @@
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4&t=2686s"
+*/
+
 class Obstacle {
     constructor(x, y, width, height, speed, type) {
         this.x = x;
@@ -11,6 +16,7 @@ class Obstacle {
         this.randomise = Math.floor(Math.random() * 30 + 30);
         this.carType = Math.floor(Math.random() * numberOfCars);
     } 
+    // Draw to canvas
     draw() {
         if (this.type === "turtle") {
             if (frame % this.randomise === 0) {
@@ -30,6 +36,7 @@ class Obstacle {
             ctx2.drawImage(car,this.frameX * this.width, this.carType * this.height, grid * 2, grid, this.x, this.y, this.width, this.height);
         }
     }  
+    // Add animation
     update() {
         this.x += this.speed * gamespeed;
         // Moving to the right
@@ -51,7 +58,7 @@ class Obstacle {
     }
 }
 
-// Add new obstacle to car array
+/* Add obstacles to cars, logs and turtles array */
 
 function initObstacles() {
     // Car lane 1
@@ -83,6 +90,9 @@ function initObstacles() {
 
 initObstacles();
 
+/* Draw obstacles to canvas */
+/* Add collision detection to obstacles */
+
 function handleObstacles() {
     for (let i = 0; i < carsArray.length; i++) {
         carsArray[i].update();
@@ -108,7 +118,7 @@ function handleObstacles() {
                 safe = true;
             }
         }
-        // Fall in water detection
+        // Fall in water collision detection
         if (!safe) {
             for (let i = 0; i < 30; i++) {
                 ripplesArray.unshift(new Ripple(frogger.x, frogger.y));

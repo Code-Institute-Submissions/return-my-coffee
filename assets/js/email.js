@@ -1,7 +1,7 @@
 /**
  * Based upon EmailJS Documentation guide
  * "https://www.emailjs.com/docs/tutorial/creating-contact-form/"
- */
+*/
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();

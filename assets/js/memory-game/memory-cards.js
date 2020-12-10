@@ -1,7 +1,9 @@
-/* 
-The following code for this game was based upon a video guide from the following source:
-"https://www.youtube.com/watch?v=ZniVgo8U7ek"
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=ZniVgo8U7ek"
 */
+
+/* Game variables */ 
 
 var lockBoard = false;
 var hasFlippedCard = false;
@@ -12,7 +14,8 @@ let animateSpeed = localStorage.getItem("animateSpeed") || 20;
 let startGameCountdown = 5;
 let totalMatches = 0;
 
-// Flip Card
+/* Flip Card */
+
 cards.forEach((card)=> {
     card.addEventListener("click", flipCard);
 });

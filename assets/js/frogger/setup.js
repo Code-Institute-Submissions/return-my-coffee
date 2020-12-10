@@ -1,3 +1,8 @@
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4&t=2686s"
+*/
+
 // Begin game
 const countdownBoard = document.querySelector(".time-left");
 const timeLeft = document.querySelector(".time-left span");
@@ -14,7 +19,7 @@ const zeroCollisions2 = document.querySelector("#noCollisions2");
 const showNewHighscore = document.querySelector("#beatHighscore");
 const showHighscoreDiv = document.querySelector("#showHighscore");
 
-// Canvas 
+/* Canvas */
 
 const canvas = document.getElementById("canvas1");
 const ctx1 = canvas.getContext("2d");
@@ -41,18 +46,20 @@ const ctx5 = canvas5.getContext("2d");
 canvas5.width = 600;
 canvas5.height = 600;
 
-// Global game variables
+/* Global game variables */
 
+// Constant game variables
 const scoreBoard = document.querySelector(".score span");
 const collisionBoard = document.querySelector(".collisions span");
 const highScoreBoard = document.querySelector(".highscore span");
 
+// Local storage variables
 let countdown = localStorage.getItem("countdownSpeed") || 20;
 let animateSpeed = localStorage.getItem("animateSpeed") || 20;
-
 let highscore = localStorage.getItem("game2HighScore") || 0;
 highScoreBoard.textContent = highscore;
 
+// Changeable game variables
 const grid = 80;
 let keys = [];
 let score= 0;
@@ -67,7 +74,7 @@ const ripplesArray = [];
 const carsArray = [];
 const logsArray = [];
 
-// Images
+/* Images to load onto the canvas */
 
 const background_lvl2 = new Image();
 background_lvl2.src = "./assets/img/frogger/background_lvl2.png";

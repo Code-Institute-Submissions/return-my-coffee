@@ -1,3 +1,8 @@
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=GXvNEwu9cgM&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=4&t=2686s"
+*/
+
 class Dust {
     constructor(x, y) {
         this.x = x + 25;

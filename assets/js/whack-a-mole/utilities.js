@@ -1,4 +1,9 @@
-// Start game 
+/**
+ * This game is based upon a video guide from the following source:
+ * "https://www.youtube.com/watch?v=RTb8icFiSfk&list=PLYElE_rzEw_sowQGjRdvwh9eAEt62d_Eu&index=2"
+*/
+
+/* Start game */
 
 playGame.addEventListener("click", startGame);
 
@@ -32,7 +37,7 @@ function startGame() {
     }, animateSpeed);
 }
 
-// Count player score
+/* Count player score */
 
 moles.forEach(mole => mole.addEventListener("click", whackMole));
 
@@ -66,7 +71,6 @@ function whackMole(e) {
 }
 
 // Check high score
-
 function checkHighScore() {
     if (score > localStorage.getItem("game1HighScore")) {
         localStorage.setItem("game1HighScore", score);
@@ -76,7 +80,6 @@ function checkHighScore() {
 }
 
 // End game 
-
 function endGame() {
     // Win
     if (score === 25 || score > 25) {
