@@ -3,7 +3,8 @@
  * "https://www.emailjs.com/docs/tutorial/creating-contact-form/"
 */
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+var form = document.getElementById("contactForm");
+form.addEventListener("submit", function(event) {
     event.preventDefault();
     emailjs.sendForm("ellenst264", "return_mycoffee", this)
         .then(function() {
@@ -19,7 +20,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
                     }
                 }
             });
-
+        form.reset();
         }, function(error) {
             console.log("FAILED...", error);
             alert("Oops, something went wrong..." + JSON.stringify(error));
