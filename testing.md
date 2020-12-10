@@ -40,6 +40,8 @@
 
     - [Frogger - End Game Modal](#frogger---end-game-modal)
 
+- [Further Testing](#further-testing)
+
 - [Bug Fixes](#bug-fixes)
 
     - [Memory Game](#memory-game-1)
@@ -466,6 +468,45 @@ EmailJS team
 
 
 -----
+
+## Further Testing
+
+### Desktop
+
+- Hardware 
+    - Desktop PC with a AOC 2560 x 1440 monitor
+    - Apple MacBook 13inch
+
+- Operating Sytems 
+    - Windows 10
+    - iOS
+
+- Browsers 
+    - Google Chrome
+    - Brave
+    - Microsoft Edge
+
+
+### Mobile Devices
+
+- Hardware
+    - Honor 20 Pro
+    - Sony Xperia Z3 Plus
+    - Samsung A20
+    - iPhone 7
+
+- Operating Systems
+    - Android
+    - iOS
+
+- Browsers
+    - Google Chrome
+    - Opera 
+    - Safari
+
+
+-----
+
 
 ## Bug Fixes 
 
