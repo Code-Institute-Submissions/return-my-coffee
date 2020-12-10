@@ -58,6 +58,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 - [Deployment](#deployment)
 
+- [Further Notes](#further-notes)
+
 - [Credits](#credits)
 
   - [Code](#code)
@@ -662,6 +664,15 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
+
+-----
+
+## Further Notes
+
+- In older commit messages there is in the message: **"Refractor code"** 
+  - It should be `Refactor code`
+  - Addressing this issue using the terminal command `git rebase -i HEAD~[number]` would imply that all the commit messages were made in one day (commit messages made between Dec 2 and Dec 10 were all moved to Dec 10 after using this command to fix the first instance of this typo), therefore, I have chosen to leave this as there are too many commit messages to sift through.
+
 
 -----
 
