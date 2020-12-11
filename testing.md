@@ -475,7 +475,9 @@ EmailJS team
 
 - Hardware 
     - Desktop PC with a AOC 2560 x 1440 monitor
-    - Apple MacBook 13inch
+    - 13" Apple MacBook
+    - MSI GE72MVR Apache Pro 17'3" Laptop
+    - HP Spectre x360 15'6" Laptop 
 
 - Operating Sytems 
     - Windows 10
@@ -494,6 +496,7 @@ EmailJS team
     - Sony Xperia Z3 Plus
     - Samsung A20
     - iPhone 7
+    - iPhone XR
 
 - Operating Systems
     - Android
@@ -506,6 +509,7 @@ EmailJS team
 
 
 -----
+
 
 
 ## Bug Fixes 
