@@ -223,6 +223,12 @@ body {
 
 /* ------------------------- Laptop and tablet devices */
 
+@media (min-height: 1441px) {
+    .game-hud {
+        margin: -4vh auto;
+    }
+}
+
 @media (max-width: 1440px) {
     .game-hud {
         margin: -4vh auto;
