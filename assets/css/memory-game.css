@@ -218,14 +218,14 @@ body {
     .game-hud {
         margin: -2vh auto;
         position: fixed;
-    }    
+    }
 }
 
 /* ------------------------- Laptop and tablet devices */
 
 @media (max-width: 1440px) {
     .game-hud {
-        margin: -2vh auto;
+        margin: -4vh auto;
         z-index: 50;
     }  
     .game-desk {
@@ -251,6 +251,32 @@ body {
     }
 }
 
+@media (max-width: 1280px) and (min-height: 600px) and (max-height: 760px) {
+    .game-hud {
+        margin: -50px auto;
+        z-index: 50;
+    }
+    .time-left {
+        color: white;
+    }
+    .game-desk {
+        margin: -20px auto;
+    }
+    #deskCoffee {
+        width: 180px;
+        height: 180px;
+        left: 65px;
+        top: 55vh;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 768px) {
+    .game-hud {
+        margin: 0 auto;
+        z-index: 50;
+    }
+}
+
 @media (max-width: 1015px) {
     .game-container {
         background-color: #0b6736;
@@ -258,6 +284,9 @@ body {
         display: -ms-flexbox;
         display: flex;
         margin: auto;
+    }
+    .time-left {
+        color: white;
     }
     .game-desk {
         background-image: none;
@@ -286,12 +315,46 @@ body {
 
 /* ------------------------- Smaller tablet and mobile devices */
 
-
+@media (max-height: 599px) and (min-width: 800px) {
+    .game-hud {
+        margin: -50px auto;
+        z-index: 50;
+    }
+    .time-left {
+        color: white;
+    }
+    .game-container {
+        background-color: #0b6736;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: auto;
+    }
+    .game-desk {
+        background-image: none;
+    }
+    .game-desk {
+        margin: -20px auto;
+    }
+    .memory-game-board {
+        width: 400px;
+        height: 500px;
+        margin: 75px 30%;
+    }
+    .memory-card {
+        width: 100px;  
+        height: 125px;
+        margin: 0 auto; 
+    }
+}
 
 @media (max-width: 650px) {
     body {
         background-image: none;
         background-color: #0b6736;
+    }
+    .time-left {
+        color: white;
     }
     .memory-game-board {
         width: 450px;
@@ -318,17 +381,17 @@ body {
         width: 450px;
         height: 600px;
         padding: 0;
-        margin-top: 10px;
+        margin-top: 54px;
     }
 }
 
-@media (max-width: 445px) and (min-height: 650px) {
+@media (max-width: 445px) and (min-height: 640px) {
     .memory-game-board {
         width: 400px;
         margin-top: 0;
     }
     .game-container {
-        height: 95vh;
+        height: 84vh;
     }
     .memory-card {
         width: 90px;  
@@ -337,19 +400,35 @@ body {
     }
 }
 
-@media (max-width: 385px) and (min-height: 500px) {
+@media (max-width: 385px) and (min-height: 600px) {
     .memory-game-board {
         width: 350px;
         max-height: 500px;
         margin-top: 0;
     }
     .game-container {
-        height: 95vh;
+        height: 82vh;
     }
     .memory-card {
         width: 80px;  
         height: 105px;
         margin: 1px auto;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 599px) {
+    .memory-game-board {
+        width: 350px;
+        max-height: 500px;
+        margin-top: 0;
+    }
+    .game-container {
+        height: 98vh;
+    }
+    .memory-card {
+        width: 80px;  
+        height: 105px;
+        margin: 0 auto;
     }
 }
 
@@ -369,27 +448,15 @@ body {
 
 @media (max-width: 280px) {
     .memory-game-board {
-        width: 280px;
-    }
-    .memory-card {
-        width: 65px;  
-        height: 85px;
-    }
-    .time-left {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 280px) {
-    .time-left {
-        width: 50%;
-        font-size: 14px;
-    }
-    .memory-game-board {
-        width: 250px;
+        width: 240px;
+        margin-top: 15px;
     }
     .memory-card {
         width: 55px;  
         height: 75px;
+    }
+    .time-left {
+        width: 80%;
+        font-size: 14px;
     }
 }
