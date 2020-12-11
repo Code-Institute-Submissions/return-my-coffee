@@ -343,7 +343,7 @@ label {
     }
 }
 
-@media (min-width: 540px) and (max-width: 991px) and (min-height: 762px) {
+@media (min-width: 540px) and (max-width: 991px) and (min-height: 720px) {
     .game-title {
         position: relative;
         top: 125px;
@@ -353,17 +353,17 @@ label {
     }
 }
 
-@media (max-width: 540px) and (min-height: 720px) {
+@media (max-width: 540px) and (min-height: 719px) {
     .game-title {
         position: relative;
-        top: 65px;
+        top: 125px;
         bottom: 0;
         right: 0;
         left: 0;
     }
     .hero-coffee {
         position: relative;
-        top: -120px;
+        top: -100px;
         bottom: 0;
         right: 0;
         left: 0; 
@@ -371,6 +371,31 @@ label {
     #playNowHeroBtn {
         position: relative;
         top: -100px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 539px) and (max-height: 719px) {
+    .game-title {
+        position: relative;
+        top: 180px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 50px;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -50px;
+        bottom: 0;
+        right: 0;
+        left: 0; 
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -50px;
         bottom: 0;
         right: 0;
         left: 0;
@@ -391,7 +416,7 @@ label {
     }
     .game-title {
         position: relative;
-        top: 100px;
+        top: 125px;
         bottom: 0;
         right: 0;
         left: 0;
@@ -399,7 +424,7 @@ label {
     }
     .hero-coffee {
         position: relative;
-        top: -125px;
+        top: -90px;
         bottom: 0;
         right: 0;
         left: -10px; 
@@ -408,14 +433,14 @@ label {
     }
     #playNowHeroBtn {
         position: relative;
-        top: -100px;
+        top: -60px;
         bottom: 0;
         right: 0;
         left: 0;
     }
 }
 
-@media (max-width: 310px) {
+@media (max-width: 320px) {
     .navbar .navbar-brand {
         margin-right: 2px;
         font-size: 14px;
@@ -427,6 +452,31 @@ label {
     }
     .navbar .navbar-toggler {
         font-size: 15px;
+    }
+    .game-title {
+        position: relative;
+        top: 160px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 45px;
+    }
+    .hero-coffee {
+        position: relative;
+        top: -45px;
+        bottom: 0;
+        right: 0;
+        left: -10px; 
+        height: 400px;
+        width: auto;
+    }
+    #playNowHeroBtn {
+        position: relative;
+        top: -25px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 20px;
     }
 }
 
