@@ -732,4 +732,16 @@ I removed `e.preventDefault();` from swipe.js to fix the issue.
 
 - I dealt with this issue as best as I could with custom media queries in CSS.
 
-- I believe that this bug is not detrimental to the project's UX design as the game is responsive for a vast majority of devices and this particular visual issue does not hinder users from playing the game. However, I may try to address this in the future.
+- During peer review, one user noted that they could not see the frog at all. They played the game on an iPhone 7.
+
+![iPhone 7 screenshot](assets/img/main/iphone-screenshot.png)
+
+- However, I was unable to replicate this in Chrome DevTools and therefore I am unable to this fix this issue at the moment. This shall be addressed in future updates to ensure that *all* users can play the game without issues.
+
+    - I believe that this visual bug could potentially be 'fixed' by allowing the user to scroll down the webpage. **However**, this would interfere with the touchscreen controls of the game and would prevent the users from playing it.
+
+    - I should note that another user who tested the application, and who was also using an iPhone 7 did not report this sort of issue.
+
+    - Another user, who tested the game on an iPhone X also did not report any issues.
+
+- I believe that this bug is not detrimental to the project's overall UX design as the game is responsive for a vast majority of devices and this particular visual issue does not hinder users from playing the game. However, I may try to address this in the future.
