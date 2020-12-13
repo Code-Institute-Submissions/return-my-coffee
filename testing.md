@@ -699,19 +699,6 @@ I removed `e.preventDefault();` from swipe.js to fix the issue.
 -----
 
 
-## Some notes on the Construction Phase
-
-### Memory Game 
-
-- To first test if the CSS "flip" class worked as intended, I used `card.classList.toggle("flip")` which allowed me to toggle the flip animation on and off when clicking the card.
-
-    - Once I knew this worked as intended, I replaced the toggle method with the `add` method, as I did not want users to be able to flip the cards back to the default back-face by themselves.
-
-    - The flip animation was then handled in its own function so that it could handle more complex behaviours.
-
-
------
-
 ## Known Bugs 
 
 ### Whack-A-Mole
