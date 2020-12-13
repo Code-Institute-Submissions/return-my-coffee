@@ -42,6 +42,8 @@
 
 - [Further Testing](#further-testing)
 
+- [Peer Review ](#peer-review)
+
 - [Bug Fixes](#bug-fixes)
 
     - [Memory Game](#memory-game-1)
@@ -510,6 +512,18 @@ EmailJS team
 
 -----
 
+
+## Peer Review 
+
+- The project was posted on Slack's Peer Review channel, and the feedback I received from other students helped me isolate some final issues. 
+
+    - These issues were concerned with minor clipping issues which were corrected by updating media queries in CSS.
+
+- The project was also sent directly to family members and friends. They noted some grammar mistakes in the homepage and menus, which were promptly corrected, and one family member noted a visual problem when playing frogger on her iPhone 7. See [Bug Fixes](#game-canvas-clipping ) for more details.
+
+
+
+-----
 
 
 ## Bug Fixes 
