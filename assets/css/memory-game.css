@@ -410,7 +410,7 @@ body {
     .memory-game-board {
         width: 350px;
         max-height: 500px;
-        margin-top: 0;
+        margin-top: 12px;
     }
     .game-container {
         height: 82vh;
