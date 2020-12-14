@@ -48,6 +48,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
   - [Final End Game Modal](#final-end-game-modal)
 
+- [Accessibility](#accessibility)
+
 - [Technologies Used](#technologies-used)
 
   - [Languages](#languages)
@@ -574,6 +576,18 @@ The only difference between tablet and desktop is the collapsible navbar with th
   - After playing the game users may want to know more about the game's design, or may want to contact the site owner.
 
   -----
+
+
+## Accessibility
+
+- All images imported via img tags in the HTML files have been given meaningful, clear and descriptive alt attributes to conform to accessibility guidelines. 
+
+- Most of the font size is relatively large in order to cater for audiences who have difficulties with their vision.
+
+- Good colour contrast has been used throughout the project to ensure that all the content is readable.
+
+
+-----
 
 
 ## Technologies Used
