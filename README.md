@@ -48,6 +48,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
   - [Final End Game Modal](#final-end-game-modal)
 
+- [Features Left to Implement](#features-left-to-implement)
+
 - [Accessibility](#accessibility)
 
 - [Technologies Used](#technologies-used)
@@ -576,6 +578,16 @@ The only difference between tablet and desktop is the collapsible navbar with th
   - After playing the game users may want to know more about the game's design, or may want to contact the site owner.
 
   -----
+
+
+## Features Left to Implement
+
+- Add the progress bar timer to smaller screens to improve on the responsive UX design.
+
+- Improve on the frogger spritesheet animation so that it works the same for both keyboard input and touchscreen input. 
+
+
+-----
 
 
 ## Accessibility
