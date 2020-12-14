@@ -50,6 +50,8 @@ This web-application is a fun, interactive game that combines popular mini-games
 
 - [Features Left to Implement](#features-left-to-implement)
 
+- [Areas of Improvement](#areas-of-improvement)
+
 - [Accessibility](#accessibility)
 
 - [Technologies Used](#technologies-used)
@@ -585,6 +587,18 @@ The only difference between tablet and desktop is the collapsible navbar with th
 - Add the progress bar timer to smaller screens to improve on the responsive UX design.
 
 - Improve on the frogger spritesheet animation so that it works the same for both keyboard input and touchscreen input. 
+
+
+-----
+
+
+## Areas of Improvement
+
+- An improvement could be made to the hover effects for the navbar links in the homepage, as they are quite basic and are not very visually stimulating.
+
+- Find a better way to tell the users how to play Frogger, as it's controls are the most complex, without breaking the story narrative.
+
+- If I had more time and experience I could have made the games more original and expanded on the tutorials even further.
 
 
 -----
