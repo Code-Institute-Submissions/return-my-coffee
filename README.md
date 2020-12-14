@@ -82,11 +82,11 @@ The most significant goal of this project is to ensure that the game is entertai
 
 ### Project Owner Goals
 
-The primary goal is to create something unique - presenting a browser game that is responsive and enjoyable.
+The primary goal is to create something unique - presenting a browser game that is responsive and enjoyable. I also want this application to further enhance my porfolio, which is why it is important that a means of contact is provided for users who wish to reach out to me regarding my work. 
 
 ### Target Audience 
 
-The target audience is open to anyone who is fond of playing quick fun mini-games such as the *memory card game*, *whack-a-mole* and *frogger*. However, there are subtle references to coding that an astute eye may pick up on - the most obvious one can be found in the game title name. 
+The target audience is open to anyone who is fond of playing quick fun mini-games such as the *memory card game*, *whack-a-mole* and *frogger*. There are subtle references to coding that an astute eye may pick up on - the most obvious one can be found in the game title. 
 
 -----
 
@@ -113,7 +113,7 @@ The target audience is open to anyone who is fond of playing quick fun mini-game
 
 ### Returning Vistor Goals
 
-- As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score for the game.
+- As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score.
 
 - As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
 
@@ -139,7 +139,7 @@ Source Code Pro, Nanum Gothic Coding, Inconsolata and Roboto Mono have Monospace
 
 Roboto has a fallback font of Sans Serif incase it fails to import.
 
-All of the fonts have a similar style, but their subtle differences help add visual variety to the project to make it more interesting. I chose this style of font to stress the project's purpose. The fonts can easily be associated with arcade games, older RPG games and/or text-based games. Examples of this are displayed below:
+All of the fonts have a similar style, but their subtle differences help add visual variety to the project to make it more interesting. I chose this style to stress the project's purpose. The fonts can easily be associated with arcade games, older RPG games and/or text-based games. Examples of this are displayed below:
 
 | Example 1 | Example 2 | Example 3 |
 | --------- | --------- | --------- |
@@ -241,20 +241,20 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Navlinks hover effect
 
-  - A slight hover effect for the navbar links to provide feedback to user input.
+  - A slight hover effect for the navbar links provide feedback to user input.
 
 - Play Now button
   
-  - A play now button within the navigation menu to allow users to start the game at any moment, no matter where they are on the homepage.
+  - The play now button within the navigation menu allows users to start the game at any moment, no matter where they are on the homepage.
+
+
+#### Homepage Content
 
 - Smooth scroll effect
 
   - Removes the abrupt choppiness of default scrolling.
 
   - Correlates nicely the parrallax effect of the homepage.
-
-
-#### Homepage Content
 
 - Hero image
 
@@ -280,6 +280,8 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Contact form
 
+  - Fulfills a site owner's goal.
+
   - Allows users to contact the site owner easily, reducing the amount of steps they would need to take if they wanted to make contact.
 
   - Follows typical web-design conventions by being located at the bottom of the page (where a footer would be if the homepage had need for one)
@@ -301,7 +303,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Difficulty buttons
   
-  - Allows the users to choice a difficulty setting for each game.
+  - Allows the users to choose a difficulty setting for each game.
 
   - Gives users greater control in regards to how *they want to* play the game.
 
@@ -317,7 +319,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - Reduces cognitive overload by limiting the amount of information that is shown to the user.
 
-  - Many users may not want to even read game instructions and/or may already know how to the play the game.
+  - Many users may not want to even read the game instructions and/or may already know how to the play the game.
 
 - Return to Homepage
 
@@ -334,11 +336,11 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - A fake loading screen is added before each game to give users time to process what they have to do before the game starts.
 
-- The fake loading screen helps the project conform to a lot of game conventions. A loading screen would almost always be present before starting the game. 
+- The fake loading screen helps the project conform to a lot of game conventions. A loading screen would almost always be present before starting a game. 
 
 - Provides feedback to the user by 'pretending' that their input is being processed before the game loads. In reality, this information is processed in milliseconds, but this time can reassure users that their input is being processed successfully. 
 
-- Removes any suddeness from the game which prepares them to play the game.
+- Removes any suddeness which prepares them to play the game.
 
 
 ### Win Game Modal (Memory Card Game and Whack-A-Mole)
@@ -367,7 +369,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - 8 Card pairs (12 cards in total)
 
-  - A large enough number to be a challenge yet small enough to not be too difficult or fustrating the user.
+  - A large enough number to be a challenge yet small enough to not be too difficult or fustrating for the user.
 
   - Each card is coffee themed which correlates to the game's overall theme.
 
@@ -381,9 +383,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Game board - desk
 
-  - Added a card-game desk (or a green background for smaller mobile devices) to emulate the cards being spread out across the desk.
+  - Added a card-game desk (or a green background for smaller mobile devices) to simulate the cards being spread out across the desk.
 
-  - On larger screens, an animated coffee cup is on the desk to keep the game theme flowing throughout.
+  - On larger screens, an animated coffee cup is on the desk to keep the game's visual theme flowing throughout.
 
 - Card flip animation
 
@@ -401,7 +403,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Game timer - Numbered Timer
 
-  - Provides a clear indication to how much timer is left.
+  - Provides a clear indication to how much time is left.
 
 - Game timer - Progress Bar
 
@@ -416,19 +418,19 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - A large enough number to be a challenge yet small enough to not be too difficult or fustrating the user.
 
-  - The number of holes is a right to ensure responsive UX design on a wide range of devices.
+  - The number of holes is a near perfect amount to ensure responsive UX design on a wide range of devices.
 
 - Mole pop animation
 
-  - The mole pops up from the hole at different depending on what difficulty setting was chosen by the user.
+  - The mole pops up from the hole at different speeds depending on what difficulty setting was chosen by the user.
 
 - Whack Mole Feedback
 
-  - When whacked (clicked by the user) the mole will change to a mole with an angry face.
+  - When whacked (clicked by the user) the mole image will change to a mole with an angry face.
 
   - This gives the user appropriate feedback so that they know that their input was recognised by the game.
 
-  - The score increments by one to also provide feedback for user input.
+  - The score also increments by one to provide feedback for user input.
 
 - Score Count
 
@@ -467,9 +469,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - Collision detection has been added to game to create the effect of the frog being hit by a car and/or falling into the water.
 
-- Animated frogger sprite which users can move across the canvas with their keyboard or with swipe motions on touchscreen devices.
+- The frog is an animated spritesheet, which users can move across the canvas with their keyboard or with swipe motions on touchscreen devices.
 
-  - The frog animation is only activated when the input is registered via keyboard due to limitations with the code.
+  - The frog animation is only activated when the input is registered via keyboard due to limitations with the code. I would like to improve on this in the future so that the animations works as desired on **all** devices, not only desktop.
 
 - Animated Coffee Gif on game canvas - Desktop only
 
@@ -522,9 +524,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - Tells users how many frogs they saved.
 
-  - If less than zero the modal will say: `"You didn't save any!"`
+  - If less than zero, the modal will say: `"You didn't save any!"`
 
-  - If the collision count is **also** zero, the modal will say: `"But you also didn't lose any of them!`
+  - If the the score **and** collision count is zero, the modal will say: `"But you also didn't lose any of them!`
 
 - Logs collision count
 
@@ -544,7 +546,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - Arrow button to continue
 
-  - Using an arrow icon rather than text reduces the amount of text on screen (preventing cognitive overload) and makes for a better user experience.
+  - Using an arrow icon rather than text reduces the amount of text on the screen (preventing cognitive overload) and makes for a better user experience.
 
 
 ### Final End Game Modal
@@ -569,7 +571,7 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
   - Allows users to easily return to the Homepage.
 
-  - After playing the game users may want to know more, or may want to contact the site owner.
+  - After playing the game users may want to know more about the game's design, or may want to contact the site owner.
 
   -----
 
@@ -684,9 +686,9 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ## Further Notes
 
-- In older commit messages there is in the message: **"Refractor code"** 
+- In older commit messages there is a spelling mistake in the message: **"Refractor code"** 
   - It should be `Refactor code`
-  - Addressing this issue using the terminal command `git rebase -i HEAD~[number]` would imply that all the commit messages were made in one day (commit messages made between Dec 2 and Dec 10 were all moved to Dec 10 after using this command to fix the first instance of this typo), therefore, I have chosen to leave this as there are too many commit messages to sift through.
+  - Addressing this issue using the terminal command `git rebase -i HEAD~[number]` would imply that all the commit messages were made in one day (commit messages made between Dec 2 and Dec 10 were all moved to Dec 10 after using this command to fix the first instance of this mistake), therefore, I have chosen to leave this as there are too many commit messages to sift through.
 
 - Return myCoffee is most optimal when played on desktop or laptop devices. Nevertheless, the game is highly reponsive and can be played on a wide range of devices easily.
 
@@ -702,7 +704,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
   - Design foundation for some buttons
   - Jumbotron in the Homepage
 
-- [Bootbox JS](http://bootboxjs.com/) was used to style the alert box which is trigged when the contact form is submitted on the homepage. Code provided on the Bootbox documentation pages found [here](http://bootboxjs.com/documentation.html#bb-options) was referenced to style the alert box further.
+- [Bootbox JS](http://bootboxjs.com/) was used to style the alert box which is trigged when the contact form is submitted on the homepage. Code provided on the Bootbox documentation pages, found [here](http://bootboxjs.com/documentation.html#bb-options), was referenced to style the alert box further.
 
 - [EmailJS](https://www.emailjs.com/) was used to add real world functionality to the contact form on the homepage. When a user submits the form, EmailJS sends the content to me via email.
 
@@ -724,16 +726,16 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - To fix null errors in the console, I looked to [this Stack Overflow post](https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null)
 
-- To animate the progress bar timer, I based my code of [this source](https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar)
+- To animate the progress bar timer, I looked to [this source](https://www.coding.academy/blog/how-to-create-a-smooth-animated-progress-bar)
 
-- The pulsing animation for the 'Start Game' button in Frogger was based upon [this Codepen source](https://codepen.io/seansean11/pen/dhwzj)
+- The pulsing animation for the 'Start Game' button before all games was based upon [this Codepen source](https://codepen.io/seansean11/pen/dhwzj)
 
 - The code to make the animated clock in each game was taken from [this Codepen source](https://codepen.io/MyXoToD/pen/psLen)
 
 
 ### Content
 
-- All content was written by the developer
+- All content was written by the developer.
 
 - However, please note that the games would not exist without the tutorial guides from the following channels:
 
@@ -748,7 +750,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - A variety of coffee-themed gifs were taken from [here](https://giphy.com/stickers/g0HiibIiGp2oWQjMy5) and were created by the talented Dave Gamez.
 
-- The keyboard icon images used in the help page for Frogger, was taken from [this GitHub page](https://github.com/q2apro/keyboard-keys-speedflips)
+- The keyboard icon images used in the help page for Frogger, were taken from [this GitHub page](https://github.com/q2apro/keyboard-keys-speedflips)
 
 - The background images and spritesheets used in the Frogger game were taken from [Franks Laboratory's](https://www.youtube.com/channel/UCEqc149iR-ALYkGM6TG-7vQ) website, [found here](http://frankslaboratory.co.uk/frogger-game-with-vanilla-javascript/)
 
