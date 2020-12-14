@@ -594,9 +594,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 ## Areas of Improvement
 
-- An improvement could be made to the hover effects for the navbar links in the homepage, as they are quite basic and are not very visually stimulating.
+- Improvement could be made to the hover effects for the navbar links in the homepage, as they are quite basic and are not very visually stimulating.
 
-- Find a better way to tell the users how to play Frogger, as it's controls are the most complex, without breaking the story narrative.
+- Another improvement would be to find a better way to tell the users how to play Frogger, as it's controls are the most complex, without breaking the story narrative.
 
 - If I had more time and experience I could have made the games more original and expanded on the tutorials even further.
 
@@ -652,6 +652,9 @@ The only difference between tablet and desktop is the collapsible navbar with th
 
 - [Smartmockups - Free Product Mockup Generator](https://smartmockups.com/)
   - Smartmocks is a web-application that allows you to create free mockup images. I used it in this readme file to present a mockup image of the project.
+
+- [Responsively App](https://responsively.app/)
+  - Responsively App is DevTool software that allows you to see an instant preview of all target screens for your website in a single window, side-by-side. It was used to check the responsiveness of my site. Screenshots of this was used in the [Testing User Stories](testing.md#testing-user-stories) section of the `testing.md` file.
 
 - [PicResize - Crop, Resize, Edit images online](https://picresize.com/)
   - PicResize is a web-application that allows you to resize images and alter their width/height and pixel size. I used PicResize to resize a variety of images in the project, such as the navbar brand, memory-game cards and mole images.

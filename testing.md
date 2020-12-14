@@ -222,20 +222,22 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
     - Each game has a clear and visually pleasing user-interface that does not hinder the user when playing the game. 
     
-    - Each game is relatively simple to play and the games themselvers are widely popular, making it very likely that the user would already know the game rules. 
+    - Each game is relatively simple to play and the games themselves are widely popular, making it very likely that the user would already know the game rules. 
 
     - Each game stresses visual importance. Text is kept to a minimum, while game art, pictures and vibrant colours are used to make the game more visually stimulating and encourage a positive user response.
 
 
 3. I want the game to have a challenge in terms of a time limit or a score I need to beat.
 
-    - There is a time limit for every game, which is indicated at the top of the screen via the game hud.
+    - There is a **time limit** for every game, which is indicated at the top of the screen via the game hud.
 
     | Desktop | Mobile |
     | ------- | ------ |
     | ![Timer screenshot - desktop](assets/img/main/timer-desktop.png) | ![Timer screenshot - mobile](assets/img/main/timer-mobile.png)
 
     - The timer includes a visual progress bar timer and a numbered timer to make the time limit more clear.
+
+    - To win whack-a-mole users must reach a **target score** of 25.
 
 
 4. I want to be able to change the difficulty of the game.
@@ -244,7 +246,7 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
     - Before each game users can chose a **difficulty settings** for the game. 
 
-    - Users can see what each **difficulty settings** is by clicking the **Help** button in the modal.
+    - Users can see what each difficulty settings is by clicking the **Help** button in the modal.
 
         ![Help menu difficulty settings screenshot](assets/img/main/help-difficulty.png)
 
@@ -266,7 +268,7 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
 6. I want the game instructions to be clear.
 
-- Each game has a specifically designed help menu (which can be accessed via the game menu modal) where users can find instructions for each game.
+- Each game has a specifically designed help menu (which can be accessed via each game settings menu) where users can find instructions for each game.
 
 | Memory Game | Whack-A-Mole | Frogger |
 | ----------- | ------------ | ------- |
@@ -282,13 +284,13 @@ Although the test for desktop devices gave a good score, the mobile results coul
 
 1. As a returning visitor I want to try and beat my high score, which means I expect a local storage system which will save my score for the game.
 
-    - Whack-A-Mole and Frogger both have a local storage system where a highscore is stored. 
+    - Whack-A-Mole and Frogger both have a local storage system where a high score is stored. 
 
     | Whack-A-Mole | Frogger |
     | ------------ | ------- |
     | ![Whack-A-Mole highscore screenshot](assets/img/main/whack-mole-highscore.png) | ![Frogger highscore screenshot](assets/img/main/frogger-highscore.png) |
 
-    - Memory game does not have a highscore system but one could be added in future developments.
+    - Memory game does not have a high score system but one could be added in future developments.
 
 
 2. As I have played the game before, I now seek a bigger challenge, so I want to be able to change the difficulty of the game.
@@ -517,7 +519,7 @@ EmailJS team
 
 - The project was posted on Slack's Peer Review channel, and the feedback I received from other students helped me isolate some final issues. 
 
-    - These issues were concerned with minor clipping issues which were corrected by updating media queries in CSS.
+    - These issues were concerned with minor clipping on smaller screens which were corrected by updating media queries in CSS.
 
 - The project was also sent directly to family members and friends. They noted some grammar mistakes in the homepage and menus, which were promptly corrected, and one family member noted a visual problem when playing frogger on her iPhone 7. See [Bug Fixes](#game-canvas-clipping ) for more details.
 
@@ -631,7 +633,7 @@ The mole became unclickable after `whack-a-mole.css` was changed in order to mak
 
 #### Highscore Modal
 
-When reseting the local storage for the frogger highscore, as shown [here](), the Frogger `end game modal` began showing the incorrect modal text when logging the `highscore`. 
+When resetting the local storage for the frogger highscore, the Frogger `end game modal` began showing the incorrect modal text when logging the `highscore`. 
 
 - It displayed: `And wow! You beat the highscore. It is now: 0`
 
@@ -754,10 +756,10 @@ I removed `e.preventDefault();` from swipe.js to fix the issue.
 
     - I believe that this visual bug could potentially be 'fixed' by allowing the user to scroll down the webpage. **However**, this would interfere with the touchscreen controls of the game and would prevent the users from playing it.
 
-    - I have added some guidance on the Frogger's help page for users who are experiencing this bug. It tells users to 'swipe up' to bypass the issue and play the game as normal. For now, this all can do to address the issue, but I hope to fix the issue properly in future updates.
+    - I have added some guidance on the Frogger's help page for users who are experiencing this bug. It tells users to 'swipe up' to bypass the issue and play the game as normal. For now, this all can do to address the issue, but I hope to fix this properly in future updates.
 
     - Another user who tested the application, and who was also using an iPhone 7 did not report this sort of issue.
 
-    - Another user, who tested the game on an iPhone X also did not report any issues.
+    - Another user, who tested the game on an iPhone X, also did not report any issues.
 
-- I believe that this bug is not detrimental to the project's overall UX design as the game is responsive for a vast majority of devices and this particular visual issue does not hinder users from playing the game. However, I may try to address this in the future.
+- I believe that this bug is not detrimental to the project's overall UX design as the game is responsive for a vast majority of devices and this particular visual issue does not hinder users from playing the game. However, I will want to address this bug in the future.
