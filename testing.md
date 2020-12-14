@@ -754,7 +754,9 @@ I removed `e.preventDefault();` from swipe.js to fix the issue.
 
     - I believe that this visual bug could potentially be 'fixed' by allowing the user to scroll down the webpage. **However**, this would interfere with the touchscreen controls of the game and would prevent the users from playing it.
 
-    - I should note that another user who tested the application, and who was also using an iPhone 7 did not report this sort of issue.
+    - I have added some guidance on the Frogger's help page for users who are experiencing this bug. It tells users to 'swipe up' to bypass the issue and play the game as normal. For now, this all can do to address the issue, but I hope to fix the issue properly in future updates.
+
+    - Another user who tested the application, and who was also using an iPhone 7 did not report this sort of issue.
 
     - Another user, who tested the game on an iPhone X also did not report any issues.
 
